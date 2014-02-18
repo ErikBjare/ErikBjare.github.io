@@ -1,0 +1,137 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    background: url("http://i.imgur.com/0havhk6.jpg") #000 center no-repeat fixed;
+    background-size: contain;
+}
+
+body {
+    background-color: rgba(0,0,0,0);
+    color: #FFF;
+    font-family: 'Nova Square', cursive;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 40px;
+}
+
+h5 {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 12pt;
+}
+
+a {
+    color: #FA0;
+}
+a:hover { color: #FA0; }
+a:visited { color: #FD5; }
+a:active { color: #FA0; }
+
+hr {
+    background: url("../images/diagonal-dotted-rule-invert.png") repeat-x 0 0;
+    border: 0 none;
+    height: 4px;
+    margin: 20px 0 20px 0;
+    /*border: 0 none;
+    height: 4px;
+    padding: 15px;*/
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+    #header {
+        background: linear-gradient(#060606, #1F1F3F);
+        height: 40px;
+        border: solid #428bca;
+        border-width: 0 0 1px 0;
+        /*box-shadow: 0 -10px 20px -3px #224 inset;*/
+    }
+
+        .header-button {
+            text-align: center;
+            padding: 9px 12px 9px 12px;
+            border: solid #335;
+            border-width: 0 1px 0 0;
+            font-weight: bold;
+            font-size: 1.1em;
+            float: left;
+        }
+
+        .header-button:hover {
+            box-shadow: 0 0 5px -2px rgba(255, 255, 255, 0.2) inset;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        ul.header-menu {
+            height: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            list-style: none;
+            padding: 0px;
+        }
+
+        a.header-button-link {
+            color: #FFF;
+            transition: color .3s ease-out;
+            -moz-transition: color .3s ease-out;
+            -webkit-transition: color .3s ease-out;
+            -o-transition: color .3s ease-out;
+        }
+        a.header-button-link:hover {
+            text-decoration-line: none;
+            color: #FA0;
+        }
+
+    #content {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        border-radius: 0 0 15px 15px;
+        padding: 35px 15px 15px 15px;
+        border-width: 0px 1px 1px 1px;
+    }
+
+        .section {
+            padding: 0 0 0 0;
+        }
+
+    #footer-wrapper {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        background: linear-gradient(#1F1F3F, #060606);
+        border: solid #428bca;
+        border-width: 1px 0 0 0;
+    }
+
+    #footer {
+        width: 100%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 10px;
+
+    }
