@@ -3,9 +3,16 @@ layout: custom
 title: Blog - Erik.Bjareho.lt
 ---
 
-{% for page in site.posts %}
-    {% include post.html content=page.content %}
+{% for post in site.posts %}
+    <h1>{{ post.title }}</h1>
+    <p class="meta">{{ post.date | date_to_string }}</p>
+
+    <div class="post">
+        {{ post.content }}
+    </div>
+
     <hr>
+
 {% endfor %}
 
-Next page button somewhere here!
+Next page button will go somewhere here later on!
