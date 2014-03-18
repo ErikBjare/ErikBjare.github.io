@@ -2,6 +2,7 @@
 layout: post
 title:  "Testing!"
 date:   2014-03-18 14:18:30
+author: Erik Bj&auml;reholt
 categories: blog
 ---
 
@@ -10,15 +11,15 @@ This is a test!
 Deep into the mines we go, gotta get us some gemstones!
 {% highlight ruby %}
 def print_hi(name)
-  puts "Hi, #{name}"
+  puts "Hello, #{name}"
 end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+print_hi('Dave')
+#=> prints 'Hello, Dave' to STDOUT.
 {% endhighlight %}
 
 
-No syntax test is complete without some snakes!
-{% highlight python %}
+No syntax test is complete without some snakes and lineno's!
+{% highlight python linenos %}
 def is_there_a_mun():
     return True
 

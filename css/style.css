@@ -33,6 +33,10 @@ h5 {
 
 a {
     color: #FA0;
+    transition: color .3s ease-out;
+    -moz-transition: color .3s ease-out;
+    -webkit-transition: color .3s ease-out;
+    -o-transition: color .3s ease-out;        
 }
 a:hover { color: #FA0; }
 a:visited { color: #FD5; }
@@ -53,6 +57,47 @@ hr {
     border: 1px solid #555;
     border-radius: 5px;
 }
+
+.post {
+}
+
+    .post-header {
+        background: linear-gradient(#013, #000);
+        padding: 5px;
+        border: 1px solid #048;
+        border-width: 1px 0 0 0;
+        border-radius: 10px 10px 0 0;
+    }
+    
+        .post-title {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+    
+        .post-meta {
+            margin-top: 5px;
+            margin-left: 5px;
+            font-size: 0.85em;
+            opacity: 0.7; 
+            transition: opacity .3s ease-out;
+            -moz-transition: opacity .3s ease-out;
+            -webkit-transition: opacity .3s ease-out;
+            -o-transition: opacity .3s ease-out;
+        }
+
+        .post-meta:hover {
+            opacity: 1;
+        }
+
+        .post-content {
+            padding: 0 5px 0 5px;
+            /*
+            background: linear-gradient(#000, #000515);
+            border: solid #038;
+            border-width: 0px 0px 1px 0px;
+            border-radius: 0px 0px 10px 10px;
+            */
+        }
 
 #container {
     min-height: 100%;
@@ -75,6 +120,10 @@ hr {
             font-weight: bold;
             font-size: 1.1em;
             float: left;
+            transition: background-color .3s ease-out;
+            -moz-transition: background-color .3s ease-out;
+            -webkit-transition: background-color .3s ease-out;
+            -o-transition: background-color .3s ease-out;
         }
 
         .header-button:hover {
@@ -93,10 +142,6 @@ hr {
 
         a.header-button-link {
             color: #FFF;
-            transition: color .3s ease-out;
-            -moz-transition: color .3s ease-out;
-            -webkit-transition: color .3s ease-out;
-            -o-transition: color .3s ease-out;
         }
         a.header-button-link:hover {
             text-decoration-line: none;
