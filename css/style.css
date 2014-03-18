@@ -16,7 +16,8 @@ body {
 }
 
 h1 {
-    margin-top: 20px;
+    margin-top: -60px;
+    padding-top: 60px;
 }
 
 h3 {
@@ -41,7 +42,7 @@ hr {
     background: url("../images/diagonal-dotted-rule-invert.png") repeat-x 0 0;
     border: 0 none;
     height: 4px;
-    margin: 20px 0 20px 0;
+    margin: 30px 0 30px 0;
     /*border: 0 none;
     height: 4px;
     padding: 15px;*/
@@ -108,7 +109,7 @@ hr {
         margin-right: auto;
         margin-bottom: 60px;
         border-radius: 0 0 15px 15px;
-        padding: 35px 15px 15px 15px;
+        padding: 60px 15px 15px 15px;
         border-width: 0px 1px 1px 1px;
     }
 

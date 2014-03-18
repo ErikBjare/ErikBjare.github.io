@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Testing!"
+date:   2014-03-18 14:18:30
+categories: blog
+---
+
+This is a test!
+
+Deep into the mines we go, gotta get us some gemstones!
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+
+No syntax test is complete without some snakes!
+{% highlight python %}
+def is_there_a_mun():
+    return True
+
+def is_there_a_cow_level(blizz_humor: boolean):
+    return blizz_humor
+{% endhighlight %}
+
+Testing some M<span class="glyphicon glyphicon-certificate" style="color: orange"></span>RE!
