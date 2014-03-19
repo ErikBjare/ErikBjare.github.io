@@ -1,4 +1,4 @@
 name: Erik.Bjareho.lt
 markdown: redcarpet
 pygments: true
-permalink: /blog/:year/:month/:day/:title
+permalink: /blog/:year/:month/:day/:title/
