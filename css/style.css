@@ -58,6 +58,11 @@ hr {
     border-radius: 5px;
 }
 
+.separator {
+    font-weight: bold; 
+    margin: 0 5px 0 5px;
+}
+
 .post {
 }
 

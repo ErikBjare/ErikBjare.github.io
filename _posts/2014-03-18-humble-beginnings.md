@@ -2,8 +2,9 @@
 layout: post
 title:  "Humble beginnings"
 date:   2014-03-18 14:18:30
+edited: 2014-03-19 13:37:00
 author: Erik Bj&auml;reholt
-categories: blog
+categories: 
 ---
 
 So, here it is, the first post of my possibly first serious blog.
