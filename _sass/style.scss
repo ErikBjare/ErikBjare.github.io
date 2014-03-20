@@ -8,7 +8,7 @@ html, body {
 }
 
 html {
-    background: url("../images/Andromeda%20Galaxy%20isolated%20-%20black%20bg.jpg") #000 center no-repeat fixed;
+    background: url("/img/Andromeda%20Galaxy%20isolated%20-%20black%20bg.jpg") #000 center no-repeat fixed;
     background-size: contain;
 }
 
@@ -46,7 +46,7 @@ a:visited { color: lighten($orange, 18%); }
 a:active { color: $orange; }
 
 hr {
-    background: url("../images/diagonal-dotted-rule-invert.png") repeat-x 0 0;
+    background: url("/img/diagonal-dotted-rule-invert.png") repeat-x 0 0;
     border: 0 none;
     height: 4px;
     margin: 30px 0 30px 0;
