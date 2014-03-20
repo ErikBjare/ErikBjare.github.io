@@ -1,3 +1,6 @@
+$neonblue: #428bca;
+$orange: #FA0;
+
 html, body {
     margin: 0;
     padding: 0;
@@ -32,15 +35,15 @@ h5 {
 }
 
 a {
-    color: #FA0;
+    color: $orange;
     transition: color .3s ease-out;
     -moz-transition: color .3s ease-out;
     -webkit-transition: color .3s ease-out;
     -o-transition: color .3s ease-out;        
 }
-a:hover { color: #FA0; }
-a:visited { color: #FD5; }
-a:active { color: #FA0; }
+a:hover { color: $orange; }
+a:visited { color: lighten($orange, 18%); }
+a:active { color: $orange; }
 
 hr {
     background: url("../images/diagonal-dotted-rule-invert.png") repeat-x 0 0;
@@ -96,12 +99,6 @@ hr {
 
         .post-content {
             padding: 0 5px 0 5px;
-            /*
-            background: linear-gradient(#000, #000515);
-            border: solid #038;
-            border-width: 0px 0px 1px 0px;
-            border-radius: 0px 0px 10px 10px;
-            */
         }
 
 #container {
@@ -110,9 +107,9 @@ hr {
 }
 
     #header {
-        background: linear-gradient(#060606, #1F1F3F);
+        background: linear-gradient(#040404, darken($neonblue, 40%));
         height: 40px;
-        border: solid #428bca;
+        border: solid $neonblue;
         border-width: 0 0 1px 0;
         /*box-shadow: 0 -10px 20px -3px #224 inset;*/
     }
@@ -120,7 +117,7 @@ hr {
         .header-button {
             text-align: center;
             padding: 9px 12px 9px 12px;
-            border: solid #335;
+            border: solid darken($neonblue, 30%);
             border-width: 0 1px 0 0;
             font-weight: bold;
             font-size: 1.1em;
@@ -129,11 +126,15 @@ hr {
             -moz-transition: background-color .3s ease-out;
             -webkit-transition: background-color .3s ease-out;
             -o-transition: background-color .3s ease-out;
+            transition: box-shadow .3s ease-out;
+            -moz-transition: box-shadow .3s ease-out;
+            -webkit-transition: box-shadow .3s ease-out;
+            -o-transition: box-shadow .3s ease-out;
         }
 
         .header-button:hover {
-            box-shadow: 0 0 5px -2px rgba(255, 255, 255, 0.2) inset;
-            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 -5px 16px -6px $neonblue inset;
+            background-color: rgba(255, 255, 255, 0.05);
         }
 
         ul.header-menu {
@@ -172,8 +173,8 @@ hr {
         bottom: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.6);
-        background: linear-gradient(#1F1F3F, #060606);
-        border: solid #428bca;
+        background: linear-gradient(darken($neonblue, 40%), #060606);
+        border: solid $neonblue;
         border-width: 1px 0 0 0;
     }
 
