@@ -70,7 +70,8 @@ hr {
 }
 
     .post-header {
-        background: linear-gradient(#013, #000);
+        background: rgba(0,0,0,0);
+        box-shadow: 0px 40px 80px -15px #013 inset;
         padding: 5px;
         border: 1px solid #048;
         border-width: 1px 0 0 0;
