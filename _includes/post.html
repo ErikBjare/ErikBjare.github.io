@@ -3,12 +3,19 @@
         <h1 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
         <p class="post-meta">
-            {% if page.author %}
-                <span class="glyphicon glyphicon-user" style="color: #FFB042"></span>
-                {{ page.author }} <span class="separator">|</span> 
+            <span class="glyphicon glyphicon-user post-meta-icon"></span>
+            {{ page.author }} 
+            <span class="separator">|</span>
+            <span class="glyphicon glyphicon-time post-meta-icon"></span>
+            <time datetime="{{ page.date }}">
+                {{ page.date | date: "%Y/%m/%d %H:%M %Z" }}
+            </time>
+            {% if page.status %}
+                <span class="separator">|</span>
+                <span class="glyphicon glyphicon-flash post-meta-icon"></span>
+                Status: 
+                <span class="status-{{ page.status | downcase | replace: " ", "_"}}">{{ page.status }}</span>
             {% endif %}
-            <span class="glyphicon glyphicon-time" style="color: #FFB042;"></span>
-            <time datetime="{{ page.date }}">{{ page.date }}</time>
         </p>
     </header>
 

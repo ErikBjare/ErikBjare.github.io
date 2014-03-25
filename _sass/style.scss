@@ -94,12 +94,20 @@ hr {
             -o-transition: opacity .3s ease-out;
         }
 
+            .post-meta-icon {
+                color: #FFB042;
+            }
+
         .post-meta:hover {
             opacity: 1;
         }
 
         .post-content {
             padding: 0 5px 0 5px;
+        }
+
+        .status-in_progress {
+            color: red;
         }
 
 #container {
