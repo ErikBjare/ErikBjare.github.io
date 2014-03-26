@@ -30,7 +30,7 @@
             <span class="glyphicon glyphicon-link" style="color: orange"></span> 
             <a href="{{ page.url }}">Permalink</a>
             {% if include.fullpage != true %}
-                <span class="separator"> | </span>
+                <span class="separator">|</span>
                 <span class="glyphicon glyphicon-comment" style="color: orange"></span> 
                 <a href="{{ page.url }}#disqus_thread">Comments</a>
                 <script type="text/javascript">
@@ -49,12 +49,15 @@
                 </script> 
             {% endif %}
             {% if page.edited %}
-                <span class="separator"> | </span>
+                <span class="separator">|</span>
                 <span style="opacity: 0.7;">
                     <span class="glyphicon glyphicon-edit"></span>
                     Edited: {{ page.edited }}
                 </span>
             {% endif %}
+            <div style="float: right">
+                Words: {{ include.content | split: ' ' | size }}
+            </div>
         </div>
 
         {% if include.fullpage %}
