@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Humble beginnings"
-date:   2014-03-18 14:18 +01:00
-edited: 2014-04-07 15:12 +02:00
+date:   2014-03-18 14:18
+edited: 2014-04-07 15:12
 author: Erik Bj&auml;reholt
 categories: 
 ---

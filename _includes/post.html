@@ -8,7 +8,7 @@
             <span class="separator">|</span>
             <span class="glyphicon glyphicon-time post-meta-icon"></span>
             <time datetime="{{ page.date }}">
-                {{ page.date | date: "%Y/%m/%d %H:%M %Z" }}
+                {{ page.date | date: "%F %R %Z" }}
             </time>
             {% if page.status %}
                 <span class="separator">|</span>
@@ -52,7 +52,7 @@
                 <span class="separator">|</span>
                 <span style="opacity: 0.7;">
                     <span class="glyphicon glyphicon-edit"></span>
-                    Edited: {{ page.edited | date: "%Y/%m/%d %H:%M %Z" }}
+                    Edited: {{ page.edited | date: "%F %R %Z" }}
                 </span>
             {% endif %}
             <div style="float: right">
