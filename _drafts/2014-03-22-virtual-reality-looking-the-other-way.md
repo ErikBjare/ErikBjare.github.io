@@ -7,6 +7,8 @@ status: In Progress
 categories: VR
 ---
 
+<!-- ToDo: Split into two posts, one about my vision in general and another about virtual workspace -->
+
 A few days ago, Oculus VR announced their [Oculus Development Kit 2](http://www.oculusvr.com/dk2/) 
 and on the same day Sony announced their [Project Morpheus](http://www.ign.com/articles/2014/03/19/gdc-sony-reveals-project-morpheus-playstation-4-vr-headset). 
 While the jury is still out on who will lead the future of VR (although the current leader is [without a doubt](http://www.google.com/trends/explore#q=oculus%20rift%2C%20project%20morpheus) Oculus) things are definately not progressing slowly in the space. Outlooks are primising, most reviews are positive and there is a growing anticipation in the 
@@ -23,3 +25,13 @@ The trend is pretty clear, resolution is increasing, more people use multi-monit
 
 <!--more-->
 
+One attempt has been made, [Ibex](http://www.roadtovr.com/ibex-virtual-reality-desktop-environment-oculus-rift/). While a good start and the creator certainly has set the kind of ambition sought after in the space there is plenty of room for competitors and variants, and there might come out a dominant one given the right featureset.
+
+There is still a lot of work to do, [but nothing we can't handle](https://www.youtube.com/watch?v=G-2dQoeqVVo). I am convinced that VR will be the PC of the 20th century that will forever change what we mean by reality.
+
+Michael Abrash put it perfectly:
+"We're on the cusp of what I think is not The Next Big Platform, but rather simply The Final Platform – the platform to end all platforms – and the path here has been so improbable that I can only shake my head."
+
+To make this happen will be left as an exercise to the reader.
+
+<span class="post-acknowledgements">Special thanks to Johan Bj&auml;reholt for feedback.</span>
