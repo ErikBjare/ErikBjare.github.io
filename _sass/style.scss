@@ -24,7 +24,7 @@ h1 {
 }
 
 h3 {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 h5 {
@@ -55,6 +55,10 @@ hr {
     padding: 15px;*/
 }
 
+blockquote {
+    font-size: 14px;
+}
+
 .box {
     background: rgba(0, 0, 0, 0.8);
     border: 1px solid #555;
@@ -67,23 +71,21 @@ hr {
 }
 
 .post {
-}
 
-    .post-header {
+    header {
         background: rgba(0,0,0,0);
         box-shadow: 0px 40px 80px -15px #013 inset;
         padding: 5px;
         border: 1px solid #048;
         border-width: 1px 0 0 0;
         border-radius: 10px 10px 0 0;
-    }
     
-        .post-title {
+        .title {
             margin: 0 0 0 0;
             padding: 0 0 0 0;
         }
     
-        .post-meta {
+        .meta {
             margin-top: 5px;
             margin-left: 5px;
             font-size: 0.85em;
@@ -94,32 +96,34 @@ hr {
             -o-transition: opacity .3s ease-out;
         }
 
-            .post-meta-icon {
+            .meta-icon {
                 color: #FFB042;
             }
 
-        .post-meta:hover {
+        .meta:hover {
             opacity: 1;
         }
-
-        .post-content {
-            padding: 0 5px 0 5px;
-        }
-
-        .post-acknowledgements {
-            font-style: italic;
-            font-weight: 1200;
-            font-size: 0.85em;
-        }
-
+        
         .status-in_progress {
             color: red;
         }
+    }
+
+    .content {
+        padding: 0 5px 0 5px;
+    }
+
+    .acknowledgements {
+        font-style: italic;
+        font-weight: 1200;
+        font-size: 0.85em;
+    }
+
+}
 
 #container {
     min-height: 100%;
     position: relative;
-}
 
     #header {
         background: linear-gradient(#040404, darken($neonblue, 40%));
@@ -127,9 +131,8 @@ hr {
         border: solid $neonblue;
         border-width: 0 0 1px 0;
         /*box-shadow: 0 -10px 20px -3px #224 inset;*/
-    }
 
-        .header-button {
+        .button {
             text-align: center;
             padding: 9px 12px 9px 12px;
             border: solid darken($neonblue, 30%);
@@ -147,12 +150,12 @@ hr {
             -o-transition: box-shadow .3s ease-out;
         }
 
-        .header-button:hover {
+        .button:hover {
             box-shadow: 0 -5px 16px -6px $neonblue inset;
             background-color: rgba(255, 255, 255, 0.05);
         }
 
-        ul.header-menu {
+        ul.menu {
             height: 50px;
             max-width: 800px;
             margin-left: auto;
@@ -161,14 +164,17 @@ hr {
             padding: 0px;
         }
 
-        a.header-button-link {
+        a.button-link {
             color: #FFF;
             cursor: pointer;
         }
-        a.header-button-link:hover {
+        a.button-link:hover {
             text-decoration-line: none;
             color: #FA0;
         }
+
+    }
+}
 
     #content {
         max-width: 800px;
