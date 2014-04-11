@@ -70,6 +70,11 @@ blockquote {
     margin: 0 5px 0 5px;
 }
 
+
+.status-in_progress {
+    color: red;
+}
+
 .post {
 
     header {
@@ -104,9 +109,6 @@ blockquote {
             opacity: 1;
         }
         
-        .status-in_progress {
-            color: red;
-        }
     }
 
     .content {
