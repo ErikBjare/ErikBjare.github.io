@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Erik Bj&auml;reholt</title>
-    <meta name="description" content="Towards a better tomorrow, today!">
+    <title>{% if page.title != site.name %}{{ page.title }} - {% endif %}{{ site.name }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" />
+    {% if page.title != site.name %}
+      <meta content="article" property="og:type">
+    {% else %}
+      <meta content="website" property="og:type">
+    {% endif %}
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <!-- meta property="og:image" content="http://example.com/image.jpg" /-->
+    {% if page.description %}
+      <meta content="{{ page.description }}" property="og:description">
+    {% else %}
+      <meta content="{{ site.description }}" property="og:description">
+    {% endif %}
 
+    <!-- Favicon -->
     <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <!-- Google Authorship and Publisher Markup -->

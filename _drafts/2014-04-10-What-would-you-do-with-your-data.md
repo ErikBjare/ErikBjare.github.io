@@ -2,6 +2,7 @@
 layout: post
 title: "What would you do with your data?"
 author: "Erik Bj&auml;reholt"
+description: "If you had the log of your entire life, what would you do?"
 date: 2014/04/10 20:51
 status: In Progress
 categories: QuantifiedSelf Statistics

@@ -2,6 +2,7 @@
 layout: post
 title:  "VR: Looking the other way"
 author: Erik Bj&auml;reholt
+description: "The future of VR is not only about games"
 date:   2014-03-23 17:00
 status: In Progress
 categories: VR
@@ -23,7 +24,7 @@ I mean which ordinary person knows that adding a second screen can increases pro
 
 The trend is pretty clear, resolution is increasing, more people use multi-monitor setups and when resolution increases so does monitor size. But where will this end? Well, the extreme scenario should be pretty obvious given the title of this post, fully immersive workspaces.
 
-One attempt has been made, [Ibex](http://www.roadtovr.com/ibex-virtual-reality-desktop-environment-oculus-rift/). While a good start and the creator certainly has set the kind of ambition sought after in the space there is plenty of room for competitors and variants, and there might come out a dominant one if someone jumps ahead of the competition.
+One attempt has been made, [Ibex](http://www.roadtovr.com/ibex-virtual-reality-desktop-environment-oculus-rift/). While a good start and the creator certainly has the ambition sought after in the space there is still plenty of room for competition and variants. There might even come out a dominant one if someone jumps ahead of the competition.
 
 There is still a lot of work to do, [but nothing we can't handle](https://www.youtube.com/watch?v=G-2dQoeqVVo). I am convinced that VR will be the PC of the 20th century that will forever change what we mean by reality.
 

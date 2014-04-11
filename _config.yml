@@ -1,4 +1,6 @@
-name: Erik.Bjareho.lt
+name: "Erik Bj&auml;reholt"
+description: "Towards a better tomorrow, today!"
+url: "http://erik.bjareho.lt"
 markdown: redcarpet
 pygments: true
 permalink: /blog/:year/:month/:day/:title/
