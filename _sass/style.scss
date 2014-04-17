@@ -1,5 +1,40 @@
+// Dimensions
+$page-width: 800px;
+
+// Colors
 $neonblue: #428bca;
 $orange: #FA0;
+
+// Fonts
+@mixin text-styled () {
+    font-family: 'Nova Square', "Open Sans", sans-serif;
+}
+@mixin text() {
+    font-family: "Open Sans", sans-serif;
+}
+
+// Media
+
+@media only screen {
+    #content {
+        padding: 60px 15px 15px 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #content {
+        padding: 60px 5px 15px 5px;
+    }
+
+    .button.right {
+        visibility: hidden;
+    }
+
+    
+}
+
+// #####
+
 
 html, body {
     margin: 0;
@@ -13,12 +48,13 @@ html {
 }
 
 body {
+    @include text;
     background-color: rgba(0,0,0,0);
     color: #FFF;
-    font-family: 'Nova Square', Arial;
 }
 
 h1 {
+    @include text-styled;
     margin-top: -60px;
     padding-top: 60px;
 }
@@ -44,6 +80,9 @@ a {
 a:hover { color: $orange; }
 a:visited { color: lighten($orange, 18%); }
 a:active { color: $orange; }
+
+p {
+}
 
 hr {
     background: url("/img/diagonal-dotted-rule-invert.png") repeat-x 0 0;
@@ -98,20 +137,11 @@ blockquote {
             margin-top: 5px;
             margin-left: 5px;
             font-size: 0.85em;
-            opacity: 0.7; 
-            transition: opacity .3s ease-out;
-            -moz-transition: opacity .3s ease-out;
-            -webkit-transition: opacity .3s ease-out;
-            -o-transition: opacity .3s ease-out;
         }
 
             .meta-icon {
                 color: #FFB042;
             }
-
-        .meta:hover {
-            opacity: 1;
-        }
         
     }
 
@@ -139,13 +169,12 @@ blockquote {
         /*box-shadow: 0 -10px 20px -3px #224 inset;*/
 
         .button {
+            @include text-styled;
             text-align: center;
             padding: 9px 12px 9px 12px;
             border: solid darken($neonblue, 30%);
             border-width: 0 1px 0 0;
-            font-weight: bold;
             font-size: 1.1em;
-            float: left;
             transition: background-color .3s ease-out;
             -moz-transition: background-color .3s ease-out;
             -webkit-transition: background-color .3s ease-out;
@@ -154,16 +183,29 @@ blockquote {
             -moz-transition: box-shadow .3s ease-out;
             -webkit-transition: box-shadow .3s ease-out;
             -o-transition: box-shadow .3s ease-out;
-        }
 
+        }
+        
+        .first {
+            border-left-width: 1px;
+        }
+        
         .button:hover {
             box-shadow: 0 -5px 16px -6px $neonblue inset;
             background-color: rgba(255, 255, 255, 0.05);
         }
 
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
         ul.menu {
             height: 50px;
-            max-width: 800px;
+            max-width: $page-width;
             margin-left: auto;
             margin-right: auto;
             list-style: none;
@@ -178,17 +220,15 @@ blockquote {
             text-decoration-line: none;
             color: #FA0;
         }
-
     }
 }
 
     #content {
-        max-width: 800px;
+        max-width: $page-width;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 60px;
         border-radius: 0 0 15px 15px;
-        padding: 60px 15px 15px 15px;
         border-width: 0px 1px 1px 1px;
     }
 
@@ -208,7 +248,7 @@ blockquote {
 
     #footer {
         width: 100%;
-        max-width: 800px;
+        max-width: $page-width;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
