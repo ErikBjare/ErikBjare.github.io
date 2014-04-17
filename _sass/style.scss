@@ -1,6 +1,3 @@
-// Dimensions
-$page-width: 800px;
-
 // Colors
 $neonblue: #428bca;
 $orange: #FA0;
@@ -16,25 +13,29 @@ $orange: #FA0;
 // Media
 
 @media only screen {
-    #content {
-        padding: 60px 15px 15px 15px;
+    ul.menu, #content, #footer {
+        max-width: 800px;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    #content {
-        padding: 60px 5px 15px 5px;
+@media only screen and (min-resolution: 120dpi) {
+    #header {
+      height: 5em;
+    }
+
+    .meta-box {
+      font-size: 150%;
+
+    }
+
+    ul.menu, #content, #footer {
+        max-width: 100%;
     }
 
     .button.right {
         visibility: hidden;
     }
-
-    
 }
-
-// #####
-
 
 html, body {
     margin: 0;
@@ -53,21 +54,23 @@ body {
     color: #FFF;
 }
 
+
 h1 {
     @include text-styled;
-    margin-top: -60px;
-    padding-top: 60px;
+    font-size: 2.5em;
+    margin-top: -4em;
+    padding-top: 4em;
 }
 
 h3 {
-    margin-top: 20px;
+    margin-top: 1.3em;
 }
 
 h5 {
     font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 5px;
-    font-size: 12pt;
+    margin-top: 2em;
+    margin-bottom: 0.3em;
+    font-size: 1em;
 }
 
 a {
@@ -75,7 +78,7 @@ a {
     transition: color .3s ease-out;
     -moz-transition: color .3s ease-out;
     -webkit-transition: color .3s ease-out;
-    -o-transition: color .3s ease-out;        
+    -o-transition: color .3s ease-out;
 }
 a:hover { color: $orange; }
 a:visited { color: lighten($orange, 18%); }
@@ -87,26 +90,26 @@ p {
 hr {
     background: url("/img/diagonal-dotted-rule-invert.png") repeat-x 0 0;
     border: 0 none;
-    height: 4px;
-    margin: 30px 0 30px 0;
+    height: 0.3em;
+    margin: 2em 0 2em 0;
     /*border: 0 none;
-    height: 4px;
-    padding: 15px;*/
+    height: 0.3em;
+    padding: 1em;*/
 }
 
 blockquote {
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .box {
     background: rgba(0, 0, 0, 0.8);
-    border: 1px solid #555;
-    border-radius: 5px;
+    border: 0.1em solid #555;
+    border-radius: 0.3em;
 }
 
 .separator {
-    font-weight: bold; 
-    margin: 0 5px 0 5px;
+    font-weight: bold;
+    margin: 0 0.3em 0 0.3em;
 }
 
 
@@ -119,42 +122,48 @@ blockquote {
 }
 
 .post {
+  padding: 0.5em;
 
     header {
         background: rgba(0,0,0,0);
-        box-shadow: 0px 40px 80px -15px #013 inset;
-        padding: 5px;
-        border: 1px solid #048;
-        border-width: 1px 0 0 0;
-        border-radius: 10px 10px 0 0;
-    
+        margin: -0.5em;
+        box-shadow: 0 2.5em 5em -1em #001647 inset;
+        padding: 0.5em;
+        border: solid #048;
+        border-width: 0.1em 0 0 0;
+        border-radius: 0.7em 0.7em 0 0;
+
         .title {
             margin: 0 0 0 0;
             padding: 0 0 0 0;
         }
-    
+
         .meta {
-            margin-top: 5px;
-            margin-left: 5px;
-            font-size: 0.85em;
+            margin: 0.3em 0 0 0;
+            font-size: 1em;
+            height: 1em;
         }
+
+        .meta-box {
+            float: left;
+            padding: 0 0.7em 0 0.3em;
 
             .meta-icon {
                 color: #FFB042;
+                padding-right: 0.3em;
             }
-        
+        }
+
     }
 
     .content {
-        padding: 0 5px 0 5px;
+        clear: both;
+        padding: 1em 0 0 0;
     }
 
-    .acknowledgements {
-        font-style: italic;
-        font-weight: 1200;
-        font-size: 0.85em;
+    .footer {
+      font-size: 0.9em;
     }
-
 }
 
 #container {
@@ -163,17 +172,17 @@ blockquote {
 
     #header {
         background: linear-gradient(#040404, darken($neonblue, 40%));
-        height: 40px;
+        height: 2.5em;
         border: solid $neonblue;
-        border-width: 0 0 1px 0;
-        /*box-shadow: 0 -10px 20px -3px #224 inset;*/
+        border-width: 0 0 0.1em 0;
+        overflow: hidden;
 
         .button {
             @include text-styled;
             text-align: center;
-            padding: 9px 12px 9px 12px;
+            padding: 0.5em 0.8em 0.5em 0.8em;
             border: solid darken($neonblue, 30%);
-            border-width: 0 1px 0 0;
+            border-width: 0 0.1em 0 0;
             font-size: 1.1em;
             transition: background-color .3s ease-out;
             -moz-transition: background-color .3s ease-out;
@@ -183,15 +192,14 @@ blockquote {
             -moz-transition: box-shadow .3s ease-out;
             -webkit-transition: box-shadow .3s ease-out;
             -o-transition: box-shadow .3s ease-out;
+        }
 
-        }
-        
         .first {
-            border-left-width: 1px;
+            border-left-width: 0.1em;
         }
-        
+
         .button:hover {
-            box-shadow: 0 -5px 16px -6px $neonblue inset;
+            box-shadow: 0 -0.3em 1em -0.2em $neonblue inset;
             background-color: rgba(255, 255, 255, 0.05);
         }
 
@@ -204,12 +212,11 @@ blockquote {
         }
 
         ul.menu {
-            height: 50px;
-            max-width: $page-width;
+            height: 3.5em;
             margin-left: auto;
             margin-right: auto;
             list-style: none;
-            padding: 0px;
+            padding: 0;
         }
 
         a.button-link {
@@ -221,15 +228,14 @@ blockquote {
             color: #FA0;
         }
     }
-}
 
     #content {
-        max-width: $page-width;
+        padding: 3.5em 1em 1em 1em;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 60px;
-        border-radius: 0 0 15px 15px;
-        border-width: 0px 1px 1px 1px;
+        margin-bottom: 4em;
+        border-radius: 0 0 1em 1em;
+        border-width: 0.1em 0.1em 0.1em;
     }
 
         .section {
@@ -243,23 +249,21 @@ blockquote {
         background: rgba(0, 0, 0, 0.6);
         background: linear-gradient(darken($neonblue, 40%), #060606);
         border: solid $neonblue;
-        border-width: 1px 0 0 0;
+        border-width: 0.1em 0 0 0;
     }
 
     #footer {
         width: 100%;
-        max-width: $page-width;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        padding: 10px;
-
+        padding: 0.7em;
     }
-
+}
 
 .invert {
     -webkit-filter: invert(100%);
     -moz-filter: invert(100%);
     -o-filter: invert(100%);
-    -ms-filter: invert(100%); 
+    -ms-filter: invert(100%);
 }
