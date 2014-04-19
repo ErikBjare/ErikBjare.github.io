@@ -1,16 +1,14 @@
 ---
 layout: post
 title:  "VR: Looking the other way"
-author: Erik Bj&auml;reholt
+author: "Erik Bj&auml;reholt"
 description: "The future of VR is not only about games"
-date:   2014-03-23 17:00
-status: In Progress
-categories: VR
+date:   2014-04-20 00:35
+status: Completed
+categories: VR futurism
 ---
 
-<!-- ToDo: Split into two posts, one about my vision in general and another about virtual workspace -->
-
-A few days ago, Oculus VR announced their [Oculus Development Kit 2](http://www.oculusvr.com/dk2/) 
+About a month ago, Oculus VR announced their [Oculus Development Kit 2](http://www.oculusvr.com/dk2/) 
 and on the same day Sony announced their [Project Morpheus](http://www.ign.com/articles/2014/03/19/gdc-sony-reveals-project-morpheus-playstation-4-vr-headset). 
 While the jury is still out on who will lead the future of VR (although the current leader is [without a doubt](http://www.google.com/trends/explore#q=oculus%20rift%2C%20project%20morpheus) Oculus) things are definately not progressing slowly in the space. Outlooks are primising, most reviews are positive and there is a growing anticipation in the 
 game-developer community, concerned about how they have to adapt, what will be the first "killer app" and [how to create it](https://www.youtube.com/watch?v=-YCBadIVro8). 
@@ -31,6 +29,8 @@ There is still a lot of work to do, [but nothing we can't handle](https://www.yo
 Michael Abrash put it perfectly:   
 *"We're on the cusp of what I think is not The Next Big Platform, but rather simply The Final Platform &#8213; the platform to end all platforms &#8213; and the path here has been so improbable that I can only shake my head."*
 
-While I think that The Final Platform will be a [BCI](https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface) of some form, it would not seem totally implausible if primitive BCIs found their way into VR as an extension that ultimately removed the need for a screen, but that's probably a couple decades away (yes, I'm an optimist). That is, of course, before (and if) mind uploading becomes a possibility, and I'd rather not call the hypothetical computer, on which we will exist, a platform.
+While I think that The Final Platform will be a [BCI](https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface) of some form, it would not seem totally implausible if primitive BCIs found their way into VR as an extension that ultimately removed the need for a screen, but that's probably a couple decades away (or am I being too optimistic?). That is, of course, before (and if) mind uploading becomes a possibility, and I'd rather not call the hypothetical computer, on which we will exist, a platform. 
 
-To make this happen will be left as an exercise to the reader (and the author). Now let the inevitable and the self-fulfilling prophecy fulfill themselves!
+To make VR happen in all it's glory is now in the hands of a few companies and perhaps also you, the reader, and me (if I can find the time).   
+
+It would be an understatement to say that we have an exciting future ahead of us.
