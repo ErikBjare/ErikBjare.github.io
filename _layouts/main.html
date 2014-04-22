@@ -9,7 +9,7 @@
     {% else %}
       <meta content="website" property="og:type">
     {% endif %}
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}" />
     <meta property="og:image" content="http://erik.bjareho.lt/img/glider.png" />
     {% if page.description %}
       <meta content="{{ page.description }}" property="og:description">
