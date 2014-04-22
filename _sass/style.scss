@@ -163,6 +163,12 @@ blockquote {
 
     .footer {
       font-size: 0.9em;
+
+      .social-button {
+        float: left;
+        display: inline-block;
+        margin-right: 4px;
+      }
     }
 }
 
