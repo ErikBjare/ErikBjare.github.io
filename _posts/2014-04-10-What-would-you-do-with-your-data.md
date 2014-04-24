@@ -4,6 +4,7 @@ title: "What would you do with your data?"
 author: "Erik Bj&auml;reholt"
 description: "If you had the log of your entire life, what would you do?"
 date: 2014/04/11 22:53
+date: 2014/04/24 17:42
 status: Completed
 categories: QuantifiedSelf Statistics
 ---
@@ -30,7 +31,7 @@ There is a problem however, your dataset is now as biased as it can get. The pro
 The same applies to how much sleep you need (and how much is too much), the efficacy of diets/supplements/drugs, what music makes you more productive and so on... There are incredibly many unexplored avenues to take this further, and the value it would provide could be incredible.
 
 I've been logging much of my own life for the past month. Mood, productivity and alertness 3x daily, the activities I've engaged in (coding, studying, training, reading, writing, etc.) and the insights I've gotten are many. 
-Logging what activities I engaged in accidentally enabled the [Seinfeld method](http://lifehacker.com/281626/jerry-seinfelds-productivity-secret) which turned out to work better than expected. I'd encourage you to try it, it doesn't take much time and is even surprisingly fun. I use Google Spreadsheets, and while it works well, there are limitations and possibilities that call for a specialized service. But for exploring, a spreadsheet works well.
+Logging what activities I engaged in accidentally enabled the [Seinfeld method](http://lifehacker.com/281626/jerry-seinfelds-productivity-secret) which turned out to work better than expected. It also happened to have the same method as the *non-zero days* system introduced to me by ryans01 in this [wonderful post](http://www.reddit.com/r/getdisciplined/comments/1q96b5/i_just_dont_care_about_myself/cdah4af). I'd encourage you to try it, it doesn't take much time and is even surprisingly fun. I use Google Spreadsheets, and while it works well, there are limitations and possibilities that call for a specialized service. But for exploring, a spreadsheet works well.
 
 I'd love to show you how I'm doing it and the discoveries I made, but that will have to wait for another time as I am still discovering the possibilities and the limitations of my (relatively) simple spreadsheet. In the meantime, cheap ways to gather data that would otherwise be expensive to gather includes services like [RescueTime](https://www.rescuetime.com/ref/708113) which logs your computer activities. I'm sure there are others out there, leave a comment if you find one!
 
