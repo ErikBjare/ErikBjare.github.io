@@ -3,8 +3,8 @@ layout: main
 title: Home
 ---
         <div class="section" id="home">
-            <h1>Home</h1>
-            Not much to see here yet, but you could check out the <a href="/about/">about</a> page or visit some of my various profiles online.
+            <h1>Welcome</h1>
+            ...to the personal website of me, Erik Bj&auml;reholt. Here you can read my <a href="/blog">blog</a> where I sometimes write things I like <!-- (or feel obliged) --> to think about. You can also learn more about me by checking out the <a href="/about/">about</a> page or visit some of my various profiles online as listed below.
             <br><br>
 
             <ul>
@@ -22,8 +22,8 @@ title: Home
             <ul class="posts">
                 {% for post in site.posts %}
                     <li>
-                        <span>{{ post.date | date_to_string }}</span> 
-                        &raquo; 
+                        <span>{{ post.date | date_to_string }}</span>
+                        &raquo;
                         <a href="{{ post.url }}">{{ post.title }}</a>
                     </li>
                 {% endfor %}
