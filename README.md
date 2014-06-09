@@ -1,4 +1,4 @@
-[erik.bjareho.lt](http://erik.bjareho.lt/)
+[erik.bjareholt.com](http://erik.bjareholt.com/)
 ==================
 
 My personal website
