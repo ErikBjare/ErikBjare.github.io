@@ -1,6 +1,7 @@
 // Colors
 $neonblue: #428bca;
 $orange: #FA0;
+$softblue: #3366FF;
 
 // Fonts
 @mixin text-styled () {
@@ -44,14 +45,14 @@ html, body {
 }
 
 html {
-    background: url("/img/Andromeda%20Galaxy%20isolated%20-%20black%20bg.jpg") #000 center no-repeat fixed;
+    background: #FFF center no-repeat fixed;
     background-size: contain;
 }
 
 body {
     @include text;
     background-color: rgba(0,0,0,0);
-    color: #FFF;
+    color: #000;
 }
 
 
@@ -74,27 +75,24 @@ h5 {
 }
 
 a {
-    color: $orange;
     transition: color .3s ease-out;
     -moz-transition: color .3s ease-out;
     -webkit-transition: color .3s ease-out;
     -o-transition: color .3s ease-out;
 }
-a:hover { color: $orange; }
-a:visited { color: lighten($orange, 18%); }
-a:active { color: $orange; }
+a:hover { color: #002; }
+a:active { color: #002; }
 
 p {
 }
 
 hr {
-    background: url("/img/diagonal-dotted-rule-invert.png") repeat-x 0 0;
+    background: url("/img/diagonal-dotted-rule.png") repeat-x 0 0;
     border: 0 none;
     height: 0.3em;
     margin: 2em 0 2em 0;
-    /*border: 0 none;
     height: 0.3em;
-    padding: 1em;*/
+    padding: 1em;
 }
 
 blockquote {
@@ -125,9 +123,7 @@ blockquote {
   padding: 0.5em;
 
     header {
-        background: rgba(0,0,0,0);
         margin: -0.5em;
-        box-shadow: 0 2.5em 5em -1em #001647 inset;
         padding: 0.5em;
         border: solid #048;
         border-width: 0.1em 0 0 0;
@@ -136,6 +132,9 @@ blockquote {
         .title {
             margin: 0 0 0 0;
             padding: 0 0 0 0;
+            a {
+                color: #000;
+            }
         }
 
         .meta {
@@ -149,7 +148,7 @@ blockquote {
             padding: 0 0.7em 0 0.3em;
 
             .meta-icon {
-                color: #FFB042;
+                color: $softblue;
                 padding-right: 0.3em;
             }
         }
@@ -169,18 +168,20 @@ blockquote {
         display: inline-block;
         margin-right: 4px;
       }
+      
+      .glyphicon {
+        color: $softblue;
+      }
     }
 }
 
 #container {
-    min-height: 100%;
-    position: relative;
 
     #header {
-        background: linear-gradient(#040404, darken($neonblue, 40%));
         height: 2.5em;
-        border: solid $neonblue;
+        border: solid #999;
         border-width: 0 0 0.1em 0;
+        border-radius: 10%;
         overflow: hidden;
 
         .button {
@@ -204,11 +205,6 @@ blockquote {
             border-left-width: 0.1em;
         }
 
-        .button:hover {
-            box-shadow: 0 -0.3em 1em -0.2em $neonblue inset;
-            background-color: rgba(255, 255, 255, 0.05);
-        }
-
         .left {
             float: left;
         }
@@ -226,12 +222,12 @@ blockquote {
         }
 
         a.button-link {
-            color: #FFF;
+            color: #444;
             cursor: pointer;
         }
         a.button-link:hover {
             text-decoration-line: none;
-            color: #FA0;
+            color: #000;
         }
     }
 
@@ -249,12 +245,9 @@ blockquote {
         }
 
     #footer-wrapper {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.6);
-        background: linear-gradient(darken($neonblue, 40%), #060606);
-        border: solid $neonblue;
+        margin-top: 2em;
+        margin-left: auto; margin-right: auto;
+        border: solid #BBB;
         border-width: 0.1em 0 0 0;
     }
 

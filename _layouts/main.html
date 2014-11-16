@@ -62,15 +62,12 @@
 </head>
 <body>
 <div id="container">
-
+    <div class="container" id="content">
     {% include header.html %}
-
-    <div class="box" id="content">
         {{ content }}
+    
+        {% include footer.html %}
     </div>
-
-    {% include footer.html %}
-
 </div>
 
 <script type="text/javascript">

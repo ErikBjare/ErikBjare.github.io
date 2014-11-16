@@ -1,4 +1,5 @@
 .idea
 _site
+_drafts
 *.swp
 .sass-cache
