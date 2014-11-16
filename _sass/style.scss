@@ -59,8 +59,6 @@ body {
 h1 {
     @include text-styled;
     font-size: 2.5em;
-    margin-top: -4em;
-    padding-top: 4em;
 }
 
 h3 {
@@ -83,21 +81,22 @@ a {
 a:hover { color: #002; }
 a:active { color: #002; }
 
-p {
-}
-
 hr {
     background: url("/img/diagonal-dotted-rule.png") repeat-x 0 0;
     border: 0 none;
     height: 0.3em;
     margin: 2em 0 2em 0;
     height: 0.3em;
-    padding: 1em;
 }
 
 blockquote {
     font-size: 1em;
 }
+
+.container {
+    max-width: 1000px;
+}
+
 
 .box {
     background: rgba(0, 0, 0, 0.8);
@@ -123,11 +122,11 @@ blockquote {
   padding: 0.5em;
 
     header {
-        margin: -0.5em;
-        padding: 0.5em;
-        border: solid #048;
-        border-width: 0.1em 0 0 0;
+        border: solid #888;
+        border-width: 0 0 0.1em 0;
         border-radius: 0.7em 0.7em 0 0;
+        padding: 0 0 1em 0;
+        margin: 0 0 1em 0;
 
         .title {
             margin: 0 0 0 0;
@@ -157,10 +156,12 @@ blockquote {
 
     .content {
         clear: both;
-        padding: 1em 0 0 0;
     }
 
     .footer {
+    border: #888 solid;
+    border-width: 1px 0 0 0;
+    padding-top: 1em;
       font-size: 0.9em;
 
       .social-button {
@@ -175,89 +176,19 @@ blockquote {
     }
 }
 
-#container {
+.section {
+    padding: 0 0 0 0;
+}
 
-    #header {
-        height: 2.5em;
-        border: solid #999;
-        border-width: 0 0 0.1em 0;
-        border-radius: 10%;
-        overflow: hidden;
-
-        .button {
-            @include text-styled;
-            text-align: center;
-            padding: 0.5em 0.8em 0.5em 0.8em;
-            border: solid darken($neonblue, 30%);
-            border-width: 0 0.1em 0 0;
-            font-size: 1.1em;
-            transition: background-color .3s ease-out;
-            -moz-transition: background-color .3s ease-out;
-            -webkit-transition: background-color .3s ease-out;
-            -o-transition: background-color .3s ease-out;
-            transition: box-shadow .3s ease-out;
-            -moz-transition: box-shadow .3s ease-out;
-            -webkit-transition: box-shadow .3s ease-out;
-            -o-transition: box-shadow .3s ease-out;
-        }
-
-        .first {
-            border-left-width: 0.1em;
-        }
-
-        .left {
-            float: left;
-        }
-
-        .right {
-            float: right;
-        }
-
-        ul.menu {
-            height: 3.5em;
-            margin-left: auto;
-            margin-right: auto;
-            list-style: none;
-            padding: 0;
-        }
-
-        a.button-link {
-            color: #444;
-            cursor: pointer;
-        }
-        a.button-link:hover {
-            text-decoration-line: none;
-            color: #000;
-        }
-    }
-
-    #content {
-        padding: 3.5em 1em 1em 1em;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 4em;
-        border-radius: 0 0 1em 1em;
-        border-width: 0.1em 0.1em 0.1em;
-    }
-
-        .section {
-            padding: 0 0 0 0;
-        }
-
-    #footer-wrapper {
-        margin-top: 2em;
-        margin-left: auto; margin-right: auto;
-        border: solid #BBB;
-        border-width: 0.1em 0 0 0;
-    }
-
-    #footer {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        padding: 0.7em;
-    }
+#footer {
+    border: solid #BBB;
+    border-width: 1px 0 0 0;
+    width: 100%;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0.7em;
 }
 
 .invert {
