@@ -1,7 +1,7 @@
 // Colors
 $neonblue: #428bca;
 $orange: #FA0;
-$softblue: #3366FF;
+$softblue: #4466CC;
 
 // Fonts
 @mixin text-styled () {
@@ -72,14 +72,20 @@ h5 {
     font-size: 1em;
 }
 
+$linkcolor: #44C;
+
 a {
+    color: $linkcolor;
+    text-shadow: 0px 0px 0px $linkcolor;
     transition: color .3s ease-out;
-    -moz-transition: color .3s ease-out;
-    -webkit-transition: color .3s ease-out;
-    -o-transition: color .3s ease-out;
+    -moz-transition: color .3s ease-out, text-shadow 0.3s ease-out;
+    -webkit-transition: color .3s ease-out, text-shadow 0.3s ease-out;
+    -o-transition: color .3s ease-out, text-shadow 0.3s ease-out;
 }
-a:hover { color: #002; }
-a:active { color: #002; }
+a:hover, a:active { 
+    color: darken($linkcolor, 20%); 
+    text-shadow: 0px 0px 1px darken($linkcolor, 20%);
+}
 
 hr {
     background: url("/img/diagonal-dotted-rule.png") repeat-x 0 0;
@@ -111,11 +117,11 @@ blockquote {
 
 
 .status-completed {
-    color: #0F0;
+    color: #080;
 }
 
 .status-in_progress {
-    color: red;
+    color: #800;
 }
 
 .post {
