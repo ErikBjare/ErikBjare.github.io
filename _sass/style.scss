@@ -72,28 +72,40 @@ h5 {
     font-size: 1em;
 }
 
-$linkcolor: #44C;
+$linkcolor: #66F;
 
 a {
     color: $linkcolor;
+    text-decoration: underline;
     text-shadow: 0px 0px 0px $linkcolor;
     transition: color .3s ease-out;
     -moz-transition: color .3s ease-out, text-shadow 0.3s ease-out;
     -webkit-transition: color .3s ease-out, text-shadow 0.3s ease-out;
     -o-transition: color .3s ease-out, text-shadow 0.3s ease-out;
+    
+    .button {
+        text-decoration: none;
+    }
 }
+
 a:hover, a:active { 
-    color: darken($linkcolor, 20%); 
-    text-shadow: 0px 0px 1px darken($linkcolor, 20%);
+    color: darken($linkcolor, 30%); 
+}
+
+.nav, h1, h2, h3, h4, h5 {
+    a {
+        text-decoration: none;
+    }
 }
 
 hr {
     background: url("/img/diagonal-dotted-rule.png") repeat-x 0 0;
     border: 0 none;
-    height: 0.3em;
+    height: 0.2em;
     margin: 2em 0 2em 0;
-    height: 0.3em;
 }
+
+
 
 blockquote {
     font-size: 1em;
