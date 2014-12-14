@@ -12,7 +12,6 @@ $softblue: #4466CC;
 }
 
 // Media
-
 @media only screen {
     ul.menu, #content, #footer {
         max-width: 800px;
@@ -214,4 +213,36 @@ blockquote {
     -moz-filter: invert(100%);
     -o-filter: invert(100%);
     -ms-filter: invert(100%);
+}
+
+
+table.links {
+    tr {
+        opacity: 0.7;
+    }
+    tr.google-plus {
+        color: #C00;
+    }
+
+    tr.twitter {
+        color: #08F;
+    }
+
+    tr.facebook {
+        color: #04F;
+    }
+
+    tr:hover {
+        opacity: 1;
+    }
+
+    td {
+        font-size: 1.1em;
+        line-height: 1.5;
+        min-width: 1.5em;
+        a {
+            text-decoration: none;
+        }
+    }
+
 }
