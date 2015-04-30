@@ -1,0 +1,9 @@
+@import 'variables';
+
+// Fonts
+@mixin text-styled () {
+    font-family: 'Nova Square', "Open Sans", sans-serif;
+}
+@mixin text() {
+    font-family: "Open Sans", sans-serif;
+}

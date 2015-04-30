@@ -55,16 +55,12 @@ ga('send', 'pageview');
 
     </head>
     <body>
+        {% include header.html %}
+
         <div class="container">
-            {% include header.html %}
-
-            <div class="col-md-offset-1 col-md-10">
             {{ content }}
-            </div>
-
-            <div class="col-md-12">
-                {% include footer.html %}
-            </div>
         </div>
+
+        {% include footer.html %}
     </body>
 </html>

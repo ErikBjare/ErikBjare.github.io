@@ -1,59 +1,17 @@
-// Colors
-$neonblue: #428bca;
-$orange: #FA0;
-$softblue: #4466CC;
+// Imports
 
-// Fonts
-@mixin text-styled () {
-    font-family: 'Nova Square', "Open Sans", sans-serif;
-}
-@mixin text() {
-    font-family: "Open Sans", sans-serif;
-}
+@import 'variables';
+@import 'mixins';
 
-// Media
-@media only screen {
-    ul.menu, #content, #footer {
-        max-width: 800px;
-    }
-}
+@import 'reset';
+@import 'bootstrap-mods';
+@import 'icons';
 
-@media only screen and (min-resolution: 120dpi) {
-    #header {
-      height: 5em;
-    }
-
-    .meta-box {
-      font-size: 150%;
-
-    }
-
-    ul.menu, #content, #footer {
-        max-width: 100%;
-    }
-
-    .button.right {
-        visibility: hidden;
-    }
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-html {
-    background: #FFF center no-repeat fixed;
-    background-size: contain;
-}
+//--------------------//
 
 body {
     @include text;
-    background-color: rgba(0,0,0,0);
-    color: #000;
 }
-
 
 h1 {
     @include text-styled;
@@ -70,8 +28,6 @@ h5 {
     margin-bottom: 0.3em;
     font-size: 1em;
 }
-
-$linkcolor: #66F;
 
 a {
     color: $linkcolor;
@@ -97,23 +53,51 @@ a:hover, a:active {
     }
 }
 
-hr {
+
+.navbar {
+    margin-top: -5px;
+    a {
+        .pagename {
+            margin-left: 5px;
+            margin-top: 3px;
+            height: 20px;
+            top: 4px;
+            position: relative;
+            display: inline-block;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .pagename-fold {
+            width: 0;
+            max-width: 0;
+            opacity: 0;
+            transition: max-width .4s ease-out, opacity .4s ease-out;
+            -webkit-transition: max-width .4s ease-out, opacity .4s ease-out;
+        }
+    }
+
+    a:hover {
+        background-color: #EEE !important;
+
+        .pagename-fold {
+            width: auto;
+            max-width: 3em;
+            opacity: 1;
+        }
+    }
+}
+
+hr.dotted {
     background: url("/img/diagonal-dotted-rule.png") repeat-x 0 0;
     border: 0 none;
     height: 0.2em;
     margin: 2em 0 2em 0;
 }
 
-
-
 blockquote {
     font-size: 1em;
 }
-
-.container {
-    max-width: 1000px;
-}
-
 
 .box {
     background: rgba(0, 0, 0, 0.8);
@@ -176,36 +160,34 @@ blockquote {
     }
 
     .footer {
-    border: #888 solid;
-    border-width: 1px 0 0 0;
-    padding-top: 1em;
-      font-size: 0.9em;
+        border: #888 solid;
+        border-width: 1px 0 0 0;
+        padding-top: 1em;
+        font-size: 0.9em;
 
-      .social-button {
-        float: left;
-        display: inline-block;
-        margin-right: 4px;
-      }
-      
-      .glyphicon {
-        color: $softblue;
-      }
+        .social-button {
+            float: left;
+            display: inline-block;
+            margin-right: 4px;
+        }
+
+        .glyphicon {
+            color: $softblue;
+        }
     }
 }
 
-.section {
-    padding: 0 0 0 0;
-}
-
 #footer {
+    margin-top: 2em;
     border: solid #BBB;
+    background-color: #f8f8f8;
     border-width: 1px 0 0 0;
-    width: 100%;
-    margin-top: 3em;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 0.7em;
+
+    .COINWIDGETCOM_CONTAINER > a,
+    .COINWIDGETCOM_CONTAINER > span {
+        height: 22px;
+        max-height: 22px;
+    }
 }
 
 .invert {
@@ -220,6 +202,7 @@ table.links {
     tr {
         opacity: 0.7;
     }
+
     tr.google-plus {
         color: #C00;
     }
