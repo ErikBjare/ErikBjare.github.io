@@ -37,14 +37,14 @@ a {
     -moz-transition: color .3s ease-out, text-shadow 0.3s ease-out;
     -webkit-transition: color .3s ease-out, text-shadow 0.3s ease-out;
     -o-transition: color .3s ease-out, text-shadow 0.3s ease-out;
-    
+
     .button {
         text-decoration: none;
     }
 }
 
-a:hover, a:active { 
-    color: darken($linkcolor, 30%); 
+a:hover, a:active {
+    color: darken($linkcolor, 30%);
 }
 
 .nav, h1, h2, h3, h4, h5 {
@@ -67,23 +67,31 @@ a:hover, a:active {
             overflow-x: hidden;
             overflow-y: hidden;
         }
-
-        .pagename-fold {
-            width: 0;
-            max-width: 0;
-            opacity: 0;
-            transition: max-width .4s ease-out, opacity .4s ease-out;
-            -webkit-transition: max-width .4s ease-out, opacity .4s ease-out;
-        }
     }
 
     a:hover {
         background-color: #EEE !important;
+    }
+}
 
-        .pagename-fold {
-            width: auto;
-            max-width: 3em;
-            opacity: 1;
+@media (min-width: 768px) {
+    .navbar {
+        a {
+            .pagename-fold {
+                width: 0;
+                max-width: 0;
+                opacity: 0;
+                transition: max-width .4s ease-out, opacity .4s ease-out;
+                -webkit-transition: max-width .4s ease-out, opacity .4s ease-out;
+            }
+        }
+
+        a:hover {
+            .pagename-fold {
+                width: auto;
+                max-width: 3em;
+                opacity: 1;
+            }
         }
     }
 }

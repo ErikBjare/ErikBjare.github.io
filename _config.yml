@@ -1,7 +1,7 @@
 name: "Erik Bj&auml;reholt"
 description: "Towards a better tomorrow, today!"
 url: "http://erik.bjareholt.com"
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 permalink: /blog/:year/:month/:day/:title/
 timezone: Europe/Stockholm
