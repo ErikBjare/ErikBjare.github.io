@@ -2,7 +2,7 @@ name: "Erik Bj&auml;reholt"
 description: "Towards a better tomorrow, today!"
 url: "http://erik.bjareholt.com"
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 timezone: Europe/Stockholm
 
 collections:
