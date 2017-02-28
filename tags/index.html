@@ -1,0 +1,19 @@
+---
+layout: main
+title: Tags
+---
+
+<h1>{{ page.title }}</h1>
+
+{% assign tags = site.wiki | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
+{% for tag in tags %}
+  <h4>{{ tag }}</h4>
+  <ul>
+  {% for wikipage in site.wiki %}
+    {% if wikipage.tags contains tag %}
+    <li><a href="{{ site.baseurl }}{{ wikipage.url }}">{{ wikipage.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %}
+

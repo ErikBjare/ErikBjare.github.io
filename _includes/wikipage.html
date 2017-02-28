@@ -3,15 +3,14 @@
         <h1 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
         <div class="meta">
+          <small>
             <div class="meta-box">
-              <small>
-                <span class="glyphicon glyphicon-time meta-icon"></span>
-                Last modified:
-                <time datetime="{{ page.date }}">
-                    {{ page.last_modified_at | date: "%F %R %Z" }}
-                </time>
-              </small>
+              {% include last-modified.html %}
             </div>
+            <div class="meta-box">
+              Tags: {% for tag in page.tags %} {{tag}} {% endfor %}
+            </div>
+          </small>
         </div>
     </header>
 

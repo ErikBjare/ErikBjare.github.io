@@ -1,9 +1,10 @@
 @import 'variables';
 
 // Fonts
-@mixin text-styled () {
-    font-family: 'Nova Square', "Open Sans", sans-serif;
-}
-@mixin text() {
+@mixin default-font-style() {
     font-family: "Open Sans", sans-serif;
+}
+
+@mixin round-font-style() {
+    font-family: 'Varela Round', sans-serif;
 }

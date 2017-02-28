@@ -3,7 +3,7 @@ title:  "About this wiki"
 author: Erik Bj&auml;reholt
 description: ""
 confidence: 
-tags: metawiki
+tags: meta
 ---
 
 ## What is it about?

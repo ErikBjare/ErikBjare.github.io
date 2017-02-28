@@ -10,11 +10,14 @@
 //--------------------//
 
 body {
-    @include text;
+    @include default-font-style;
+}
+
+h1, h2, h3, h4 {
+    @include round-font-style;
 }
 
 h1 {
-    @include text-styled;
     font-size: 2.5em;
 }
 
@@ -128,7 +131,7 @@ blockquote {
 }
 
 .post {
-  padding: 0.5em;
+    padding: 0.5em;
 
     header {
         border: solid #888;

@@ -38,10 +38,8 @@
             {% endif %}
 
             <span class="separator">|</span>
-            <span>
-                <span class="glyphicon glyphicon-edit"></span>
-                Last modified: {{ page.last_modified_at | date: "%F %R %Z" }}
-            </span>
+
+            {% include last-modified.html %}
 
             <div style="float: right">
                 Words: {{ include.content | split: ' ' | size }}

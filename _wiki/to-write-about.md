@@ -2,10 +2,8 @@
 title:  "Topics I want to write about"
 author: Erik Bj&auml;reholt
 description: ""
-categories: meta ideas future
+tags: meta ideas future
 ---
-
-## Important subjects
 
  - Meta
    - Why write publicly about these things?
@@ -27,6 +25,7 @@ categories: meta ideas future
  - AI
    - Andrew Ng thinks there wont be another AI winter: https://www.youtube.com/watch?v=21EiKfQYZXc
    - How do we deal with job displacement? Andrew Ng comments: https://www.youtube.com/watch?v=21EiKfQYZXc&t=1h5m20s
+   - Andrew Ng: ["One pattern that's true for a lot of industries: First comes the data, then comes the AI."](https://youtu.be/21EiKfQYZXc?t=1h20m) 
  - Computer Interaction in the Future
    - VR/AR
      - Might warrant an article in itself
@@ -40,6 +39,7 @@ categories: meta ideas future
    - Security concerns
    - Should we use something like Syncthing to provide sync and git to provide integrity/versioning?
    - How do we deal with data generated/stored by social media services? Can we extract it?
+   - How do we get the most value out of this data?
  - Open sourcing everything
    - What could other fields learn? Why is open source so successful in software development but not in other areas?
    - Does Open Hardware have a future, and if so, when?

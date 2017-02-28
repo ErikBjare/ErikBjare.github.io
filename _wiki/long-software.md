@@ -2,7 +2,7 @@
 title:  "Long Software"
 author: Erik Bj&auml;reholt
 description: ""
-categories: software long-x
+tags: software long-x
 ---
 
 Long Software (similar to [Long Content](https://www.gwern.net/About#long-content)) is software that lasts and remain in use a long time.
