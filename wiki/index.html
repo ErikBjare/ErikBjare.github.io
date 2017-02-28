@@ -1,0 +1,19 @@
+---
+layout: main
+title: Wiki
+---
+
+<h1>Wiki Index</h1>
+
+{% include wip.html %}
+
+This is the index of the Wiki.
+
+<br>
+<br>
+
+{% for post in site.wiki %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}

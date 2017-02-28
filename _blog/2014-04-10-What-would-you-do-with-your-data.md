@@ -1,12 +1,10 @@
 ---
-layout: post
 title: "What would you do with your data?"
 author: "Erik Bj&auml;reholt"
 description: "If you had the log of your entire life, what would you do?"
 date: 2014/04/11 22:53
-edited: 2014/04/24 17:42
 status: Completed
-categories: QuantifiedSelf Statistics
+tags: quantifiedself statistics
 ---
 
 If you had the log of your entire life. Your mood, the foods you ate, the things you did and when you did them, everything. What would you do with it? Could you do anything cool, perhaps even incredible?

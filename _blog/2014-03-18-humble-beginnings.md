@@ -1,11 +1,8 @@
 ---
-layout: post
 title:  "Humble beginnings"
 author: Erik Bj&auml;reholt
 description: "I had to start somewhere, might as well be here"
 date:   2014-03-18 14:18
-edited: 2014-04-07 15:12
-categories: 
 ---
 
 So, here it is, the first post of my possibly first serious blog.

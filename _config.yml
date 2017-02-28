@@ -3,8 +3,28 @@ description: "Towards a better tomorrow, today!"
 url: "http://erik.bjareholt.com"
 markdown: kramdown
 highlighter: pygments
-permalink: /blog/:year/:month/:day/:title/
 timezone: Europe/Stockholm
 
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:title/
+    blog:
+        output: true
+        permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+    - scope:
+        path: ""
+        type: "wiki"
+      values:
+        layout: wikipage
+    - scope:
+        path: ""
+        type: "blog"
+      values:
+        layout: blogpost
+
 gems:
-- jekyll-compass
+ - jekyll-compass
+ - jekyll-last-modified-at

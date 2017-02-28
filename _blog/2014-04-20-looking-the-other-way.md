@@ -1,11 +1,10 @@
 ---
-layout: post
 title:  "VR: Looking the other way"
 author: "Erik Bj&auml;reholt"
 description: "The future of VR is not only about games"
 date:   2014-04-20 00:35
 status: Completed
-categories: VR futurism
+tags: vr futurism
 ---
 
 About a month ago, Oculus VR announced their [Oculus Development Kit 2](http://www.oculusvr.com/dk2/) 
