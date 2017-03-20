@@ -50,7 +50,12 @@ Characteristics of good software:
 ## Philosophies on Good Software
 
  - [Unix](https://en.wikipedia.org/wiki/Unix_philosophy)
+   - Criticism
+      - [The Unix Haters Handbook](https://news.ycombinator.com/item?id=7726115) (1994, criticism)
+      - [The truth about Unix: the user interface is horrid](https://news.ycombinator.com/item?id=9558455) by Don Norman (1981)
+      - [The Collapse of the Unix Philosophy](https://news.ycombinator.com/item?id=13777077)
  - [Suckless](http://suckless.org/philosophy)
+   - Has a page with [software that sucks](http://suckless.org/sucks/) that notably includes [the web](http://suckless.org/sucks/web) and [systemd](http://suckless.org/sucks/systemd).
 
 ## Related articles
 
