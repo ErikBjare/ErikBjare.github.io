@@ -1,6 +1,6 @@
 ---
 title:  "About this wiki"
-author: Erik Bj&auml;reholt
+author: "Erik Bjäreholt"
 description: ""
 confidence: 
 tags: meta

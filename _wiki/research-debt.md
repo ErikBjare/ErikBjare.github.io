@@ -1,6 +1,6 @@
 ---
 title:  "Research debt"
-author: Erik Bj&auml;reholt
+author: "Erik Bjäreholt"
 description: ""
 confidence: 
 tags: meta research complexity

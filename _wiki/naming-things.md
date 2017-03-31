@@ -1,6 +1,6 @@
 ---
 title:  "Naming Things"
-author: Erik Bj&auml;reholt
+author: "Erik Bjäreholt"
 description: ""
 confidence: 
 tags: learning

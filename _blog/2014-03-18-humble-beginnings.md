@@ -1,6 +1,6 @@
 ---
 title:  "Humble beginnings"
-author: Erik Bj&auml;reholt
+author: "Erik Bjäreholt"
 description: "I had to start somewhere, might as well be here"
 date:   2014-03-18 14:18
 ---

@@ -1,6 +1,6 @@
 ---
 title:  "Topics I want to write about"
-author: Erik Bj&auml;reholt
+author: "Erik Bjäreholt"
 description: ""
 tags: meta ideas future
 ---

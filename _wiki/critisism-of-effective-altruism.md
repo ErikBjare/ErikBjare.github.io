@@ -1,6 +1,6 @@
 ---
 title:  "Criticism of Effective Altruism"
-author: Erik Bj&auml;reholt
+author: "Erik Bjäreholt"
 description: ""
 tags: effective-altruism philosophy ethics
 ---

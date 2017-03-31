@@ -1,6 +1,6 @@
 ---
 title:  "My values"
-author: Erik Bj&auml;reholt
+author: "Erik Bjäreholt"
 description: ""
 tags: values ethics
 ---

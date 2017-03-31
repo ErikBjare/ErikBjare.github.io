@@ -1,6 +1,6 @@
 ---
 title:  "Good Software"
-author: Erik Bj&auml;reholt
+author: "Erik Bjäreholt"
 description: ""
 tags: software
 ---
