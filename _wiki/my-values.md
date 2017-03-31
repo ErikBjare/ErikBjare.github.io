@@ -9,7 +9,7 @@ I'll briefly summarize my beliefs accordingly:
 
  - [Agnostic atheist](https://en.wikipedia.org/wiki/Agnostic_atheism)
  - [Effective altruist](https://en.wikipedia.org/wiki/Effective_altruism)
- - Far-future outcomes
+ - The importance of far-future outcomes
 
 ## The proposition of a universal value function
 
@@ -17,4 +17,4 @@ I once has a discussion with a friend where I proposed a, currently unknown, uni
 
 To continue this search for a universal value function, one approach might be to start off with formulating our individual value functions and then weight them. This gets interesting when you take into account synergies in this combined function.
 
-This might not be a very appealing idea to people not interested in effective altruism, but to me it's of great interest to speculate in what such a universal value function would look like, regardless if it actually ends up being a reasonable proposition. To calm concerns along the lines of "but this could impossibly lead to a fair outcome!": I don't think it needs to be perfect to be useful, as the saying goes "All models are wrong, but some are useful". Since our current models are about as impossible to prove as a universal value function I think it might serve to .
+This might not be a very appealing idea to people not interested in effective altruism, but to me it's of great interest to speculate in what such a universal value function would look like, regardless if it actually ends up being a reasonable proposition. To calm concerns along the lines of "but this could impossibly lead to a fair outcome!": I don't think it needs to be perfect to be useful, as the saying goes "All models are wrong, but some are useful".
