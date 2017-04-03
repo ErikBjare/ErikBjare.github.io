@@ -48,6 +48,11 @@ Much of this is in the realm of unprovable knowledge. And while attempts to simu
 It's safe to assume we still know relatively little about the universe, so to consider this anything else than wild (but interesting) speculation is probably a mistake at this time. In short: Don't lose any sleep over this stuff.
 
 
+# Related
+
+ - [2016 Isaac Asimov Memorial Debate: Is the Universe a Simulation?](https://www.youtube.com/watch?v=wgSZA3NPpBs)
+
+
 [lemmino]: https://youtu.be/K4rCzA8fS84
 [digitalphysics]: https://en.wikipedia.org/wiki/Digital_physics
 [simulation-hypothesis]: https://en.wikipedia.org/wiki/Simulation_hypothesis
