@@ -33,4 +33,5 @@ Me and a group of people at Lund University, including both professors and stude
 [sweclockers-programmering-i-skolan]: https://m.sweclockers.com/nyhet/23500-programmering-infors-i-skolan-fran-arskurs-ett-nasta-ar
 [lufoss]: https://www.lth.se/lufoss
 [gorel-hedin]: http://cs.lth.se/gorel-hedin/
+[bjorn-regnell]: http://cs.lth.se/bjorn-regnell/
 [introprog]: https://github.com/lunduniversity/introprog
