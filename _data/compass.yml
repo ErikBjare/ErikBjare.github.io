@@ -1,7 +1,7 @@
 ---
 require:
 - jekyll-compass
-project_path: /home/erb/Programming/Websites/erik.bjareho.lt/
+project_path: /home/erb/erik.bjareholt.com/
 http_path: /
 css_dir: css
 sass_dir: _sass
