@@ -50,7 +50,7 @@ There is a significant cognitive load assiciated with remembering the term of a 
 
 ### Mathematics
 
-![mathematics naming meme](https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/18301447_10154400496935025_5485540067251211748_n.jpg?oh=526760e6438acac0c293ee0f9cd03980&oe=598276Dasd2)
+![mathematics naming meme](/img/how-they-pick-new-math-notation.jpg)
 
 Source: https://www.facebook.com/groups/173525906362575/permalink/404538109928019/
 
