@@ -50,7 +50,9 @@ Each IPNS address has a publisher, someone with the private key to publish somet
    - Requires both computers to be on at the same time.
      - Solution: Run Syncthing on an always-on RPi/server.
 
-\*In some cases a relay is used to route between networks, but it's all end-to-end encrypted so they know nothing.
+\* *When a device is behind a firewall it can use public relays to route between networks. All data sent between devices is end-to-end encrypted so there is minimal loss of privacy. You can also host your own relay.*
+
+A good evaluation from a software engineering perspective: https://twitter.com/jakobborg/status/860510307051073536
 
 
 ## [git-annex](https://git-annex.branchable.com/)
@@ -64,13 +66,13 @@ Each IPNS address has a publisher, someone with the private key to publish somet
    - Supports encrypting all files stored on such remotes, this way they won't even know what you store there. As it should be.
  - Early stage IPFS support
 
-I won't try to explain git-annex here, as it's too daunting a task. 
+I won't try to explain git-annex here, as it's too daunting a task and better done by the documentation.
 But if you are interested in archiving or simply have a lot of files (possibly spread across computers) that you need to structure better, you should definitely check out git-annex.
 
 
-### Using together with git-annex
+### Using together with Syncthing
 
-Syncthing is in many ways the perfect complement to git-annex. Syncthing is great at syncing files, while git-annex is great at archiving. git-annex can sync files too (that's a prime reason why it's so great at archiving) but it's not optimal for often changed files since each change would require a commit in the git-annex (I think there are other reasons for not using git-annex for often changed files, but I won't go into them).
+Syncthing is in many ways the perfect complement to git-annex. Syncthing is great at syncing files, while git-annex is great at archiving. While git-annex can also sync files (that's a prime reason why it's so great at archiving) it's not optimal for often changed files since each change would require a commit in the git-annex (I think there are other reasons for not using git-annex for often changed files, but I won't go into them).
 
 How I use them together:
 
