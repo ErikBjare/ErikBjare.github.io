@@ -10,10 +10,27 @@ tags: quantified-self statistics
 
 # Value Proposition
 
+## Personal level
+
 There is a lot of discussion in the Quantified Self movement about the actual value of self-tracking/logging and it seems many have grown skeptical about its value over time.
 
 I will probably write about my own thoughts on this someday, but to summarize: I find it fun and rewarding, keeping a history of what I've been doing is important to me so that I can look back and have a less biased view of my past.
 
+## Societal level
+
+A lot of data is collected about us daily, but most of it does not end up in our hands.
+
+Perhaps one of the most important data out there is medical data. This topic has received a lot of discussion, for good reason. 
+We want to protect the patients but we also want the data available for analysis. Today there are very strict regulations on the
+use of medical data in research, effectively preventing large scale exploratory data analysis ("big data") of patient records.
+
+[One writer noted](https://tincture.io/ownership-vs-control-of-your-health-ace1c8065a2f) that giving the patient *ownership* of their data would make it even harder to do 
+large scale data analysis as there would be no information silo one could aggregate from.
+He instead advocates that patients shoud have data *control*, where the user is not the sole owner but still controls his/her copy. This seems to be the direction that medical data is moving in right now, at least in Sweden.
+
+But data silos can be dangerous for both security and privacy reasons (no transparency about which data is kept)
+I can however imagine a different world: where patients can give away their data (all or just some) on an opt-in/out basis to some regulated entity after it has been filtered through an anonymization system. 
+This would still lead to information silos, but a voluntary and less intrusive one.
 
 # Automatic
 
