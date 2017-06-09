@@ -189,6 +189,28 @@ blockquote {
     }
 }
 
+.msg-box {
+  border: 1px solid;
+  padding: 0.5em;
+  margin: 0.5em 0 0.5em 0;
+
+  &.info {
+    border: 1px solid #5CF;
+    background-color: #CFEFFF;
+  }
+
+  &.note {
+    border-color: #FC9;
+    background-color: #ffefba;
+  }
+}
+
+.underline.dotted {
+  border-bottom: 1px dashed #999;
+  text-decoration: none;
+  white-space-collapse: discard;
+}
+
 .invert {
     -webkit-filter: invert(100%);
     -moz-filter: invert(100%);

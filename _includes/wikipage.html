@@ -8,8 +8,19 @@
               {% include last-modified.html %}
             </div>
             <div class="meta-box">
-              Tags: {% for tag in page.tags %} {{tag}} {% endfor %}
+              <span class="underline dotted">Tags:</span>
+              {% for tag in page.tags %}
+                {% unless tag contains "state" and tag contains "quality" %}
+                  <a href="/tags/#{{tag}}">{{tag}}</a>
+                {% endunless %}
+              {% endfor %}
             </div>
+            {% if page.state %}
+              <div class="meta-box" title="State is a measurement of completion">
+                <span class="underline dotted">State:</span>
+                {{ page.state }}
+              </div>
+            {% endif %}
           </small>
         </div>
     </header>
