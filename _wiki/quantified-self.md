@@ -2,6 +2,7 @@
 title:  "Quantified Self"
 author: "Erik Bjäreholt"
 description: ""
+state: draft
 tags: quantified-self statistics
 ---
 

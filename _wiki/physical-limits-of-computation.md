@@ -2,6 +2,7 @@
 title:  "Physical Limits of Computation"
 author: "Erik Bjäreholt"
 description: ""
+state: stub
 tags: computation physics
 ---
 

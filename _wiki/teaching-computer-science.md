@@ -2,6 +2,7 @@
 title:  "Teaching Computer Science"
 author: "Erik Bjäreholt"
 description: ""
+state: draft
 tags: software education teaching pedagogy
 ---
 

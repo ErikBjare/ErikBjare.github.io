@@ -2,6 +2,7 @@
 title:  "Universe Simulation"
 author: "Erik Bjäreholt"
 description: ""
+state: stub
 tags: physics simulation cosmology
 ---
 
