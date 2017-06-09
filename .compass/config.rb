@@ -7,4 +7,5 @@ css_dir = "css"
 images_dir = "img"
 javascripts_dir = "js"
 
-output_style = :compressed
+output_style = :expanded
+line_comments = false

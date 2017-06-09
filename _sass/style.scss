@@ -79,25 +79,6 @@ a:hover, a:active {
     }
 }
 
-//@media (min-width: 768px) {
-//    .navbar {
-//        a {
-//          .pagename-fold {
-//            width: 0;
-//            max-width: 0;
-//            opacity: 0;
-//            transition: max-width .4s ease-out, opacity .4s ease-out;
-//            -webkit-transition: max-width .4s ease-out, opacity .4s ease-out;
-//          }
-//          &:hover>.pagename-fold {
-//              width: auto;
-//              max-width: 3em;
-//              opacity: 1;
-//          }
-//       }
-//    }
-//}
-
 hr.dotted {
     background: url("/img/diagonal-dotted-rule.png") repeat-x 0 0;
     border: 0 none;
@@ -167,6 +148,14 @@ blockquote {
 
     .content {
         clear: both;
+        text-align: justify;
+
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border: 0.3em solid #DDD;
+        }
     }
 
     .footer {

@@ -3,7 +3,7 @@ build:
 	jekyll build
 
 install-deps:
-	gem install jekyll jekyll-compass compass
+	sudo gem install jekyll jekyll-compass compass jekyll-last-modified-at
 
 dev:
 	jekyll serve --watch --drafts
