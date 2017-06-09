@@ -29,7 +29,7 @@ This in my opinion a cheap blow. It is said that [every cause wants to be a cult
 
 It would seem to me that effective altruists, following their own ideals, should not care much about being seen as a cult or religion until it hurts them. While this argument is parroted from time to time, I've found that people even outside the EA movement don't tend to find it very compelling (but still surely has a somewhat negative effect on their view of EA).
 
-An example of this argument in the wild: [including a response by Julia Galef][galef-twitter-religion-reponse].
+An example of this argument in the wild: [including a response by Julia Galef][galef-twitter-religion-response].
 
 
 [every-cause-wants-to-be-a-cult]: http://lesswrong.com/lw/lv/every_cause_wants_to_be_a_cult/
