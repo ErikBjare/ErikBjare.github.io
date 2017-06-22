@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/erb
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://erik.bjareholt.com
+  * I am erb (https://keybase.io/erb) on keybase.
+  * I have a public key ASCD1r5xOz7EHTiFwsn6HBnwDlvBoN2sIFb_JR2rp8ptSQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101b59089fc1e5c8ba27baec0af59ab7b22162fe644f7f225b9a9e007808be7aa5b0a",
+            "host": "keybase.io",
+            "kid": "012083d6be713b3ec41d3885c2c9fa1c19f00e5bc1a0ddac2056ff251daba7ca6d490a",
+            "uid": "2cb1b1987de6732375e536ff58d94e19",
+            "username": "erb"
+        },
+        "service": {
+            "hostname": "erik.bjareholt.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.22"
+    },
+    "ctime": 1498138129,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1498138110,
+        "hash": "094146b4f0f4eef777dd9ac6650bed5bdc7a046dc1ac501b77cdfaa04d697661a1f05528fecd02d7fc6bf91b32725b3bff33e19a92cfe4965a2085f0266bcdb1",
+        "seqno": 1187154
+    },
+    "prev": "9f9fee796b98947cab0b48a51ad09c2b024da6ebb43e3e8c194288c18be29dcc",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgg9a+cTs+xB04hcLJ+hwZ8A5bwaDdrCBW/yUdq6fKbUkKp3BheWxvYWTFAvZ7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxYjU5MDg5ZmMxZTVjOGJhMjdiYWVjMGFmNTlhYjdiMjIxNjJmZTY0NGY3ZjIyNWI5YTllMDA3ODA4YmU3YWE1YjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwODNkNmJlNzEzYjNlYzQxZDM4ODVjMmM5ZmExYzE5ZjAwZTViYzFhMGRkYWMyMDU2ZmYyNTFkYWJhN2NhNmQ0OTBhIiwidWlkIjoiMmNiMWIxOTg3ZGU2NzMyMzc1ZTUzNmZmNThkOTRlMTkiLCJ1c2VybmFtZSI6ImVyYiJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiZXJpay5iamFyZWhvbHQuY29tIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4yMiJ9LCJjdGltZSI6MTQ5ODEzODEyOSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDk4MTM4MTEwLCJoYXNoIjoiMDk0MTQ2YjRmMGY0ZWVmNzc3ZGQ5YWM2NjUwYmVkNWJkYzdhMDQ2ZGMxYWM1MDFiNzdjZGZhYTA0ZDY5NzY2MWExZjA1NTI4ZmVjZDAyZDdmYzZiZjkxYjMyNzI1YjNiZmYzM2UxOWE5MmNmZTQ5NjVhMjA4NWYwMjY2YmNkYjEiLCJzZXFubyI6MTE4NzE1NH0sInByZXYiOiI5ZjlmZWU3OTZiOTg5NDdjYWIwYjQ4YTUxYWQwOWMyYjAyNGRhNmViYjQzZTNlOGMxOTQyODhjMThiZTI5ZGNjIiwic2Vxbm8iOjEzLCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQLwDONnyuMUly4G7uCO6rPAmDEB3gS6DVD2Gm51SbdrQdtd3zsG8Ut9fbE7NDAISUhmDWQo85DYil3cghXQdhgioc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCDxRaidQ15V6V+G7td+KjS0pStTaqkC8ldTRbEIqNrPU6N0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/erb
+
+==================================================================
