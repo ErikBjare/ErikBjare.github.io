@@ -61,3 +61,6 @@ In programming and computer science, there has over the years been a trend of fa
 But as usual there is nuance, some things are written more often than read (such as `ls` and `cd`) and for those cases it makes sense to name a thing something short at the cost of intuition.
 
 Ken Thompson when asked about what he would do differently if he redesigned Unix said: ["I'd spell creat with an e."](https://en.wikiquote.org/wiki/Ken_Thompson).
+
+
+<!-- https://vimeo.com/216477087 -->

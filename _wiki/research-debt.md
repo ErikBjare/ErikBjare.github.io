@@ -31,7 +31,7 @@ Olah & Carter presents the following aspects of research debt:
  - Bad abstractions and notation
  - Noise
 
-It's important to note that you are unlikely to notice when your explantions in writing are bad (verbally you usually get some form of direct feedback indicating when an explanation was bad). This I suspect is, at least partially, due to the [curse of knowledge](curse-of-knowledge); or as Olah & Carter elegantly stated:
+It's important to note that you are unlikely to notice when your explantions in writing are bad (verbally you usually get some form of direct feedback indicating when an explanation was bad). This I suspect is at least partially due to the [curse of knowledge](curse-of-knowledge). Olah & Carter elegantly stated:
 
 > The insidious thing about research debt is that it’s normal. Everyone takes it for granted, and doesn’t realize that things could be different. For example, it’s normal to give very mediocre explanations of research, and people perceive that to be the ceiling of explanation quality. On the rare occasions that truly excellent explanations come along, people see them as one-off miracles rather than a sign that we could systematically be doing better.
 

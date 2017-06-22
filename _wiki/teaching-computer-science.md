@@ -25,6 +25,10 @@ In Sweden, the government recently (May 2017)[<sup>source (Swedish)</sup>][swecl
 Me and a group of people at Lund University, including both professors and students, have started working on actual course material and hope to educate teachers on how to adapt their teaching to include programming in the best way possible with a strong focus on engaging the students. I have hopes we will open source the course material when the time for publication comes since we have two professors ([Björn Regnell][bjorn-regnell] and [Görel Hedin][gorel-hedin]) with strong interests in open source. Both are on the board of [LUFOSS][lufoss], a scholarship fund for OSS contributors, and Björn lead the effort to create entirely [open source course material][introprog] for the 2016 remake of the introductory programming course for CS at Lund University.
 
 
+## To expand upon
+
+ - [Using Programming Language Concepts to Teach General Thinking Skills](https://news.ycombinator.com/item?id=14408728) 
+
 ## Related articles
 
  - [Good software](/wiki/long-software)
