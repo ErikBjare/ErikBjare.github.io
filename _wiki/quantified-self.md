@@ -17,6 +17,7 @@ tags: quantified-self statistics
 There is a lot of discussion in the Quantified Self movement about the actual value of self-tracking/logging and it seems many have grown skeptical about its value over time.
 
 I will probably write about my own thoughts on this someday, but to summarize: I find it fun and rewarding, keeping a history of what I've been doing is important to me so that I can look back and have a less biased view of my past.
+I think there is a lot of value to be extracted from some of the data. I'm interested in several ideas with high chance of failure/stagnation yet potentially high-impact projects. I reach out to people about these to share ideas and get feedback from time to time, if that brought you here: Hello!
 
 ## Societal level
 
