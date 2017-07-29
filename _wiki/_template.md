@@ -2,6 +2,7 @@
 title:  "No title set, yet."
 author: "Erik Bjäreholt"
 description: ""
+permalink: # /wiki/template/
 tags:
 ---
 

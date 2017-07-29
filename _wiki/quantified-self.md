@@ -2,6 +2,7 @@
 title:  "Quantified Self"
 author: "Erik Bjäreholt"
 description: ""
+permalink: /wiki/quantified-self/
 state: draft
 tags: quantified-self statistics
 ---
@@ -33,9 +34,11 @@ But data silos can be dangerous for both security and privacy reasons (no transp
 I can however imagine a different world: where patients can give away their data (all or just some) on an opt-in/out basis to some regulated entity after it has been filtered through an anonymization system. 
 This would still lead to information silos, but a voluntary and less intrusive one.
 
-# Automatic
+# My efforts
 
-## Computer Activity
+## Automatic
+
+### Computer Activity
 
  - Active window/website
    - RescueTime 
@@ -50,43 +53,43 @@ This would still lead to information silos, but a voluntary and less intrusive o
 
 <!-- TODO: Refer to feature comparison in the ActivityWatch README. -->
 
-## Location
+### Location
 
  - Google Maps Timeline / Google Location History
  - Moves
 
-## Fitness
+### Fitness
 
  - Fitness trackers
    - Mi Band 2 (cheap, recommended, my current one) 
    - Mi Band (even cheaper, much better 30-60 day battery)
    - Fitbit (Flex was my first one, the 5 day battery was annoying after a while) 
 
-## Sleep
+### Sleep
 
  - Currently tracking with Mi Band 2, acceptable accuracy but not great.
 
 
-# Manual logging
+## Manual logging
 
 During my first year of university (2013) I did extensive manual logging in a spreadsheet. It worked really well and it was pretty detailed (including mood + productivity 3x daily, sleep, exercise, etc.). I kept it up for months and it's one of the most important logging experiences I've had, the spreadsheet format is great for most manual logging (apart from things like diaries).
 
-## Issues
+### Issues
 
  - Takes effort
 
-## Benefits
+### Benefits
 
  - Enables logging of a lot of data otherwise unrecordable. 
 
-## Subjective measures
+### Subjective measures
 
  - Mood
  - Productivity
    - Could be worth more than objective measurements in some aspects.
    - Highly correlated with mood in my findings (as expected, but interesting nonetheless). 
 
-## Drugs/Pharmaceuticals
+### Drugs/Pharmaceuticals
 
  - Recreational drugs (alcohol, etc.)
    - A great way to keep track of consumption patterns and tolerance. 
@@ -94,6 +97,7 @@ During my first year of university (2013) I did extensive manual logging in a sp
    - Definitely recommended.
  - Pharmaceuticals and supplements
    - Valuable medical data. Good for reference. 
+   - [Of great interest to the nootropics community](https://www.reddit.com/r/StackAdvice/comments/6q8ni8/tracking_supplement_usage_and_productivity/).
 
 
 # Privacy
