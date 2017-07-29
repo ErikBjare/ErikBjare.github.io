@@ -1,7 +1,7 @@
 ---
 title:  "Amazing Open Source Software"
 author: "Erik Bjäreholt"
-description: ""
+description: "The open source projects that have changed how I work and think about software."
 tags: software open-source
 ---
 
@@ -9,17 +9,13 @@ tags: software open-source
 
 Every now and then, I find a piece of software so amazing that it changes how I solve a problem forever.
 I find some of them so amazing in fact, that I think it's a shame that other people don't know about them.
-They vastly improve upon previous solutions to the problem they are solving and 
-That is why I put together this document.
+They vastly improve upon previous solutions to the problem they are solving (at least in the respects that are important to me) and that is why I put together this document.
 
 All software written about here is free and open source. 
 Much of it is also related to networking in one way of another, this is merely a coincidence however, as the internet is one of the greatest enablers of powerful software.
 
 
-# The List
-
-
-## [IPFS](https://ipfs.io/)
+# [IPFS](https://ipfs.io/)
 *"The Permanent Web"*
 
 May well be the future of sharing content (videos, documents, music, and other "write once, read many" applications). 
@@ -39,10 +35,17 @@ IPFS solves this by making every user who recently downloaded a file into a dist
 IPNS is the InterPlanetary Name Service, a layer on top of IPFS enabling mutability similar to that found on the web.
 Each IPNS address has a publisher, someone with the private key to publish something to that address.
 
+# [Standard Notes](http://standardnotes.org/)
 
-## [Syncthing](https://syncthing.net/)
+ - The Evernote alternative I was too lazy (and shitty at UI dev) to build myself. 
+ - Full sync with E2E encryption, the server only holds encrypted notes and no decryption key.
+ - You can also self-host your sync server. 
 
- - A great Dropbox/Gdrive/OneDrive killer.
+# [Syncthing](https://syncthing.net/)
+
+ - Created by the amazing Jakob Borg
+   - Who happens to have studied at the university where I study.
+ - A great private and distributed replacement Dropbox/Google Drive/OneDrive.
  - Syncs files directly\* between your computers, without a third party.
  - Has support for [`.stignore`](https://docs.syncthing.net/users/ignoring.html) files, similar to `.gitignore`.
    - This is actually how I discovered it, I wanted to ignore syncing for some of my files (`node_modules` anyone?) but such a feature wasn't available in Dropbox or Google Drive.
@@ -50,25 +53,37 @@ Each IPNS address has a publisher, someone with the private key to publish somet
    - Requires both computers to be on at the same time.
      - Solution: Run Syncthing on an always-on RPi/server.
 
-\* *When a device is behind a firewall it can use public relays to route between networks. All data sent between devices is end-to-end encrypted so there is minimal loss of privacy. You can also host your own relay.*
+\* *When a device is behind a firewall it can use [relays to route between networks](https://docs.syncthing.net/users/relaying.html). All data sent between devices is end-to-end encrypted so there is minimal loss of privacy. You can also host your own relay. The downside is that transfer speeds will be slower (in most cases not noticeable).*
 
 A good evaluation from a software engineering perspective: https://twitter.com/jakobborg/status/860510307051073536
 
 
-## [git-annex](https://git-annex.branchable.com/)
+# [git-annex](https://git-annex.branchable.com/)
 
- - Great for archiving.
+ - Great for archiving and moving files to/from a backup system. Also great for just keeping track of files and their duplicates. 
  - A lot of features, in a simple way.
- - Can be a powerful tool for backups
-   - Note: It is not a backup tool, it will merely remove the need for conventional backups.
+ - Very useful if you have a lot of files spread out across computers (that you don't want to always sync). 
+   - Examples: Videos, books/scientific articles, music, images
  - Took some work to set up the way I wanted, but now I can't imagine going back.
- - Can use Gdrive, Amazon Cloud Drive, S3/Glacier as special remotes (storage backends).
-   - Supports encrypting all files stored on such remotes, this way they won't even know what you store there. As it should be.
- - Early stage IPFS support
+ - Supports many backends for storage. Supports encryption for all storages as well, so the storage provider doesn't have to know what you store. 
+    - Google Drive
+      - If you are a student you might have "infinite" storage space, but I wouldn't want to risk abusing it, so keep a fair self-set limit of ~10TB.
+    - Amazon Cloud Drive 
+      - Not anymore, rclone developer got his key revoked.
+      - Was previously another "unlimited storage" provider for $50/year. 
+    - Amazon S3/Glacier 
+    - Backblaze B2
+    - IPFS (early support, could be especially interesting with Filecoin)
+
+**Negatives**
+ - Doesn't work on Android or iOS 
 
 I won't try to explain git-annex here, as it's too daunting a task and better done by the documentation.
 But if you are interested in archiving or simply have a lot of files (possibly spread across computers) that you need to structure better, you should definitely check out git-annex.
 
+### Advice
+
+Once you move some of your files into git-annex, you'll want to move all of them there. But don't, some you might want to sync with Syncthing instead until you no longer modify them. 
 
 ### Using together with Syncthing
 
@@ -83,6 +98,7 @@ How I use them together:
    - Contains lots of git repositories which [git-annex cannot handle as-is](https://git-annex.branchable.com/forum/Storing_git_repos_in_git-annex/)
    - I have a Syncthing folder called "to annex" where files destined for the annex go
      - Useful when I want to archive something that's on my phone (git-annex doesn't work well on Android and not at all on iOS).
+
 
 
 ## Ethereum

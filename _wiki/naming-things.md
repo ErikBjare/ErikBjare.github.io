@@ -64,3 +64,8 @@ Ken Thompson when asked about what he would do differently if he redesigned Unix
 
 
 <!-- https://vimeo.com/216477087 -->
+
+## Stuff I haven't yet integrated into the article
+
+ - HN discussion about /pkg, /svc etc UNIX-style naming in Fuchsia: https://news.ycombinator.com/item?id=14583566
+ - Garry on naming (mostly about naming games): https://garry.tv/2017/07/21/naming-stuff/
