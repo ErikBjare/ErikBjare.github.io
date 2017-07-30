@@ -1,8 +1,9 @@
 ---
-title:  "The Critical Importance of User Controlled Recommendation Systems"
+title:  "The Critical Importance of Open Recommendation Systems"
 author: "Erik Bjäreholt"
 description: ""
-tags: psychology behavior recommendation systems
+permalink: /wiki/importance-of-open-recommendation-systems/
+tags: psychology behavior recommendation-systems
 ---
 
 Recommendation systems are all around us:
