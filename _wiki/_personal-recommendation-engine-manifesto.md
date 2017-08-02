@@ -75,6 +75,18 @@ So, after writing quite a bit here I just realized we could collect click-data a
    - Domain?
 
 
+## Problems 
+
+The kind of scraping that would be possible for a network like this to work might be illegal. However, the data could be collected stealthily without letting the service provider know by using browser plugins.
+
+See:
+ - ["LinkedIn: It’s illegal to scrape our website without permission"](https://news.ycombinator.com/item?id=14891301)
+ - https://www.eff.org/cases/facebook-v-power-ventures
+
+## Previous attempts
+
+ - Power.com (see article linked here: https://news.ycombinator.com/item?id=14891301), now defunct. Another company now owns the domain. They ended up getting sued by Facebook due to a marketing tactic where they sent PMs through Facebook from the users accounts to their friends. Now idea how similar the idea was, will have to look further into it.
+
 
 ## Links
 
