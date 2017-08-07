@@ -7,9 +7,9 @@ title: Tags
 
 {% assign tags = site.wiki | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
 {% for tag in tags %}
-  <h4 id="{{tag}}">
-    {{tag}}
-  </h4>
+  <h3 id="{{tag}}">
+    <span class="label label-default">{{tag}}</span>
+  </h3>
   <ul>
   {% for wikipage in site.wiki %}
     {% if wikipage.tags contains tag %}

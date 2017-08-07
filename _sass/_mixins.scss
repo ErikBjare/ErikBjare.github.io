@@ -8,3 +8,7 @@
 @mixin round-font-style() {
     font-family: 'Varela Round', sans-serif;
 }
+
+@mixin serif-font-style() {
+    font-family: serif;
+}

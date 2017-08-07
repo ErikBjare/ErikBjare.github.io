@@ -46,36 +46,42 @@ a {
     .button {
         text-decoration: none;
     }
-}
 
-a:hover, a:active {
-    color: darken($linkcolor, 30%);
-}
-
-.nav, h1, h2, h3, h4, h5 {
-    a {
-        text-decoration: none;
+    :hover, :active {
+       color: darken($linkcolor, 30%);
     }
 }
 
+blockquote {
+    font-size: 1.2em;
+    margin-left: -21px;
+    margin-right: -21px;
+    background-color: #f8f8f8;
+    border-color: #666;
+    font-style: italic;
+    @include serif-font-style;
+
+    p:last-child {
+      font-style: normal;
+    }
+}
 
 .navbar {
     margin-top: -5px;
-    a {
-        .pagename {
-            margin-left: 5px;
-            margin-top: 3px;
-            height: 20px;
-            top: 4px;
-            position: relative;
-            display: inline-block;
-            overflow-x: hidden;
-            overflow-y: hidden;
-        }
+
+    a > .pagename {
+        margin-left: 5px;
+        margin-top: 3px;
+        height: 20px;
+        top: 4px;
+        position: relative;
+        display: inline-block;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     a:hover {
-        background-color: #EEE !important;
+        background-color: #DDD !important;
     }
 }
 
@@ -84,10 +90,6 @@ hr.dotted {
     border: 0 none;
     height: 0.2em;
     margin: 2em 0 2em 0;
-}
-
-blockquote {
-    font-size: 1em;
 }
 
 .box {
@@ -149,6 +151,8 @@ blockquote {
     .content {
         clear: both;
         text-align: justify;
+        font-size: 1.1em;
+        line-height: 1.6em;
 
         img {
             margin-left: auto;
@@ -209,17 +213,6 @@ blockquote {
   border-bottom: 1px dashed #999;
   text-decoration: none;
   white-space-collapse: discard;
-}
-
-.invert {
-    -webkit-filter: invert(100%);
-    -moz-filter: invert(100%);
-    -o-filter: invert(100%);
-    -ms-filter: invert(100%);
-}
-
-.label {
-    font-size: 90% !important;
 }
 
 table.links {

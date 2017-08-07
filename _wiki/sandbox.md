@@ -11,7 +11,7 @@ tags: sitemeta
 
  - *Italic*
  - **Bold**
- - **Bold and Italic**
+ - ***Bold and Italic***
  - ~~strikethrough~~
 
 ### Lists
@@ -27,6 +27,12 @@ tags: sitemeta
  1. Numbered list element 1
     1. Numbered list element 1.1
  1. Numbered list element 2
+
+### Blockquote
+
+> I never said half the shit people say I did.
+>
+> \- Einstein
 
 ### Code
 
@@ -58,6 +64,8 @@ main = putStrLn "hello, world"
 ### Link annotation
 
  - [Wikipedia](https://en.wikipedia.org/)
+ - [GitHub](https://github.com/)
+ - [YouTube](https://youtube.com/)
  - [Bitcoin](bitcoin:invalid-address)
  - [Email](mailto:johndoe@example.com)
 

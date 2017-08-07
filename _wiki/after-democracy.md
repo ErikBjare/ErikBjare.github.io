@@ -6,9 +6,9 @@ permalink: /wiki/after-democracy/
 tags: democracy epistocracy futarchy
 ---
 
-This article is about various to improve or supersede democracy. It's highly speculative, so lets just get this out of the way first:
+This article is about various ways to improve or supersede democracy. It's highly speculative, so lets just get this out of the way first:
 
-> *Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed it has been said that democracy is the worst form of Government except for all those other forms that have been tried from time to time.*
+> Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed it has been said that democracy is the worst form of Government except for all those other forms that have been tried from time to time.
 >
 > – [Winston Churchill](https://richardlangworth.com/worst-form-of-government)
 
@@ -17,15 +17,16 @@ Many years ago, when I first stumbled upon the writings of Robin Hanson, I disco
 
 ## Transitioning to new systems of government
 
-Before we start talking about alternatives, actually transitioning to them is a major challenge. The prerequisites for doing so is of utmost importance to ensure that our alternatives are realistic.
+Before we start talking about alternatives, even just transitioning to them is a major challenge. Understanding the requirements for such a transition is important to ensure that our alternatives are realistic.
 
- - Any system that desires to be peacefully implemented would require evidence (preferably empirical) before being implemented.
-   - For some, this is a difficult task. Especially since systems can be similar in principle yet vary a lot in implementation. (Example: Democracy in Russia vs. Switzerland)
+ - Any system that desires to be peacefully implemented by a reasonably rational government would require empirical evidence before being implemented.
+   - For some systems, this is a difficult task. 
+   - Care should be taken since some systems can be similar in principle yet vary in implementation. (Example: Democracy in Russia vs. Switzerland)
  - Provided that a system change is agreed upon, how could we trust the ones in power to implement the new system without bias? 
-   - Examples of this can be seen in some democracies that now look more like oligarchies from the outside (Russia, also increasingly the case for Turkey under Erdogan).
+   - Examples of this can be seen in some democracies that now look more like oligarchies from the outside (Russia, arguably Turkey).
  - The constitutions of different countries usually make any fundamental change to the system different to implement, or at least makes such changes take a long time once put in motion.
-   - This is intentional to prevent bad changes from taking place, unfortunately it works both ways and will cause significant friction to any system change.
-   - It would be best to try and implement these forms of governance in smaller countries and organizations first so that we can get empirical data about the system of interest before implementing it.
+   - This is intentional to prevent bad changes from taking place. Unfortunately it causes significant friction to *any* system change, good or bad.
+   - Empirical evidence should be the solution to this issue.
    - Robin Hanson says pretty much exactly this [here @ 54:25](https://www.youtube.com/watch?time_continue=3266&v=mUUk0jSndoc).
 
 <!-- With all the above issues, no wonder political revolution is often violent when people become desperate. -->
@@ -39,9 +40,11 @@ See the article on [Wikipedia](https://en.wikipedia.org/wiki/Deliberative_democr
 
 ### Participatory vs. Deliberative
 
-> *'Religion and politics', as the old saying goes, 'should never be discussed in mixed company.'And yet fostering discussions that cross lines of political difference has long been a central concern of political theorists. More recently, it has also become a cause célèbre for pundits and civic-minded citizens wanting to improve the health of American democracy. But only recently have scholars begun empirical investigations of where and with what consequences people interact with those whose political views differ from their own. Hearing the Other Side examines this theme in the context of the contemporary United States. It is unique in its effort to link political theory with empirical research. Drawing on her empirical work, Mutz suggests that it is doubtful that an extremely activist political culture can also be a heavily deliberative one.*
+> 'Religion and politics', as the old saying goes, 'should never be discussed in mixed company.'And yet fostering discussions that cross lines of political difference has long been a central concern of political theorists. More recently, it has also become a cause célèbre for pundits and civic-minded citizens wanting to improve the health of American democracy. [...] Drawing on her empirical work, Mutz suggests that it is doubtful that an extremely activist political culture can also be a heavily deliberative one.
 >
-> – Summary of [Hearing the Other Side: Deliberative versus Participatory Democracy](https://www.amazon.com/Hearing-Other-Side-Deliberative-Participatory/dp/0521612284) by Diana C. Mutz
+> – Summary of [Deliberative versus Participatory Democracy](https://www.amazon.com/Hearing-Other-Side-Deliberative-Participatory/dp/0521612284) by Diana C. Mutz
+
+The above seems to claim there is actual evidence that [Politics is the Mind-killer](http://lesswrong.com/lw/gw/politics_is_the_mindkiller/).
 
 
 ## Futarchy
@@ -72,13 +75,11 @@ For those interested, Brennan has talked about this on the [Rationally Speaking 
 
 This has been done in the US in the past to prevent minority groups from voting in the form of ["literacy tests"](https://en.wikipedia.org/wiki/Literacy_test#Voting) which in practice was only given to said minority groups. But Brennan has a remedy to prevent these kinds of tests from disenfranchising minority groups.
 
-> *The electorate might make better decisions if it were restricted to make it more knowledgeable and less biased. For most people, ideas like epistocracy sound like advocacy of government by a small elite, which could easily abuse its powers. But Brennan presents a variety of strategies by which the quality of the electorate could be improved, while still keeping it large, and demographically representative. For example, the franchise could be limited to those who can pass a basic test of political knowledge. Those with greater knowledge could instead be given extra votes (as first advocated by John Stuart Mill in the nineteenth century). If the resulting more knowledgeable electorate is unrepresentative (e.g. – on the basis of race, sex, age, or wealth), the votes of knowledgeable members of these “underrepresented” groups could be given greater weight. Alternatively, we could potentially make the electorate both more knowledgeable and more representative than it is now, by using an “enfranchisement lottery.”*
->
-> *Such ideas may seem very radical. In some ways they are. But in many respects they are just modest extensions of the status quo. We already exclude over 20% of our population from the franchise because we think they are ignorant and have poor judgment. We call those people “children,” and we feel no guilt over systematically excluding them from political power. It strikes most of us as just simple common sense. The idea of letting some of them vote if they can prove they are more knowledgeable than the average adult is considered radical and dangerous. We don’t let legal immigrants get the vote unless they can pass a civics test that most native-born Americans would likely fail. Many states also exclude convicted felons and many of the mentally ill from the franchise.*
+> The electorate might make better decisions if it were restricted to make it more knowledgeable and less biased. For most people, ideas like epistocracy sound like advocacy of government by a small elite, which could easily abuse its powers. But Brennan presents a variety of strategies by which the quality of the electorate could be improved, while still keeping it large, and demographically representative. For example, the franchise could be limited to those who can pass a basic test of political knowledge. Those with greater knowledge could instead be given extra votes (as first advocated by John Stuart Mill in the nineteenth century). If the resulting more knowledgeable electorate is unrepresentative (e.g. – on the basis of race, sex, age, or wealth), the votes of knowledgeable members of these “underrepresented” groups could be given greater weight. Alternatively, we could potentially make the electorate both more knowledgeable and more representative than it is now, by using an “enfranchisement lottery.”
 >
 > – [Democracy vs. Epistocracy](https://www.washingtonpost.com/news/volokh-conspiracy/wp/2016/09/03/democracy-vs-epistacracy/) by Ilya Somin in the Washington Post
 
 However, the author of the above article concludes with concerns for one of the issues we've noted above:
 
-> *Ultimately, however, while I agree with most of Brennan’s diagnosis of the problem, I am skeptical of his proposed solutions. As he recognizes, there is a substantial likelihood that real-world governments cannot be trusted to implement epistocracy in any kind of unbiased way. Instead of limiting the franchise to the knowledgeable, they are likely to structure tests, lotteries, or other similar mechanisms, in ways that over represent supporters of the party in power and exclude opponents.*
+> Ultimately, however, while I agree with most of Brennan's diagnosis of the problem, I am skeptical of his proposed solutions. As he recognizes, there is a substantial likelihood that real-world governments cannot be trusted to implement epistocracy in any kind of unbiased way. Instead of limiting the franchise to the knowledgeable, they are likely to structure tests, lotteries, or other similar mechanisms, in ways that over represent supporters of the party in power and exclude opponents.
 

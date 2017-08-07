@@ -113,19 +113,27 @@ a {
 a .button {
   text-decoration: none;
 }
-
-a:hover, a:active {
+a :hover, a :active {
   color: #122a3f;
 }
 
-.nav a, h1 a, h2 a, h3 a, h4 a, h5 a {
-  text-decoration: none;
+blockquote {
+  font-size: 1.2em;
+  margin-left: -21px;
+  margin-right: -21px;
+  background-color: #f8f8f8;
+  border-color: #666;
+  font-style: italic;
+  font-family: serif;
+}
+blockquote p:last-child {
+  font-style: normal;
 }
 
 .navbar {
   margin-top: -5px;
 }
-.navbar a .pagename {
+.navbar a > .pagename {
   margin-left: 5px;
   margin-top: 3px;
   height: 20px;
@@ -136,7 +144,7 @@ a:hover, a:active {
   overflow-y: hidden;
 }
 .navbar a:hover {
-  background-color: #EEE !important;
+  background-color: #DDD !important;
 }
 
 hr.dotted {
@@ -144,10 +152,6 @@ hr.dotted {
   border: 0 none;
   height: 0.2em;
   margin: 2em 0 2em 0;
-}
-
-blockquote {
-  font-size: 1em;
 }
 
 .box {
@@ -202,6 +206,8 @@ blockquote {
 .post .content {
   clear: both;
   text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.6em;
 }
 .post .content img {
   margin-left: auto;
@@ -254,17 +260,6 @@ blockquote {
   border-bottom: 1px dashed #999;
   text-decoration: none;
   white-space-collapse: discard;
-}
-
-.invert {
-  -webkit-filter: invert(100%);
-  -moz-filter: invert(100%);
-  -o-filter: invert(100%);
-  -ms-filter: invert(100%);
-}
-
-.label {
-  font-size: 90% !important;
 }
 
 table.links tr {
