@@ -263,6 +263,10 @@ blockquote {
   -ms-filter: invert(100%);
 }
 
+.label {
+  font-size: 90% !important;
+}
+
 table.links tr {
   opacity: 0.7;
 }
