@@ -8,7 +8,7 @@ tags: quantified-self statistics
 ---
 
 <!-- TODO: I probably have an Evernote about this that I should incorporate details from -->
-<!-- TODO: Affiliate links (Amazon, RescueTime, etc)  -->
+<!-- TODO: Affiliate links (Amazon, RescueTime, etc.)  -->
 
 # Value Proposition
 
@@ -29,7 +29,7 @@ use of medical data in research, effectively preventing large scale exploratory 
 
 [One writer noted](https://tincture.io/ownership-vs-control-of-your-health-ace1c8065a2f) that giving the patient *ownership* of their data would make it even harder to do 
 large scale data analysis as there would be no information silo one could aggregate from.
-He instead advocates that patients shoud have data *control*, where the user is not the sole owner but still controls his/her copy. This seems to be the direction that medical data is moving in right now, at least in Sweden.
+He instead advocates that patients should have data *control*, where the user is not the sole owner but still controls his/her copy. This seems to be the direction that medical data is moving in right now, at least in Sweden.
 
 But data silos can be dangerous for both security and privacy reasons (no transparency about which data is kept)
 I can however imagine a different world: where patients can give away their data (all or just some) on an opt-in/out basis to some regulated entity after it has been filtered through an anonymization system. 

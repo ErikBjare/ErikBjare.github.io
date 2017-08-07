@@ -7,7 +7,7 @@ tags: meta ideas future
 
  - Meta
    - Why write publicly about these things?
-     - Primarily due to rolemodels like Gwern, Eliezer, etc.
+     - Primarily due to role models like Gwern, Eliezer, etc.
  - Longevity
    - Is Longevity research an effectively altruistic action?
    - Gwern has done an analysis of the [cost-effectiveness of life extension](https://www.gwern.net/Longevity).

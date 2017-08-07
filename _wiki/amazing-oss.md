@@ -25,7 +25,7 @@ I also predict it will serve as a next generation protocol for file sharing/pira
 
 One of the major strengths of IPFS is that it solves the problem of content distribution (planet scale spatial cache locality)
 
-**Fun story**: In the 2017 Google Hashcode competition (a "real-life problem" competition, unlike ICPC etc) the problem was to choose which YouTube videos should be cached at which servers in order to minimize latency for end-users.
+**Fun story**: In the 2017 Google Hashcode competition (a "real-life problem" competition, unlike ICPC etc.) the problem was to choose which YouTube videos should be cached at which servers in order to minimize latency for end-users.
 During the competition I joked with my teammates that the problem Google was trying to solve was the wrong one (for them it's the right problem, IPFS might kill all ad revenue).
 
 IPFS solves this by making every user who recently downloaded a file into a distributor of that file, much like BitTorrent.

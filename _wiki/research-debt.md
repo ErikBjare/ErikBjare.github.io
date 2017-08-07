@@ -15,9 +15,9 @@ An intuitive summary of the phenomenon is probably best done by Olah & Carter:
 
 > For centuries, countless minds have climbed the mountain range of mathematics and laid new boulders at the top. Over time, different peaks formed, built on top of particularly beautiful results. Now the peaks of mathematics are so numerous and steep that no person can climb them all. Even with a lifetime of dedicated effort, a mathematician may only enjoy some of their vistas.
 >
-> People expect the climb to be hard. It reflects the tremendous progress and cumulative effort that’s gone into mathematics. The climb is seen as an intellectual pilgrimage, the labor a rite of passage. But the climb could be massively easier. It’s entirely possible to build paths and staircases into these mountains.1 The climb isn’t something to be proud of.
+> People expect the climb to be hard. It reflects the tremendous progress and cumulative effort that's gone into mathematics. The climb is seen as an intellectual pilgrimage, the labor a rite of passage. But the climb could be massively easier. It’s entirely possible to build paths and staircases into these mountains. The climb isn't something to be proud of.
 >
-> The climb isn’t progress: the climb is a mountain of debt.
+> The climb isn't progress: the climb is a mountain of debt.
 
 
 ## Characteristics
@@ -31,9 +31,9 @@ Olah & Carter presents the following aspects of research debt:
  - Bad abstractions and notation
  - Noise
 
-It's important to note that you are unlikely to notice when your explantions in writing are bad (verbally you usually get some form of direct feedback indicating when an explanation was bad). This I suspect is at least partially due to the [curse of knowledge](curse-of-knowledge). Olah & Carter elegantly stated:
+It's important to note that you are unlikely to notice when your explanations in writing are bad (verbally you usually get some form of direct feedback indicating when an explanation was bad). This I suspect is at least partially due to the [curse of knowledge](curse-of-knowledge). Olah & Carter elegantly stated:
 
-> The insidious thing about research debt is that it’s normal. Everyone takes it for granted, and doesn’t realize that things could be different. For example, it’s normal to give very mediocre explanations of research, and people perceive that to be the ceiling of explanation quality. On the rare occasions that truly excellent explanations come along, people see them as one-off miracles rather than a sign that we could systematically be doing better.
+> The insidious thing about research debt is that it's normal. Everyone takes it for granted, and doesn't realize that things could be different. For example, it’s normal to give very mediocre explanations of research, and people perceive that to be the ceiling of explanation quality. On the rare occasions that truly excellent explanations come along, people see them as one-off miracles rather than a sign that we could systematically be doing better.
 
 
 ## Relation to education

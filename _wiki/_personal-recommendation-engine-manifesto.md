@@ -12,11 +12,13 @@ Recommendation systems are all around us:
  - Search results
  - Your social media feeds
 
+<!-- TODO: Add note that recommendation systems are reinforcing clickbait -->
+
 ## Why care? 
 
 They control a large part of your life. Which articles you read (and which you don't), which ads you get served, and which search results are deemed relevant for you.
 
-It seems the the Internet has been pretty polarising, if we could pop more <!-- Bad term --> "search bubbles". We'd probably be less ignorant about everyone else's position on issues for instance and would be more likely to interact online on with better understanding for each others position. 
+It seems the Internet has been pretty polarising, if we could pop more <!-- Bad term --> "search bubbles". We'd probably be less ignorant about everyone else's position on issues for instance and would be more likely to interact online on with better understanding for each others position. 
 
  - Essentially, by controlling the algorithm we would have the freedom to decide how we want to communicate [(free as in freedom)](https://www.fsf.org/about/what-is-free-software) 
 
@@ -34,7 +36,7 @@ It would enable us to configure it in ways that self-controlled systems usually 
 
 Social Media has had a remarkable impact on society. There have certainly been positive effects, the breaking down of barriers and vastly decreased friction in communication and networking. 
 
-What we want is to be able to research ourselves a better future, and for that we have to work together in an as transparent manner as practical. Unfortunately this transparency stands in some opposition the the practical thing at Facebook for example. The currently popular social media networks are all for-profit, with the usual associated pros and cons when it comes to incentive.
+What we want is to be able to research ourselves a better future, and for that we have to work together in an as transparent manner as practical. Unfortunately this transparency stands in some opposition the practical thing at Facebook for example. The currently popular social media networks are all for-profit, with the usual associated pros and cons when it comes to incentive.
 
 What I want is for this debate to start and the research to happen. I think it is extremely important. 
 
@@ -43,7 +45,7 @@ What I want is for this debate to start and the research to happen. I think it i
 
 AI is, in a way, potentially a threat to us in some ways already today.  (No wonder Mark Zuckerberg defends it.)
 
-I really want to stress the impact this has on people's life.
+I really want to stress the impact this has on peoples' lives.
 
 ### Personal Improvement
 
@@ -58,12 +60,12 @@ So, after writing quite a bit here I just realized we could collect click-data a
 
 ## Feature ideas
 
- - Offer a the platform black box models as systems to use some of the time. Analyze the results.
+ - Offer the black box models of existing platforms as systems to use some of the time. Analyze the results.
  - Offer a view that presents a community-collected "public" database of votes.
     - Could be created from the public data of reddit, HN and Twitter as examples. Even combine/weight them. The most wanted will prevail.
  - Degrees-of-separation to interactor (interactor that votes/likes/comments) for weighting recommendations based on the connectome of the social graph. 
     - This could be immensely powerful protection against true shills, since they'd need to infiltrate the social graph. 
- - We could implement combined views by filtering/sampling of sources and combinating them. 
+ - We could implement combined views by filtering/sampling of sources and mixing them. 
    - This seems like a good way to think about it, for me at least.
 
 

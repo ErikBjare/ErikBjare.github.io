@@ -14,7 +14,7 @@ tags: ethics business
 
 In an [article by Philips executive Roy Jakobs](http://www.philips.com/a-w/innovationmatters/blog/good-business-why-placing-ethics-over-profits-pays-off.html) he stated clearly that:
 
-> "When companies work ethically, they will naturally outpace competition. Why? Simply because customers, as we’ve discovered, will see them as a trusted partner, not only for what they do, but how it is delivered."
+> "When companies work ethically, they will naturally outpace competition. Why? Simply because customers, as we've discovered, will see them as a trusted partner, not only for what they do, but how it is delivered."
 
 This kind of consumer-driven ethics are to be expected in consumer-facing businesses where brand is important but might not hold up for the supply chain for such businesses as there is clearly a dissipation of responsibility. This is essentially acting ethically as a means to effectively signal as an ethical company. This comes with a bunch of issues such as what would the company do when faced with an ethical dilemma that the consumers will never know the existence of? They might err on the side of caution, and choose ethics over profit for fear of the choice becoming known, or they might err on the side of profit, fullfilling their shareholder obligations.
 
