@@ -14,7 +14,7 @@ When I about 5 years old, my uncle Wolf (<a href="https://en.wikipedia.org/wiki/
 
 ## Welcome to the Internet <small>("OMG, Broadband!")</small>
 
-A few months into kindergarten (the "0th grade" in primary school) I found out that one of my new found friends had this amazing thing called broadband which gave you UNLIMITED access to the internet without having to dial up! I thought this was the coolest thing as I had been playing <a href="https://en.wikipedia.org/wiki/Adobe_Shockwave">Shockwave</a> games but with a time-restraint set by my parents (who wanted to be able to use the phone and not pay for a large internet bill). I barely remember Netscape, but I'm fairly sure I used it back then.
+A few months into kindergarten (the "0th grade" in primary school) I found out that one of my new found friends had this amazing thing called broadband which gave you UNLIMITED access to the internet without having to [dial up](https://www.youtube.com/watch?v=gsNaR6FRuO0)! I thought this was the coolest thing as I had been playing <a href="https://en.wikipedia.org/wiki/Adobe_Shockwave">Shockwave</a> games but with a time-restraint set by my parents (who wanted to be able to use the phone and not pay for a large internet bill). I barely remember Netscape, but I'm fairly sure I used it back then.
 
 
 ## A short tale of admins with redskulls and the demise of Onyxia

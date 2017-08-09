@@ -2,7 +2,7 @@
 title:  "Finite and Infinite Games"
 author: "Erik Bjäreholt"
 description: ""
-conficence: low
+confidence: low
 state: draft
 tags: philosophy leadership
 ---
@@ -10,8 +10,9 @@ tags: philosophy leadership
 Some years ago I encountered the book *"Finite and Infinite Games"* by James P. Carse and subsequently watched his Long Now talk. 
 
 > War is the ultimate finite game.<br>
-> Religion is the ultimate infinite game.<br>
->  \-- James P. Carse *(Religious War In Light of the Infinite Game, SALT talk)*
+> Religion is the ultimate infinite game.
+>
+>  — James P. Carse *(Religious War In Light of the Infinite Game, SALT talk)*
 
 I no longer believe him that religion is the ultimate infinite game. I think that it's more accurate to say that life, or perhaps the cosmos/multiverse itself (life included), is the ultimate infinite game.
 
@@ -19,7 +20,7 @@ I've found some uses of thinking in terms of finite and infinite games, which I'
 
 ## Simon Sinek's view
 
-Simon Sineks way of viewing businesses as finite and infinite games is based on wether the company is based around temporary goals or a value system that leads them forward indefinitely. In company run as finite games, the focus lies on short term metrics, but others that are run as an infinite games instead focus on what their long-term goals are, which in turn have a firm grounding in the company values.
+Sinek's way of viewing businesses as finite and infinite games is based on whether the company is based around temporary goals or a value system that leads them forward indefinitely. In company run as finite games, the focus lies on short term metrics, but others that are run as an infinite games instead focus on what their long-term goals are, which in turn have a firm grounding in the company values.
 
 He claims (he appears to at least, not entirely clear) to have found the concept of finite and infinite games in game theory. But I can find no reference to it by search and he doesn't mention any other game theoretic ideas so if that's indeed what he meant he either doesn't mean *the* game theory, or it's just marketing speech.
 
