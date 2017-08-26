@@ -83,3 +83,4 @@ However, the author of the above article concludes with concerns for one of the 
 
 > Ultimately, however, while I agree with most of Brennan's diagnosis of the problem, I am skeptical of his proposed solutions. As he recognizes, there is a substantial likelihood that real-world governments cannot be trusted to implement epistocracy in any kind of unbiased way. Instead of limiting the franchise to the knowledgeable, they are likely to structure tests, lotteries, or other similar mechanisms, in ways that over represent supporters of the party in power and exclude opponents.
 
+Richard Dawkins touches on this in his BigThink video ["No, Not All Opinions Are Equal—Elitism, Lies, and the Limits of Democracy"](https://www.youtube.com/watch?v=pe4feBH0ABk) where he argues against the use of direct democracy in referendums like Brexit where the population is clearly undereducated/misinformed on the issue (Dawkins admitted to being undereducated himself).
