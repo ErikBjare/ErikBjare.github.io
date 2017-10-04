@@ -54,6 +54,29 @@
 
 ga('create', 'UA-48818326-1', 'auto');
 ga('send', 'pageview');
+
+// Used to track outbound links:
+// https://support.google.com/analytics/answer/1136920?hl=en
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){
+       document.location = url;
+     }
+   });
+}
+
+// TODO: Not tested properly
+// Found here: http://veithen.github.io/2015/01/24/outbound-link-tracking.html
+$(function() {
+  $("a").click(function(e) {
+    if (!ga.q) {
+      var url = $(this).attr("href");
+      trackOutboundLink(url);
+      e.preventDefault();
+    }
+  });
+});
         </script>
 
     </head>
