@@ -22,7 +22,7 @@ I've found some uses of thinking in terms of finite and infinite games, which I'
 
 Sinek's way of viewing businesses as finite and infinite games is based on whether the company is based around temporary goals or a value system that leads them forward indefinitely. In company run as finite games, the focus lies on short term metrics, but others that are run as an infinite games instead focus on what their long-term goals are, which in turn have a firm grounding in the company values.
 
-He claims (he appears to at least, not entirely clear) to have found the concept of finite and infinite games in game theory. But I can find no reference to it by search and he doesn't mention any other game theoretic ideas so if that's indeed what he meant he either doesn't mean *the* game theory, or it's just marketing speech.
+He claims (he appears to at least, not entirely clear) to have found the concept of finite and infinite games in game theory. ~~But I can find no reference to it by search~~ and he doesn't mention any other game theoretic ideas so if that's indeed what he meant he either doesn't mean *the* game theory, or it's just marketing speech. *The closest thing that does exist is an [infinitely repeated game](https://en.wikipedia.org/wiki/Repeated_game)* but that isn't quite the same as what he presents it as.
 
 ## Links
 
