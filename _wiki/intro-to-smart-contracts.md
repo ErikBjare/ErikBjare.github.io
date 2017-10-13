@@ -168,6 +168,7 @@ Be very careful about them and don't buy into the hype. Do your due diligence an
 
 <!--
  - Cite Ethereum developers themselves
+   - A good start: https://twitter.com/VladZamfir/status/908054431962468357
 -->
 
 Blockchains enables extreme privacy (especially untraceable chains like Monero and Zcash). 
@@ -197,10 +198,20 @@ If you want to buy Bitcoin only as an investment and expect gains over ~2% year 
 then the by far best option is to buy Bitcoin certificate and keep them in an ISK.
 
 
+## Top Blockchain Projects
+
+**Note:** My own biases lie herein, and my biases are a bit conservative.
+
+ - Bitcoin
+ - Ethereum
+ - Filecoin
+
+
 ## What I'm the most excited about
 
 <!-- Try to end it on a lighter note -->
 
+ - Decentralized systems
  - Programmable money
  - Fewer third parties
    - Pitch: [ActivityWatch](https://github.com/ActivityWatch/activitywatch) and [Thankful](https://github.com/ActivityWatch/thankful)
@@ -218,10 +229,13 @@ then the by far best option is to buy Bitcoin certificate and keep them in an IS
 
 ## Learn more
 
+<!-- TODO: This list grew long, should probably make a top 3/5 recommendation of videos/articles -->
+
  - Discuss/learn together with friends
  - Follow experts online
+   - Naval Ravikant (big picture guy, AngelList founder)
    - Bitcoin devs
-     - Warning: High risk of becoming distracted by Bitcoin governance issues that people love to fight over.
+     - Warning: High risk of becoming distracted by Bitcoin governance issues that people love to fight over. Therefore I won't list them here as I don't want to be seen endorsing some over others.
    - Ethereum devs
      - Note: I have a (arguably) slight Ethereum bias, and it's the fault of these excellent people.
      - [Vitalik Buterin](https://twitter.com/VitalikButerin)
@@ -246,6 +260,7 @@ then the by far best option is to buy Bitcoin certificate and keep them in an IS
    - Podcasts
      - [Naval Ravikant and Nick Szabo on Tim Ferris podcast](https://tim.blog/2017/06/04/nick-szabo/) - Both Naval and Nick are highly recommended
      - ['Governing the Future' with Hampus Jakobsson](https://soundcloud.com/hajak) - Created by LTH graduate, [TaT](https://en.wikipedia.org/wiki/The_Astonishing_Tribe) co-founder and angel investor Hampus Jakobsson.
+     - [Naval Ravikant and Ryan Shea @ Blockstack summit](https://youtu.be/IrSn3zx2GbM)
      - [Epicenter Podcast](https://epicenter.tv/)
 
 

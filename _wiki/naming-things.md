@@ -6,6 +6,8 @@ confidence:
 tags: learning mathematics computer-science
 ---
 
+<!-- Read and include: https://twitter.com/JennyBryan/status/898372123281858560 -->
+
 Naming things is hard, in fact, it's commonly joked about being one of the hardest things in computer science:
 
 > *"There are only two hard things in Computer Science: cache invalidation and naming things."*

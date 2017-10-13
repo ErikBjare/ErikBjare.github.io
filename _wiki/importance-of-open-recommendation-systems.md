@@ -73,11 +73,12 @@ Here's another example:
  - (~10%) Global news
  - (~10%) Local news
 
-This is a simple way to configure an information diet and suffers from a few issues:
+This is a simple way to configure an information diet, but it suffers from a few issues:
 
  - What happens when a source is depleted or no longer has high-quality content?
    - The source could be turned off or have it's probability of appearing in the feed decrease as the high-quality content has already been seen.
  - It doesn't take into consideration what you're specifically interested in from those sources.
+ - The simplest version delegates to the underlying algorithms for each category.
 
 Despite these issues, the strength of a simple model like this one is that it is easy to understand and modify. So it serves as a good starting point.
 

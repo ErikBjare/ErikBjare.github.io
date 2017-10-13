@@ -5,6 +5,8 @@ description: ""
 tags:
 ---
 
+<!-- TODO: Reference "Decentralized Social Networks Won't Work" - https://news.ycombinator.com/item?id=15244596 -->
+
 ## Federated
 
  - Diaspora
