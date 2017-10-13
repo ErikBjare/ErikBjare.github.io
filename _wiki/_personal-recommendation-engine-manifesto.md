@@ -1,5 +1,5 @@
 ---
-title:  "The Critical Importance of Open Recommendation Systems"
+title:  "The Importance of Open Recommendation Systems"
 author: "Erik Bjäreholt"
 description: ""
 permalink: /wiki/importance-of-open-recommendation-systems/
@@ -15,7 +15,7 @@ state: draft
 Recommendation systems are all around us:
 
  - Your social media feeds: Facebook, YouTube, Twitter, Reddit, Hacker News, etc.
- - Search results: Google, Amazon, Ebay, etc.
+ - Search results: Google, Amazon, eBay, etc.
  - Ads: All around the web
 
 They control a large part of your life:
@@ -25,9 +25,9 @@ They control a large part of your life:
  - Which ads you get served
  - Which search results you see
 
-It seems as if the internet has been pretty polarising. If we could pop more filter bubbles we'd be less ignorant about other peoples positions on issues and would be more likely to interact online. This could lead to a better understanding for each others position and, as a consequence, a better debate.
+It seems as if the internet has been pretty polarising. If we could pop more filter bubbles, we'd be more likely to interact online. Perhaps this could help us understand other people better and, as a consequence, give us a better debate.
 
-The information you consume controls you, for better or worse. Yet most people have a questionable information diet (I include myself here). Our bad habits are reinforced by recommendation systems (do you *want* to spend an hour scrolling Facebook?).
+The information you consume controls you, for better or worse. I'd argue that most people have a questionable information diet (I include myself here). It gets worse when platforms that depend on your attention have control of what gets shown since they have an incentive to reinforce our bad habits.
 
 When we go on Facebook or any other social media site, we are at their algorithms mercy. They presumably optimize for clicks, time spent, and endless scrolling. That's what they want us to do, but is it what we want out of Facebook?
 
@@ -38,9 +38,9 @@ If we had full control of the recommendation algorithms, what could we do?
  - We could aggregate all our feeds into one where we decide what we want and what we don't.
  - We could purposefully include content that we wouldn't usually get recommended, just to reduce filter bubbles.
  - We could get one step closer to platform independence. 
-   - By aggregating all content in one feed we wouldn't have to choose between Facebook, Twitter and reddit: we could have the best of both worlds.
+   - By aggregating all content in one feed, we wouldn't have to choose between Facebook, Twitter, and Reddit: we could have the best of both worlds.
  - We could decide ourselves on what to filter away. 
-   - Do you find that comments containing curse words or have a really low sentiment score rarely contribute to the conversation? Don't show those comments.
+   - Do you find that comments containing curse words or have an unusually negative sentiment score rarely contribute to the conversation? Don't show those comments.
 
 ## Planning an information diet
 
@@ -50,15 +50,15 @@ An example (not necessarily a good diet):
 
  - (~20%) The posts of your closest friends
  - (~20%) The posts of your 2nd degree closest friends (friends of friends)
- - (~40%) Content from Hacker News and/or the subreddits you subscribe to (the reddit/HN algorithm decides)
- - (10%) Content from r/all on reddit  (minimal filters)
+ - (~40%) Content from Hacker News and the subreddits you subscribe to (the HN/Reddit algorithm decides)
+ - (10%) Content from r/all on Reddit  (minimal filters)
  - (5%) Low-scoring content (could be controversial, low quality or recently posted)
  - (5%) Let the Facebook algorithm decide
 
 Here's another example:
 
  - (10%) The top world news
- - (50%) Programming related from reddit, Hacker News, Twitter
+ - (50%) Programming related from Reddit, Hacker News, Twitter
  - (20%) Friends and family  (could be set to zero during working hours)
  - (20%) Memes/jokes  (could be set to zero during working hours)
 
@@ -71,7 +71,7 @@ We could analyse the results of each recommendation rule:
 
 We might even be able to score our diet in various ways:
 
- - How bubbly is our diet? Which content is notably not in it?
+ - How bubbly is it? Which content is notably excluded?
  - Which friends/sources/feeds are the most influential?
 
 ### What would be the effect?
@@ -82,13 +82,13 @@ We might even be able to score our diet in various ways:
 
 Social media has had a remarkable impact on society. There have certainly been positive effects, the breaking down of barriers and vastly decreased friction in communication and networking. But it's pretty clear that it hasn't all been unicorns and rainbows.
 
-What I want is for a debate to start and the research to happen. I'd love nothing more than for the existing giants like Facebook, Twitter, and reddit to join us in this research and help us build better social media feeds where the users get more control. 
+What I want is for a debate to start and the research to happen. It would be amazing if the existing giants (Facebook, Twitter, Reddit) joined us in this research to help build better social media feeds. But unfortunately, they are unlikely to have any interest in that. Ads are the primary source of income for all the dominant platforms, and ad revenue is directly correlated with platform use (endless scrolling). 
 
-Unfortunately it seems they aren't interested in that, ads are the primary source of income for all the existing platforms and that's unlikely to change anytime soon. As much as I wish they'd use their enormous influence for good, I'm not holding my breath.
+That's unlikely to change anytime soon, and as much as I wish they'd use their enormous influence for good, I'm not holding my breath.
 
 ## Problems 
 
-The kind of scraping that would be required for the kind of aggregated feed as presented here might be illegal and at least break the terms of service for the services involved. However, the data could be collected stealthily without letting the service provider know by using browser plugins. The European Union has also gotten a recent interest in getting large companies to reduce barriers for users who wish to switch services, so perhaps there is hope.
+The scraping that would be required for the kind of aggregated feed as presented here might be illegal and at least break the terms of service for the services involved. However, the data could be collected stealthily without letting the service provider know by using browser plugins. The European Union has also gotten a recent interest in getting large companies to reduce barriers for users who wish to switch services, so perhaps there is hope.
 
 ### Legal disputes
 
