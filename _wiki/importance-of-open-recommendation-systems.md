@@ -20,47 +20,67 @@ Recommendation systems are all around us:
 
 They control a large part of your life:
 
- - Which friends posts you see on social media
- - Which articles you read (and which you don't)
+ - Which posts you see on social media (the big one).
+   - Which friends you stay in touch with.
+   - Which topics you get exposure to.
+   - Which articles you read, and which you don't.
  - Which ads you get served
  - Which search results you see
 
-It seems as if the internet has been pretty polarising. If we could pop more filter bubbles, we'd be more likely to interact online. Perhaps this could help us understand other people better and, as a consequence, give us a better debate.
-
 The information you consume controls you, for better or worse. I'd argue that most people have a questionable information diet (I include myself here). It gets worse when platforms that depend on your attention have control of what gets shown since they have an incentive to reinforce our bad habits.
 
-When we go on Facebook or any other social media site, we are at their algorithms mercy. They presumably optimize for clicks, time spent, and endless scrolling. That's what they want us to do, but is it what we want out of Facebook?
+Social media has had a remarkable impact on society. There have certainly been positive effects such as the removal of gatekeepers and vastly decreased friction in communication and networking. However, it's pretty clear that it hasn't all been unicorns and rainbows, but what of it?
 
-## What could be different?
+When we go on our Facebook feed or that of any other social media site, we are at their recommendation algorithms mercy. They presumably optimize for clicks, time spent, and endless scrolling. That's what they want us to do, but is that what we want out of Facebook?
+
+If we could somehow control the recommendation algorithms we would have the ability to decide our own information diet. Would that make a significant difference? I think so.
+
+
+## What would be different?
 
 If we had full control of the recommendation algorithms, what could we do?
 
- - We could aggregate all our feeds into one where we decide what we want and what we don't.
- - We could purposefully include content that we wouldn't usually get recommended, just to reduce filter bubbles.
- - We could get one step closer to platform independence. 
-   - By aggregating all content in one feed, we wouldn't have to choose between Facebook, Twitter, and Reddit: we could have the best of both worlds.
+ - We could make the content that is recommended more relevant us.
+   - By being able to configure what we are and aren't interested in.
+ - We could make the feeds less distracting.
+   - By not recommending entertainment and other highly distracting content while working.
+ - We could get closer to platform independence. 
+   - By aggregating all content in one feed, we wouldn't have to choose between Facebook, Twitter, and Reddit: we could have all the feeds in one place.
+ - We could reduce filter bubbles.
+   - By purposefully include content that we wouldn't usually get recommended.
  - We could decide ourselves on what to filter away. 
-   - Do you find that comments containing curse words or have an unusually negative sentiment score rarely contribute to the conversation? Don't show those comments.
+   - Do you find that comments containing curse words rarely contribute to the conversation? Hide them. <!-- or have an unusually negative sentiment score -->
+
 
 ## Planning an information diet
 
-Just like the [food pyramid](https://en.wikipedia.org/wiki/Food_pyramid_(nutrition\)) has served to help people plan what they eat, we could suggest a common sense information diet for people as a default and then let them modify it as they wish.
+Just like the [food pyramid](https://en.wikipedia.org/wiki/Food_pyramid_(nutrition\)) has served as a heuristic to help people plan what they eat, we could suggest an information diet (or several) for people as a default and then let them modify it as they wish.
 
 An example (not necessarily a good diet):
 
+ - (~50%) Content from Hacker News and your reddit feed (the HN/Reddit algorithm decides)
  - (~20%) The posts of your closest friends
- - (~20%) The posts of your 2nd degree closest friends (friends of friends)
- - (~40%) Content from Hacker News and the subreddits you subscribe to (the HN/Reddit algorithm decides)
- - (10%) Content from r/all on Reddit  (minimal filters)
- - (5%) Low-scoring content (could be controversial, low quality or recently posted)
- - (5%) Let the Facebook algorithm decide
+ - (~10%) The posts of your 2nd degree closest friends (friends of friends)
+ - (~10%) Content from r/all on Reddit  (minimal filters)
+ - (~5%) Low-scoring content (could be controversial, low quality or recently posted)
+ - (~5%) Let the Facebook algorithm decide
 
 Here's another example:
 
- - (10%) The top world news
- - (50%) Programming related from Reddit, Hacker News, Twitter
- - (20%) Friends and family  (could be set to zero during working hours)
- - (20%) Memes/jokes  (could be set to zero during working hours)
+ - (~40%) Programming-related posts from Reddit, Hacker News, Twitter
+ - (~20%) Friends and family  (could be set to zero during working hours)
+ - (~20%) Memes/jokes  (could be set to zero during working hours)
+ - (~10%) Global news
+ - (~10%) Local news
+
+This is a simple way to configure an information diet and suffers from a few issues:
+
+ - What happens when a source is depleted or no longer has high-quality content?
+   - The source could be turned off or have it's probability of appearing in the feed decrease as the high-quality content has already been seen.
+ - It doesn't take into consideration what you're specifically interested in from those sources.
+
+Despite these issues, the strength of a simple model like this one is that it is easy to understand and modify. So it serves as a good starting point.
+
 
 ## Analysing our diet
 
@@ -74,17 +94,18 @@ We might even be able to score our diet in various ways:
  - How bubbly is it? Which content is notably excluded?
  - Which friends/sources/feeds are the most influential?
 
+
 ### What would be the effect?
 
 **TODO**: Speculation followed by implementation, experimentation, and research.
 
-### This cause has no enemies, only people who ignore it
 
-Social media has had a remarkable impact on society. There have certainly been positive effects, the breaking down of barriers and vastly decreased friction in communication and networking. But it's pretty clear that it hasn't all been unicorns and rainbows.
+### This cause has no enemies
 
 What I want is for a debate to start and the research to happen. It would be amazing if the existing giants (Facebook, Twitter, Reddit) joined us in this research to help build better social media feeds. But unfortunately, they are unlikely to have any interest in that. Ads are the primary source of income for all the dominant platforms, and ad revenue is directly correlated with platform use (endless scrolling). 
 
 That's unlikely to change anytime soon, and as much as I wish they'd use their enormous influence for good, I'm not holding my breath.
+
 
 ## Problems 
 
@@ -122,15 +143,16 @@ The scraping that would be required for the kind of aggregated feed as presented
    - "There will be more good stuff tomorrow"
  - Anti-FOMO
    - Some mechanism to reduce the chance that anything especially interesting isn't seen due to the user not visiting the feed for a few days or more.
+   - We could also include a way to view the entire feed history, unlike on Facebook where a page-refresh recalculates the feed.
    - How could that work?
 
 ## Links
 
 <!-- TODO: Twitter iframe for these tweets and add discussion around them inline -->
 
+ - ["Democracy or Social Media, Pick One"](https://www.facebook.com/gdiego.vichutilitarian/posts/1474383972645395) by Giego Caleiro
  - https://twitter.com/naval/status/891025944621727744
     - https://twitter.com/ErikBjare/status/891274989974032388
- - https://www.facebook.com/gdiego.vichutilitarian/posts/1474383972645395
 
 
 <!--
