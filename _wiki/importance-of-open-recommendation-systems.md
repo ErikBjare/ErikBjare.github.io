@@ -96,12 +96,12 @@ We might even be able to score our diet in various ways:
  - Which friends/sources/feeds are the most influential?
 
 
-### What would be the effect?
+## What would be the effect?
 
 **TODO**: Speculation followed by implementation, experimentation, and research.
 
 
-### This cause has no enemies
+## The status quo
 
 What I want is for a debate to start and the research to happen. It would be amazing if the existing giants (Facebook, Twitter, Reddit) joined us in this research to help build better social media feeds. But unfortunately, they are unlikely to have any interest in that. Ads are the primary source of income for all the dominant platforms, and ad revenue is directly correlated with platform use (endless scrolling). 
 
