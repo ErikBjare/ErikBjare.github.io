@@ -117,6 +117,12 @@ The scraping that would be required for the kind of aggregated feed as presented
    - This is good protection against shills, since they'd need to infiltrate the social graph in order to get influence.
  - We could implement combined views by filtering/sampling of sources and mixing them. 
    - This seems like a good way to think about it, for me at least.
+ - Anti-endless scrolling
+   - A gentle reminder either when a person has spent more than x minutes on the feed or when feed quality is diminishing due to lack of good content
+   - "There will be more good stuff tomorrow"
+ - Anti-FOMO
+   - Some mechanism to reduce the chance that anything especially interesting isn't seen due to the user not visiting the feed for a few days or more.
+   - How could that work?
 
 ## Links
 
