@@ -8,6 +8,7 @@ state: draft
 ---
 
 <!-- TODO: Reference "Decentralized Social Networks Won't Work" - https://news.ycombinator.com/item?id=15244596 -->
+<!-- TODO: Reference "I cured my tech fatigue by ditching feeds" - https://news.ycombinator.com/item?id=15578019 -->
 <!-- TODO: Add note that recommendation systems are reinforcing clickbait -->
 
 ## Why care? 
