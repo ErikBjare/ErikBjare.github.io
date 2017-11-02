@@ -152,6 +152,7 @@ The scraping that would be required for the kind of aggregated feed as presented
 
 <!-- TODO: Twitter iframe for these tweets and add discussion around them inline -->
 
+ - \[podcast\] [Conversation with Thore Husfeldt about the algorithms that run Facebook among other things](https://www.facebook.com/thore.husfeldt/posts/1465597066893486)
  - ["Democracy or Social Media, Pick One"](https://www.facebook.com/gdiego.vichutilitarian/posts/1474383972645395) by Giego Caleiro
  - https://twitter.com/naval/status/891025944621727744
     - https://twitter.com/ErikBjare/status/891274989974032388
