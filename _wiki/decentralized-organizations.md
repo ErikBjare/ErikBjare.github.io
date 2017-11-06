@@ -1,0 +1,5 @@
+ - Valve Employees Handbook
+ - https://blog.p2pfoundation.net/belonging-is-a-superpower-patterns-for-decentralised-organising/2017/10/27
+ - Open source projects
+ - Hampus kommentar om feasibilityn av Valve-style
+ - DAO's and DAC's
