@@ -1,7 +1,7 @@
 ---
 title:  "The Importance of Open Recommendation Systems"
 author: "Erik Bjäreholt"
-description: ""
+description: "Algorithms are in control our attention, so what can we do about it?"
 permalink: /wiki/importance-of-open-recommendation-systems/
 tags: psychology behavior recommendation-systems
 state: draft
@@ -10,14 +10,20 @@ state: draft
 <!-- TODO: Reference "Decentralized Social Networks Won't Work" - https://news.ycombinator.com/item?id=15244596 -->
 <!-- TODO: Reference "I cured my tech fatigue by ditching feeds" - https://news.ycombinator.com/item?id=15578019 -->
 <!-- TODO: Add note that recommendation systems are reinforcing clickbait -->
+<!-- TODO: Reference http://marginalrevolution.com/marginalrevolution/2017/11/dont-blame-facebook-failings.html -->
+<!-- TODO: Reference https://www.economist.com/news/leaders/21730871-facebook-google-and-twitter-were-supposed-save-politics-good-information-drove-out -->
+<!-- TODO: Read this and include quote from Sean: https://www.axios.com/sean-parker-facebook-exploits-a-vulnerability-in-humans-2507917325.html -->
 
 ## Why care? 
 
 Recommendation systems are all around us:
 
  - Your social media feeds: Facebook, YouTube, Twitter, Reddit, Hacker News, etc.
+   - Controls what you see when you casually browse the web
  - Search results: Google, Amazon, eBay, etc.
+   - Controls which needle you find in the haystack
  - Ads: All around the web
+   - Steals your attention away from things you care about, directs it to what someone else wants you to care about.
 
 They control a large part of your life:
 
@@ -25,10 +31,10 @@ They control a large part of your life:
    - Which friends you stay in touch with.
    - Which topics you get exposure to.
    - Which articles you read, and which you don't.
- - Which ads you get served
  - Which search results you see
+ - Which ads you get served
 
-The information you consume controls you, for better or worse. I'd argue that most people have a questionable information diet (I include myself here). It gets worse when platforms that depend on your attention have control of what gets shown since they have an incentive to reinforce our bad habits.
+The information you consume controls you, for better or worse. I'd argue that most people have a questionable information diet (myself included). It gets worse when platforms that depend on your attention have control of what gets shown since they have an incentive to reinforce our bad habits.
 
 Social media has had a remarkable impact on society. There have certainly been positive effects such as the removal of gatekeepers and vastly decreased friction in communication and networking. However, it's pretty clear that it hasn't all been unicorns and rainbows, but what of it?
 
@@ -156,6 +162,7 @@ The scraping that would be required for the kind of aggregated feed as presented
  - ["Democracy or Social Media, Pick One"](https://www.facebook.com/gdiego.vichutilitarian/posts/1474383972645395) by Giego Caleiro
  - https://twitter.com/naval/status/891025944621727744
     - https://twitter.com/ErikBjare/status/891274989974032388
+ - https://twitter.com/captainsafia/status/929917650943315969
 
 
 <!--
