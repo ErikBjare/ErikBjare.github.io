@@ -1,0 +1,4 @@
+ - Why Education Startups Do Not Succeed (2011) - https://news.ycombinator.com/item?id=15709479
+ - Cross-reference "teaching computer science"
+ - Mention "maplearner" or whatever er it is called
+ - Mention KnowTree

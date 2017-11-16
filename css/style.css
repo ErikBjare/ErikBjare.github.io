@@ -262,26 +262,24 @@ hr.dotted {
   white-space-collapse: discard;
 }
 
-table.links tr {
-  opacity: 0.7;
+.links a {
+  line-height: 2.0;
+  min-width: 2.5em;
+  text-decoration: none;
 }
-table.links tr.google-plus {
+.links a i {
+  font-size: 1.5em;
+  width: 1.0em;
+}
+.links .google-plus {
   color: #C00;
 }
-table.links tr.twitter {
+.links .twitter {
   color: #08F;
 }
-table.links tr.facebook {
+.links .facebook {
   color: #04F;
 }
-table.links tr:hover {
-  opacity: 1;
-}
-table.links td {
-  font-size: 1.1em;
-  line-height: 1.5;
-  min-width: 1.5em;
-}
-table.links td a {
-  text-decoration: none;
+.links .github {
+  color: #000;
 }

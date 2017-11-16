@@ -2,109 +2,100 @@
 layout: main
 title: Home
 ---
-<h1>Welcome</h1>
-<!-- TODO: This makes the paragraph 80% wide even if the links are pushed down when display is too small, I think -->
-<p style="float: left; width: 80%;">
-    This is the personal website of me, Erik Bj&auml;reholt.
-    Here you can read my <a href="/blog">blog</a> where I sometimes write about things I enjoy <!-- (or feel obliged) --> thinking about. You can also learn more about me by checking out the <a href="/about/">about</a> page or visit some of my various profiles online as listed below.
-</p>
 
-<table class="links" style="float: right; max-width: 20%;">
-    <tbody>
-        <tr class="facebook">
-            <td>
-                <i class="fa fa-facebook"></i>
-            </td>
-            <td>
-                <a href="https://www.facebook.com/erik.bjareholt">
-                    Facebook
-                </a>
-            </td>
-        </tr>
-        <tr class="twitter">
-            <td>
-                <i class="fa fa-twitter"></i>
-            </td>
-            <td>
-                <a href="https://twitter.com/ErikBjareholt">
-                    Twitter
-                </a>
-            </td>
-        </tr>
-        <tr class="google-plus">
-            <td>
-                <i class="fa fa-google-plus"></i>
-            </td>
-            <td>
-                <a href="https://plus.google.com/+ErikBj&auml;reholt">
-                    Google+
-                </a>
-            </td>
-        </tr>
-        <tr class="linkedin">
-            <td>
-                <i class="fa fa-linkedin"></i>
-            </td>
-            <td>
-                <a href="https://www.linkedin.com/in/erikbjareholt">
-                    LinkedIn
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <i class="fa fa-github"></i>
-            </td>
-            <td>
-                <a href="https://github.com/ErikBjare" class="no-link-annotation">
-                    GitHub
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <i class="fa fa-stack-exchange"></i>
-            </td>
-            <td>
-                <a href="https://stackexchange.com/users/936491/erb?tab=accounts">
-                    StackExchange
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <!-- i class="fa fa-quora"></i -->
-                <span class="icon-quora" style="color: #A00;">&nbsp;</span>
-            </td>
-            <td>
-                <a href="https://www.quora.com/Erik-Bj&auml;reholt">
-                    Quora
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <span class="icon-wikipedia"></span>
-            </td>
-            <td>
-                <a href="https://en.wikipedia.org/wiki/User:Erik.Bjareholt" class="no-link-annotation">
-                    Wikipedia
-                </a>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<div class="row">
+
+  <div class="col-md-12">
+    <h1>Welcome</h1>
+  </div>
+
+  <div class="col-md-10">
+    <!-- TODO: This makes the paragraph 80% wide even if the links are pushed down when display is too small, I think -->
+    <p>
+        This is the personal website of me, Erik Bj&auml;reholt.
+        Here you can read my <a href="/blog">blog</a> where I sometimes write about things I enjoy <!-- (or feel obliged) --> thinking about. You can also learn more about me by checking out the <a href="/about/">about</a> page or visit some of my various profiles online as listed below.
+    </p>
+
+    <a href="/wiki">Check out the wiki</a>
+
+    <h2>Latest blogposts</h2>
+    <ul class="posts">
+        {% for post in site.blog %}
+        <li>
+            <span>{{ post.date | date_to_string }}</span>
+            &raquo;
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+  </div>
 
 
-<a href="/wiki">Check out the wiki</a>
+  <div class="col-md-2 links">
 
-<h2>Latest blogposts</h2>
-<ul class="posts">
-    {% for post in site.blog %}
-    <li>
-        <span>{{ post.date | date_to_string }}</span>
-        &raquo;
-        <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
+    <a href="https://github.com/ErikBjare" class="no-link-annotation">
+      <div class="github">
+        <i class="fa fa-github"></i>
+        GitHub
+      </div>
+    </a>
+    <a href="https://twitter.com/ErikBjareholt">
+      <div class="twitter">
+        <i class="fa fa-twitter"></i>
+        Twitter
+      </div>
+    </a>
+    <a href="https://www.facebook.com/erik.bjareholt">
+      <div class="facebook">
+        <i class="fa fa-facebook"></i>
+        Facebook
+      </div>
+    </a>
+    <a href="https://www.linkedin.com/in/erikbjareholt">
+      <div class="linkedin">
+        <i class="fa fa-linkedin"></i>
+        LinkedIn
+      </div>
+    </a>
+
+    <hr>
+
+    <h5>Other</h5>
+    <br>
+
+    <!-- TODO: Keybase -->
+
+    <a href="https://plus.google.com/+ErikBj&auml;reholt">
+      <div class="google-plus">
+        <i class="fa fa-google-plus"></i>
+        Google+
+      </div>
+    </a>
+    <a href="https://stackexchange.com/users/936491/erb?tab=accounts">
+      <div class="stack-exchange">
+        <i class="fa fa-stack-exchange"></i>
+        StackExchange
+      </div>
+    </a>
+    <a href="https://www.quora.com/Erik-Bj&auml;reholt">
+      <div>
+        <!-- i class="fa fa-quora"></i -->
+        <span class="icon-quora" style="color: #A00;">&nbsp;</span>
+        Quora
+      </div>
+    </a>
+
+            </tr>
+            <tr>
+                <td>
+                    <span class="icon-wikipedia"></span>
+                </td>
+                <td>
+                    <a href="https://en.wikipedia.org/wiki/User:Erik.Bjareholt" class="no-link-annotation">
+                        Wikipedia
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
