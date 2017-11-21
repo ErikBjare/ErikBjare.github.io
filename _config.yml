@@ -27,4 +27,5 @@ defaults:
 
 gems:
  - jekyll-compass
+ - jekyll-redirect-from
  - jekyll-last-modified-at

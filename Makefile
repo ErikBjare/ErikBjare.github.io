@@ -18,3 +18,5 @@ list-by-state:
 	@grep -l -r "state: stub" _wiki | sed "s/_wiki\// - /g"
 	@echo -e "\nArticles with state draft:"
 	@grep -l -r "state: draft" _wiki | sed "s/_wiki\// - /g"
+	@echo -e "\nArticles with other states:"
+	@egrep -l -r 'state: [^ds]' _wiki | sed "s/_wiki\// - /g"

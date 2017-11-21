@@ -1,9 +1,11 @@
 ---
-title:  "The Importance of Open Recommendation Systems"
+title:  "The Importance of Open Recommender Systems"
 author: "Erik Bjäreholt"
 description: "Algorithms are in control our attention, so what can we do about it?"
 permalink: /wiki/importance-of-open-recommendation-systems/
-tags: psychology behavior recommendation-systems
+redirect_from:
+  - /wiki/importance-of-open-recommender-systems/
+tags: psychology behavior recommender-systems
 state: draft
 ---
 
@@ -16,7 +18,7 @@ state: draft
 
 ## Why care? 
 
-Recommendation systems are all around us:
+Recommender systems are all around us:
 
  - Your social media feeds: Facebook, YouTube, Twitter, Reddit, Hacker News, etc.
    - Controls what you see when you casually browse the web
@@ -163,7 +165,7 @@ The scraping that would be required for the kind of aggregated feed as presented
  - https://twitter.com/naval/status/891025944621727744
     - https://twitter.com/ErikBjare/status/891274989974032388
  - https://twitter.com/captainsafia/status/929917650943315969
-
+ - https://abebabirhane.wordpress.com/2017/09/20/1162/amp/
 
 <!--
 ## Am I crazy or right?

@@ -15,6 +15,8 @@ NOTE: This article/talk was aimed at programmers, but it is probably also useful
  - TODO: Run this through Grammarly
 -->
 
+NOTE: You probably want to watch [this great video](https://www.youtube.com/watch?v=2jisWLxf38E) in addition to reading this.
+
 # Disclaimers
 
 **Disclaimer 1:** I'm not an expert. I've been in the blockchain space since 2012 but I have no self-written smart contracts running in production (I'll explain why later). Despite having none running in production, I know how to write them and how they work, so I'm not a [complete fraud](https://en.wikipedia.org/wiki/Craig_Steven_Wright).
@@ -100,8 +102,10 @@ Examples:
  - [Multisig](https://github.com/ethereum/dapp-bin/blob/master/wallet/wallet.sol)
    - Useful when you want to have collective ownership of a wallet. Examples are 2-of-3 multisigs where two keys are needed to move tokens from a wallet.
 
+More advanced examples:
 
-There are more complex contracts, but they are too complex to be good examples.
+ - Prediction markets
+ - Futarchy
 
 ## Work through an example contract
 
@@ -140,10 +144,13 @@ A Decentralized Autonomous Organization is a form of organization that exist out
 
 An Initial Coin Offerings is a form of decentralized crowdfunding for decentralized applications (usually applications running on blockchains).
 
-Some are complete money-grabs, others end up being highly overfunded startups with no working product.
-But a few might actually turn out successful, but we're still holding our breaths.
+Some are complete money-grabs, others end up being highly overfunded startups with a overhyped product, or worse: no product.
+A few might actually turn out successful (I have my guesses), but we're still holding our breaths to see what unfolds.
 
-Be very careful about them and don't buy into the hype. Do your due diligence and exercise extreme skepticism.
+Words of caution: Be very careful about ICOs and don't buy into the hype. Do your own due diligence, crunch the numbers with your expectations, and be the best sceptic you can be. 
+At this point, Bitcoin and Ethereum are relatively low-risk assets compared to many ICOs, so those might be better investments if you don't have the time to be as careful as you would need to be with ICOs.
+
+Many types of ICOs might now be illegal in the US, the SEC (Securities and Exchange Commission) has sent out warning letters and new ICOs in the US now tend to be held for accredited investors only.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Am I late to this? <a href="https://t.co/KbPj8WrMuY">pic.twitter.com/KbPj8WrMuY</a></p>&mdash; Jerry Neumann (@ganeumann) <a href="https://twitter.com/ganeumann/status/900790393712910337">August 24, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
