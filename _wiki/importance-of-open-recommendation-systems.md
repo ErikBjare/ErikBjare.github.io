@@ -1,7 +1,7 @@
 ---
 title:  "The Importance of Open Recommender Systems"
 author: "Erik Bjäreholt"
-description: "Algorithms are in control our attention, so what can we do about it?"
+description: "Algorithms are in control of our attention, so what can we do about it?"
 permalink: /wiki/importance-of-open-recommendation-systems/
 redirect_from:
   - /wiki/importance-of-open-recommender-systems/
@@ -160,6 +160,8 @@ The scraping that would be required for the kind of aggregated feed as presented
 
 <!-- TODO: Twitter iframe for these tweets and add discussion around them inline -->
 
+ - [Recommender systems](https://en.wikipedia.org/wiki/Recommender_system) on Wikipedia
+ - [Information filtering systems](https://en.wikipedia.org/wiki/Information_filtering_system) on Wikipedia
  - \[podcast\] [Conversation with Thore Husfeldt about the algorithms that run Facebook among other things](https://www.facebook.com/thore.husfeldt/posts/1465597066893486)
  - ["Democracy or Social Media, Pick One"](https://www.facebook.com/gdiego.vichutilitarian/posts/1474383972645395) by Giego Caleiro
  - https://twitter.com/naval/status/891025944621727744
