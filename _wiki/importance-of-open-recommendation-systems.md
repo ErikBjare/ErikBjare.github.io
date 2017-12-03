@@ -162,6 +162,7 @@ The scraping that would be required for the kind of aggregated feed as presented
 
  - [Recommender systems](https://en.wikipedia.org/wiki/Recommender_system) on Wikipedia
  - [Information filtering systems](https://en.wikipedia.org/wiki/Information_filtering_system) on Wikipedia
+ - [We're building a dystopia just to make people click on ads | Zeynep Tufekci @ TED 2017](https://www.youtube.com/watch?v=iFTWM7HV2UI)
  - \[podcast\] [Conversation with Thore Husfeldt about the algorithms that run Facebook among other things](https://www.facebook.com/thore.husfeldt/posts/1465597066893486)
  - ["Democracy or Social Media, Pick One"](https://www.facebook.com/gdiego.vichutilitarian/posts/1474383972645395) by Giego Caleiro
  - https://twitter.com/naval/status/891025944621727744
