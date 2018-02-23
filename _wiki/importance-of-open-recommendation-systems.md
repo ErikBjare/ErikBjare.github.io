@@ -5,7 +5,7 @@ description: "Algorithms are in control of our attention, so what can we do abou
 permalink: /wiki/importance-of-open-recommendation-systems/
 redirect_from:
   - /wiki/importance-of-open-recommender-systems/
-tags: psychology behavior recommender-systems
+tags: psychology behavior recommender-systems social-media decentralization
 state: draft
 ---
 

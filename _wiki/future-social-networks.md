@@ -2,19 +2,19 @@
 title:  "The Future of Social Networks"
 author: "Erik Bjäreholt"
 description: ""
-tags:
+tags: social-media decentralization
 ---
 
 <!-- TODO: Reference "Decentralized Social Networks Won't Work" - https://news.ycombinator.com/item?id=15244596 -->
 
-## Federated
+## Decentralized/Federated
 
  - Diaspora
  - Mastodon
 
 Some notes on federated protocols by Whisper Systems' own Moxie: https://whispersystems.org/blog/the-ecosystem-is-moving/
 
-## Decentralized
+## Distributed
 
  - Secure Scuttlebutt ([thread on reddit](https://www.reddit.com/r/crypto/comments/63svi3/an_offgrid_social_network/), there is also a thread on HN)
  - [Rotonde](https://github.com/Rotonde/rotonde-client)
