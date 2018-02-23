@@ -5,6 +5,9 @@ description: ""
 tags: organization leadership
 ---
 
+<!-- TODO: Read and include http://struggle.ws/pdfs/tyranny.pdf -->
+<!-- TODO: Include related stuff in comments: https://www.facebook.com/2zelf/posts/10154779748167924 -->
+
 This article is intended to be a braindump of thoughts about decentralized/flat/self-organising organizations. It is in large part inspired by open source projects and the Valve Employee Handbook.
 
 ## Examples

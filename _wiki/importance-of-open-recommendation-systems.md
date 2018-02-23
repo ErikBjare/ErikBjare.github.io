@@ -9,16 +9,6 @@ tags: psychology behavior recommender-systems
 state: draft
 ---
 
-<!-- TODO: Reference "Decentralized Social Networks Won't Work" - https://news.ycombinator.com/item?id=15244596 -->
-<!-- TODO: Reference "I cured my tech fatigue by ditching feeds" - https://news.ycombinator.com/item?id=15578019 -->
-<!-- TODO: Add note that recommendation systems could be reinforcing clickbait, but could also be used to get rid of clickbait (see reddit/HN) -->
-<!-- TODO: Reference http://marginalrevolution.com/marginalrevolution/2017/11/dont-blame-facebook-failings.html -->
-<!-- TODO: Reference https://www.economist.com/news/leaders/21730871-facebook-google-and-twitter-were-supposed-save-politics-good-information-drove-out -->
-<!-- TODO: Read this and include quote from Sean: https://www.axios.com/sean-parker-facebook-exploits-a-vulnerability-in-humans-2507917325.html -->
-<!-- TODO: Reference https://www.facebook.com/intelligence2/posts/10156850422886151 -->
-<!-- TODO: Reference https://medium.com/@BlueYard/userfeeds-why-the-web-needs-a-new-information-ranking-system-5bdab9f5e580 -->
-<!-- TODO: Add https://www.quora.com/What-things-can-tell-a-lot-about-a-person/answer/Jessica-Su -->
-
 ## Why care? 
 
 Recommender systems are all around us:
@@ -171,7 +161,18 @@ The scraping that would be required for the kind of aggregated feed as presented
  - https://twitter.com/naval/status/891025944621727744
     - https://twitter.com/ErikBjare/status/891274989974032388
  - https://twitter.com/captainsafia/status/929917650943315969
- - https://abebabirhane.wordpress.com/2017/09/20/1162/amp/
+ - [Resources – on automated systems and bias](https://abebabirhane.wordpress.com/2017/09/20/1162/amp/)
+ - [Decentralized Social Networks Won't Work](https://news.ycombinator.com/item?id=15244596)
+ - [I cured my tech fatigue by ditching feeds](https://news.ycombinator.com/item?id=15578019)
+ - [Don’t blame Facebook for our own failings](http://marginalrevolution.com/marginalrevolution/2017/11/dont-blame-facebook-failings.html)
+ - [Do social media threaten democracy?](https://www.economist.com/news/leaders/21730871-facebook-google-and-twitter-were-supposed-save-politics-good-information-drove-out) -->
+ - [Sean Parker: Facebook was designed to exploit human "vulnerability"](https://www.axios.com/sean-parker-facebook-exploits-a-vulnerability-in-humans-2507917325.html)
+
+<!-- TODO: Add note that recommendation systems could be reinforcing clickbait, but could also be used to get rid of clickbait (see reddit/HN) -->
+<!-- TODO: Reference https://www.facebook.com/intelligence2/posts/10156850422886151 -->
+<!-- TODO: Reference https://medium.com/@BlueYard/userfeeds-why-the-web-needs-a-new-information-ranking-system-5bdab9f5e580 -->
+<!-- TODO: Add https://www.quora.com/What-things-can-tell-a-lot-about-a-person/answer/Jessica-Su -->
+<!-- https://www.facebook.com/techcrunch/posts/10156594133107952 -->
 
 <!--
 ## Am I crazy or right?
