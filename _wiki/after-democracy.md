@@ -4,6 +4,7 @@ author: "Erik Bjäreholt"
 description: ""
 permalink: /wiki/after-democracy/
 tags: democracy epistocracy futarchy
+state: draft
 ---
 
 This article is about various ways to improve or supersede democracy. It's highly speculative, so lets just get this out of the way first:

@@ -3,16 +3,20 @@ title:  "The Future of Social Networks"
 author: "Erik Bjäreholt"
 description: ""
 tags: social-media decentralization
+state: draft
 ---
 
 <!-- TODO: Reference "Decentralized Social Networks Won't Work" - https://news.ycombinator.com/item?id=15244596 -->
 
 ## Decentralized/Federated
 
+Generally considered the 1st generation of decentralized social networks, they operate under 
+
  - Diaspora
  - Mastodon
+ - [GNU Social](https://en.wikipedia.org/wiki/GNU_social) (not sure if technically federated)
 
-Some notes on federated protocols by Whisper Systems' own Moxie: https://whispersystems.org/blog/the-ecosystem-is-moving/
+For the problems with federated protocols, see [Moxie's blogpost on the topic](https://whispersystems.org/blog/the-ecosystem-is-moving/).
 
 ## Distributed
 
@@ -40,4 +44,6 @@ See the post about [the importance of open recommender systems](https://erik.bja
 
 # Links
 
- - Thoughts on the Social Graph (2007) - https://news.ycombinator.com/item?id=14139325
+ - [Thoughts on the Social Graph (2007)](https://news.ycombinator.com/item?id=14139325)
+ - [Comparison of software and protocols for distributed social networking
+](https://en.wikipedia.org/wiki/Comparison_of_software_and_protocols_for_distributed_social_networking)
