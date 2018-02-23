@@ -167,6 +167,8 @@ The scraping that would be required for the kind of aggregated feed as presented
  - [Don’t blame Facebook for our own failings](http://marginalrevolution.com/marginalrevolution/2017/11/dont-blame-facebook-failings.html)
  - [Do social media threaten democracy?](https://www.economist.com/news/leaders/21730871-facebook-google-and-twitter-were-supposed-save-politics-good-information-drove-out) -->
  - [Sean Parker: Facebook was designed to exploit human "vulnerability"](https://www.axios.com/sean-parker-facebook-exploits-a-vulnerability-in-humans-2507917325.html)
+ - [Humanetech](http://humanetech.com/)
+   - [Friends of Time Well Spent](https://www.facebook.com/groups/FriendsofTimeWellSpent/) - a related Facebook group
 
 <!-- TODO: Add note that recommendation systems could be reinforcing clickbait, but could also be used to get rid of clickbait (see reddit/HN) -->
 <!-- TODO: Reference https://www.facebook.com/intelligence2/posts/10156850422886151 -->
