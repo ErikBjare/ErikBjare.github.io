@@ -68,6 +68,11 @@ The central mechanism in a futarchy is the prediction market. Good real-money pr
 It still seems that separation of values and beliefs is a hard problem. However, I'm not sure if we need to do it particularly well in order to improve upon democracy.
 
 
+## Delegative democracy
+
+I've thought about something similar before, with no previous knowledge of "liquid democracy" or [delegative democracy](https://en.wikipedia.org/wiki/Delegative_democracy). I'll try to write more about it in the future since I find it really interesting.
+
+
 ## Epistocracy
 
 First proposed by political philosopher Jason Brennan in his 2016 book [Against Democracy](https://www.amazon.com/Against-Democracy-Jason-Brennan/dp/0691162603/), epistocracy at first sight doesn't seem like a new idea: The basic idea is to give more votes to those who prove themselves more knowledgeable about politics.
