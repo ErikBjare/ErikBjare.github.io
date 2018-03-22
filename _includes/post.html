@@ -4,18 +4,18 @@
 
         <div class="meta">
             <div class="meta-box">
-                <span class="glyphicon glyphicon-user meta-icon"></span>
+                <span class="glyphicon glyphicon-user meta-icon" style="color: #05A"></span>
                 {{ page.author }}
             </div>
             <div class="meta-box">
-                <span class="glyphicon glyphicon-time meta-icon"></span>
+                <span class="glyphicon glyphicon-time meta-icon" style="color: #666"></span>
                 <time datetime="{{ page.date }}">
                     {{ page.date | date: "%F %R %Z" }}
                 </time>
             </div>
             {% if page.status %}
             <div class="meta-box">
-                <span class="glyphicon glyphicon-flash meta-icon"></span>
+                <span class="glyphicon glyphicon-flash meta-icon" style="color: #FA6"></span>
                 Status:  <span class='status-{{ page.status | downcase | replace: " ", "_"}}'>{{ page.status }}</span>
             </div>
             {% endif %}

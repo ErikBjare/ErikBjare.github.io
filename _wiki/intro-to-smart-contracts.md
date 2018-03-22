@@ -199,7 +199,7 @@ This does not apply when directly trading cryptocurrency pairs.
 The Swedish Tax Authority now believes that capital gains on cryptocurrency have been underreported. 
 See this reporting by TV4: ["Skatteverket misstänker omfattande skattefusk med Bitcoins"](http://www.tv4.se/nyheterna/klipp/skatteverket-misst%C3%A4nker-omfattande-skattefusk-med-bitcoins-3929237).
 
-In Sweden, the capital gains tax is normally 30% ("genomsnittsmetoden"). But when gains go above 400% one can use a different method when calculating taxes that instead of taxing 30% of gains taxes 20% of the whole sale ("schablonmetoden").
+In Sweden, the capital gains tax is normally 30% ("genomsnittsmetoden"). But when gains go above 400% ~~one can use a different method when calculating taxes that instead of taxing 30% of gains taxes 20% of the whole sale ("schablonmetoden").~~
 
 If you want to buy Bitcoin only as an investment and expect gains over ~2% year (the tax on assets held in an ISK), 
 then the by far best option is to buy Bitcoin certificate and keep them in an ISK.

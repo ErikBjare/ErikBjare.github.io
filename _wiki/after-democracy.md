@@ -15,7 +15,6 @@ This article is about various ways to improve or supersede democracy. It's highl
 
 Many years ago, when I first stumbled upon the writings of Robin Hanson, I discovered what I then thought to be a promising (although still unlikely) form of government with long-term potential: [Futarchy](https://en.wikipedia.org/wiki/Futarchy). Since then, I've thought more and more about it and have learned about other promising candidates to improve or replace democracy. Here's my attempt at writing about them.
 
-
 ## Transitioning to new systems of government
 
 Before we start talking about alternatives, even just transitioning to them is a major challenge. Understanding the requirements for such a transition is important to ensure that our alternatives are realistic.
@@ -45,7 +44,7 @@ See the article on [Wikipedia](https://en.wikipedia.org/wiki/Deliberative_democr
 >
 > – Summary of [Deliberative versus Participatory Democracy](https://www.amazon.com/Hearing-Other-Side-Deliberative-Participatory/dp/0521612284) by Diana C. Mutz
 
-The above seems to claim there is actual evidence that [Politics is the Mind-killer](http://lesswrong.com/lw/gw/politics_is_the_mindkiller/).
+The above essentially claims empirical evidence that [Politics is the Mind-killer](http://lesswrong.com/lw/gw/politics_is_the_mindkiller/).
 
 
 ## Futarchy
@@ -70,7 +69,11 @@ It still seems that separation of values and beliefs is a hard problem. However,
 
 ## Delegative democracy
 
-I've thought about something similar before, with no previous knowledge of "liquid democracy" or [delegative democracy](https://en.wikipedia.org/wiki/Delegative_democracy). I'll try to write more about it in the future since I find it really interesting.
+I've thought about something similar before, but can't remember hearing about [delegative democracy](https://en.wikipedia.org/wiki/Delegative_democracy) or *liquid democracy* as it's also called. 
+
+DAOs could essentially work as delegative democracies since token holders could choose to automatically follow a delegate.
+
+I'll try to write more about it in the future since I find it really interesting. 
 
 
 ## Epistocracy

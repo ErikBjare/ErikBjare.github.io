@@ -1,12 +1,12 @@
 build:
-	compass compile
-	jekyll build
+	bundle exec compass compile
+	bundle exec jekyll build
 
 install-deps:
-	sudo gem install jekyll jekyll-compass compass jekyll-last-modified-at
+	bundle install
 
 dev:
-	jekyll serve --watch --drafts
+	bundle exec jekyll serve --watch --drafts
 
 clean:
 	rm -r _site

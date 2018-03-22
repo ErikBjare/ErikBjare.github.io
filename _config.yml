@@ -25,7 +25,7 @@ defaults:
       values:
         layout: blogpost
 
-gems:
+plugins:
  - jekyll-compass
  - jekyll-redirect-from
  - jekyll-last-modified-at

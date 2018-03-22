@@ -141,7 +141,7 @@ hr.dotted {
             padding: 0 0.7em 0 0.3em;
 
             .meta-icon {
-                color: $softblue;
+                color: #444;
                 padding-right: 0.3em;
             }
         }
@@ -241,5 +241,18 @@ hr.dotted {
 
   .github {
     color: #000;
+  }
+}
+
+.toc {
+  font-size: 0.8em;
+  display: inline-block;
+  background: #f8f8f8;
+  padding: 1em 1em 0.0em 1em;
+  border: 1px solid #bbb;
+  margin-bottom: 2em;
+
+  ul {
+    padding-left: 2em;
   }
 }

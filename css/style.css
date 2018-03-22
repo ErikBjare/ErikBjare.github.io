@@ -17,12 +17,11 @@ html, body {
 }
 
 .icon-quora {
-  background-position: 0 3px;
+  background-position: 0 0.5em;
   background-image: url(/img/quora.svg);
   background-repeat: no-repeat;
-  background-size: 14px 14px;
-  margin-right: 0.5em;
-  width: 14px;
+  background-size: 0.9em 1em;
+  width: 1em;
   display: inline-block;
 }
 
@@ -200,7 +199,7 @@ hr.dotted {
   padding: 0 0.7em 0 0.3em;
 }
 .post header .meta-box .meta-icon {
-  color: #4466CC;
+  color: #444;
   padding-right: 0.3em;
 }
 .post .content {

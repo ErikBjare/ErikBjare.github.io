@@ -41,6 +41,11 @@
     </header>
 
     <div class="content">
+        <div class="toc">
+          <b>Table of contents</b>
+          {% include toc.html html=include.content %}
+        </div>
+
         {{ include.content }}
     </div>
 
