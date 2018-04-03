@@ -93,3 +93,29 @@ However, the author of the above article concludes with concerns for one of the 
 > Ultimately, however, while I agree with most of Brennan's diagnosis of the problem, I am skeptical of his proposed solutions. As he recognizes, there is a substantial likelihood that real-world governments cannot be trusted to implement epistocracy in any kind of unbiased way. Instead of limiting the franchise to the knowledgeable, they are likely to structure tests, lotteries, or other similar mechanisms, in ways that over represent supporters of the party in power and exclude opponents.
 
 Richard Dawkins touches on this in his BigThink video ["No, Not All Opinions Are Equal—Elitism, Lies, and the Limits of Democracy"](https://www.youtube.com/watch?v=pe4feBH0ABk) where he argues against the use of direct democracy in referendums like Brexit where the population is clearly undereducated/misinformed on the issue (Dawkins admitted to being undereducated himself).
+
+
+## Range voting
+
+For a good primer on range voting (also called *score voting*, or *olympic scoring*), see [this website](http://rangevoting.org/).
+
+Notably, Range voting is considered ["uniquely best" among all common proposals for single winner voting systems](http://rangevoting.org/UniqBest.html). The difference in [Bayesian regret](http://rangevoting.org/BayRegDum.html) between feudalism/monarchy and [plurality voting](http://rangevoting.org/Plurality.html) (also known as *first-past-the-post*, or the one voting system widely used today) is [about as large as the difference between plurality and range voting](http://rangevoting.org/UniqBest.html). In other words: A huge difference.
+
+For a good argument about how important issues like these are in general, see [this excellent article](http://rangevoting.org/LivesSaved.html).
+
+### Use in online scoring systems
+
+In reddit's youth, they considered using a 5-star scheme to rate submissions. And while they've since considered it a really good idea to not have done so, it remains a curiosity for some of us despite it arguably being bad UX. Luckily, there is the reddit clone [Flowchat](https://github.com/dessalines/flowchat/) which uses it (but haven't solved the UX issue).
+
+Many sites use a similar, familiar, form of voting: the 5-star rating system. And while ridden with issues like selection bias, [among other things](https://xkcd.com/1098/), it still works surprisingly well on sites like Goodreads.
+
+### How it affects controversial parties
+
+One interesting aspect of range voting is how it affects controversial parties (such as [UKIP](https://en.wikipedia.org/wiki/UK_Independence_Party#Other_political_groups), or Sweden's own [Sweden Democrats](https://en.wikipedia.org/wiki/Sweden_Democrats)), because they would get hurt in elections if people actively disliked them. 
+
+Or, as I cheekily said in a conversation about it with friends:
+
+> All of a sudden, you'd have to care about what people *(other than your voters)* think about you.
+
+I believe this would have major impact on the political sphere, but I defer to political scientists on how it could actually play out.
+
