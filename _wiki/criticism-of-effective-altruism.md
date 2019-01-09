@@ -23,7 +23,7 @@ As someone completely unfamiliar with moral psychology and political philosophy 
 
 ## Effective Altruism is a cult/religion
 
-This in my opinion a cheap blow. It is said that [every cause wants to be a cult][very-cause-wants-to-be-a-cult] and as Elizer states therein:
+This in my opinion a cheap blow. It is said that [every cause wants to be a cult][every-cause-wants-to-be-a-cult] and as Elizer states therein:
 
 > Every group of people with an unusual goal—good, bad, or silly—will trend toward the cult attractor unless they make a constant effort to resist it.  You can keep your house cooler than the outdoors, but you have to run the air conditioner constantly, and as soon as you turn off the electricity—give up the fight against entropy—things will go back to "normal".
 
