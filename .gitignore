@@ -1,6 +1,14 @@
-.idea
+# Produced by pug
 _site
+_plugins
+_build
+
+# Not ready for publication
 _drafts
+
+# Misc
 *.swp
 .sass-cache
 .stfolder
+.idea
+vendor

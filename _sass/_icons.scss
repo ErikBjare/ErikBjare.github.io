@@ -1,18 +1,10 @@
 // Wikipedia Font Awesome icon
 // Source: https://github.com/FortAwesome/Font-Awesome/issues/388#issuecomment-94491920
+// TODO: Migrate to the new fa-wikipedia-w
 .icon-wikipedia:before {
     font-family: "Times New Roman", Times, serif;
     font-weight: 400;
     content: "VV";
     letter-spacing:-0.45em;
     margin-right:0.5em;
-}
-
-.icon-quora {
-    background-position: 0 0.5em;
-    background-image: url(/img/quora.svg);
-    background-repeat: no-repeat;
-    background-size: 0.9em 1em;
-    width: 1em;
-    display: inline-block;
 }

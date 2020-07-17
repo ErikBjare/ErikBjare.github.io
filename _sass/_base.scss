@@ -1,5 +1,3 @@
-// Imports
-
 @import 'variables';
 @import 'mixins';
 
@@ -7,9 +5,15 @@
 @import 'bootstrap-mods';
 @import 'icons';
 
-@import 'link-annotation';
+@import 'link-icons';
 
-//--------------------//
+// To
+.links {
+  i.fab,
+  span.icon-wikipedia {
+    vertical-align: middle;
+  }
+}
 
 body {
     @include default-font-style;
@@ -221,26 +225,10 @@ hr.dotted {
     min-width: 2.5em;
     text-decoration: none;
 
-    i {
+    i, span {
       font-size: 1.5em;
       width: 1.0em;
     }
-  }
-
-  .google-plus {
-    color: #C00;
-  }
-
-  .twitter {
-    color: #08F;
-  }
-
-  .facebook {
-    color: #04F;
-  }
-
-  .github {
-    color: #000;
   }
 }
 

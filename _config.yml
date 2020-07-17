@@ -1,6 +1,11 @@
-name: "Erik Bj&auml;reholt"
-description: "Towards a better tomorrow, today!"
-url: "http://erik.bjareholt.com"
+name: "Erik Bj&auml;reholt - Personal website"
+email: erik@bjareho.lt
+description: >
+  Blog, personal wiki, and stuff about me.
+baseurl: ""
+url: "https://erik.bjareholt.com"
+
+# Build settings
 markdown: kramdown
 highlighter: rouge
 timezone: Europe/Stockholm
@@ -25,7 +30,16 @@ defaults:
       values:
         layout: blogpost
 
+sass:
+    sass_dir: _sass
+
 plugins:
- - jekyll-compass
  - jekyll-redirect-from
  - jekyll-last-modified-at
+
+jekyll-bliss:
+  build-folder: _build
+  debug: false
+  quiet: false
+  delete-build-folder: false
+  livereload: true

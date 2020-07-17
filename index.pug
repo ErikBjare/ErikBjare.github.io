@@ -1,0 +1,54 @@
+---
+layout: main
+title: Home
+---
+
+div.row
+  div.col-md-12
+    h1 Welcome
+
+  div.col-md-9
+    // TODO: This makes the paragraph 80% wide even if the links are pushed down when display is too small, I think
+    p
+    | This is the personal website of me, Erik Bj&auml;reholt.
+    | Here you can read my #[a(href="/blog") blog] where I sometimes write about things I enjoy thinking about.
+    | You can also learn more about me by checking out the #[a(href="/about/") about page] or visit some of my various profiles online as listed below.
+
+    a(href="/wiki") Check out the wiki
+
+    h2 Latest blogposts
+    ul.posts
+      | {% for post in site.blog %}
+      li
+        span {{ post.date | date_to_string }}
+          | &raquo;
+          a(href="{{ post.url }}") {{ post.title }}
+      | {% endfor %}
+
+  div.col-md-3.links
+    h4 I'm also on
+
+    a.no-link-icon(href="https://github.com/ErikBjare")
+      div(style="color: #000")
+        | #[i.fab.fa-github] GitHub
+    a(href="https://keybase.io/erb")
+      div(style="color: #F3A")
+        | #[i.fab.fa-keybase] Keybase
+    a(href="https://twitter.com/ErikBjare")
+      div(style="color: #08F")
+        | #[i.fab.fa-twitter] Twitter
+    a(href="https://www.facebook.com/erik.bjareholt")
+      div(style="color: #04F")
+        | #[i.fab.fa-facebook] Facebook
+    a(href="https://www.linkedin.com/in/erikbjareholt")
+      div(style="color: #0077B4")
+        | #[i.fab.fa-linkedin] LinkedIn
+    a(href="https://stackoverflow.com/users/965332/erb")
+      div(style="color: #F48024")
+        | #[i.fab.fa-stack-overflow] StackOverflow
+    a(href="https://www.quora.com/Erik-Bj&auml;reholt")
+      div(style="color: #A00")
+        | #[i.fab.fa-quora] Quora
+    a.no-link-icon(href="https://en.wikipedia.org/wiki/User:Erik.Bjareholt")
+      div(style="color: #333 !important")
+        | #[span.icon-wikipedia] Wikipedia
