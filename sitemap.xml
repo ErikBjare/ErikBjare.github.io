@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://erik.bjareholt.com/</loc>
+    <!--
+    lastmod not used since it's annoying to update,
+    and apparently Google doesn't care anyway:
+    https://webmasters.stackexchange.com/questions/108491/what-does-url-lastmod-in-a-sitemap-really-mean
+    -->
+    <!--lastmod>2020-05-15T20:35:13+00:00</lastmod-->
+  </url>
+  <url>
+    <loc>https://erik.bjareholt.com/blog/</loc>
+  </url>
+  <url>
+    <loc>https://erik.bjareholt.com/wiki/</loc>
+  </url>
+</urlset>

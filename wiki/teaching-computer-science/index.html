@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Teaching Computer Science - Erik Bj&auml;reholt - Personal website</title>
+        <meta name="description" content="Blog, personal wiki, and stuff about me.
+">
+        <meta property="og:title" content="Teaching Computer Science" />
+        
+        <meta content="article" property="og:type">
+        
+        <meta property="og:url" content="https://erik.bjareholt.com/wiki/teaching-computer-science/" />
+        <meta property="og:image" content="https://erik.bjareholt.com/img/glider.png" />
+        
+        <meta content="" property="og:description">
+        
+
+        <!-- Favicon -->
+        <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+        <!-- Google Authorship and Publisher Markup -->
+        <link rel="author" href="https://plus.google.com/+ErikBjareholt/posts">
+        <link rel="publisher" href="https://plus.google.com/+ErikBjareholt">
+
+        <!-- For better viewing on mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Facebook admin -->
+        <meta property="fb:admins" content="1155422697" />
+
+        <!-- CSS (Bootstrap, custom) -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=latin-ext" rel="stylesheet">
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' rel='stylesheet' type='text/css'>
+
+        <!-- JS -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="/js/negativar.js"></script>
+
+        <!-- Google Analytics -->
+        <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48818326-1', 'auto');
+ga('send', 'pageview');
+
+// Used to track outbound links:
+// https://support.google.com/analytics/answer/1136920?hl=en
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){
+       document.location = url;
+     }
+   });
+}
+
+// TODO: Not tested properly
+// Found here: http://veithen.github.io/2015/01/24/outbound-link-tracking.html
+$(function() {
+  $("a").click(function(e) {
+    if (!ga.q) {
+      var url = $(this).attr("href");
+      trackOutboundLink(url);
+      e.preventDefault();
+    }
+  });
+});
+        </script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+    <div class=row>
+        <nav class="navbar navbar-default navbar-static-top" role=navigation>
+            <div class="container">
+                <div class=row>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--a class="navbar-brand" href="#">Brand</a-->
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                          <li>
+                              <a href="/">
+                                  <span class="glyphicon glyphicon-home"></span>
+                                  <span class="pagename pagename-fold"> Home</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/wiki/">
+                                  <span class="fa fa-book" style="font-size: 1.2em"></span>
+                                  <span class="pagename pagename-fold"> Wiki</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/blog/">
+                                  <span class="glyphicon glyphicon-pencil"></span>
+                                  <span class="pagename pagename-fold"> Blog</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/about/">
+                                  <span class="glyphicon glyphicon-info-sign"></span>
+                                  <span class="pagename pagename-fold"> About</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/about/#cv">
+                                  <span class="glyphicon glyphicon-user"></span>
+                                  <span class="pagename pagename-fold"> CV</span>
+                              </a>
+                          </li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                          <li>
+                              <a href="/contact/">
+                                  <span class="glyphicon glyphicon-envelope"></span>
+                                  <span class="pagename"> Contact</span>
+                              </a>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+        <div class="container">
+            <article class="post panel panel-default">
+    <header>
+        <h1 class="title"><a href="/wiki/teaching-computer-science/">Teaching Computer Science</a></h1>
+
+        <div class="meta">
+          <small>
+            <div class="meta-box">
+              <span>
+    <span class="glyphicon glyphicon-edit"></span>
+    Last modified:
+    <time datetime="2020-07-17 16:17:51 +0200">
+      2020-07-17 16:17 CEST
+    </time>
+</span>
+
+            </div>
+            <div class="meta-box">
+              <span class="underline dotted">Tags:</span>
+              
+                
+                  <a href="/tags/#software">
+                    <span class="label label-info" style="margin-left: 0.3em; font-size: 90%">
+                      software
+                    </span>
+                  </a>
+                
+              
+                
+                  <a href="/tags/#education">
+                    <span class="label label-info" style="margin-left: 0.3em; font-size: 90%">
+                      education
+                    </span>
+                  </a>
+                
+              
+                
+                  <a href="/tags/#teaching">
+                    <span class="label label-info" style="margin-left: 0.3em; font-size: 90%">
+                      teaching
+                    </span>
+                  </a>
+                
+              
+                
+                  <a href="/tags/#pedagogy">
+                    <span class="label label-info" style="margin-left: 0.3em; font-size: 90%">
+                      pedagogy
+                    </span>
+                  </a>
+                
+              
+            </div>
+            
+              <div class="meta-box" title="State is a measurement of completion">
+                <span class="underline dotted">State:</span>
+                
+                  <span class="label label-warning" style="margin-left: 0.3em">
+                
+                  draft
+                </span>
+              </div>
+            
+          </small>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="toc">
+          <b>Table of contents</b>
+          <ul>
+  <li><a href="#how-does-learning-programming-affect-the-learner">How does learning programming affect the learner?</a></li>
+  <li><a href="#computer-science-in-core-curricula">Computer Science in Core Curricula</a>
+    <ul>
+      <li><a href="#to-expand-upon">To expand upon</a></li>
+      <li><a href="#related-articles">Related articles</a></li>
+    </ul>
+  </li>
+</ul>
+
+        </div>
+
+        <p>This article won’t specifically be about teaching the theoretical parts of computer science, the focus is actually on teaching programming as a tool for the mind.</p>
+
+<h1 id="how-does-learning-programming-affect-the-learner">How does learning programming affect the learner?</h1>
+
+<p>When I first started learning programming proper, it really felt like I was learning to think in a new, very structured and logical, way. I still until this day feel this way. Learning programming teaches you so much: abstraction, procedure, functions, logic, etc. I feel like I can apply my programmer toolkit to almost every problem in one way or another. I’ve often heard similar sentiments expressed by others, giving some credence to its validity.</p>
+
+<h1 id="computer-science-in-core-curricula">Computer Science in Core Curricula</h1>
+
+<p>This should, in my opinion, be approached very carefully. I myself were entirely self-taught up until I started university, and so were many of my friends. And while I’ve learned a lot at university, most CS/programming I’ve learned has still been independent of my studies. At university I’ve noticed a wide range of feelings towards programming and CS among students. Some lyrical beyond comprehension, others seem to only consider it a good career (high salary, good working conditions, low risk of automation).</p>
+
+<p>What I fear is that programming and Computer Science will meet the same fate as mathematics. This concern arose when I first read <a href="https://www.maa.org/external_archive/devlin/LockhartsLament.pdf">Lockhart’s Lament</a> (if you care about maths education, or education in general, you really should read it). I’m really not sure if this is a valid concern, but the worst case scenario - a society where the vast majority of the population think programming is hard, boring or devoid of creativity - looks pretty bad to me.</p>
+
+<p>In Sweden, the government recently (May 2017)<a href="https://m.sweclockers.com/nyhet/23500-programmering-infors-i-skolan-fran-arskurs-ett-nasta-ar"><sup>source (Swedish)</sup></a> decided that programming/CS (or as sometimes called in Sweden, datalogi) would become a part of the core curriculum all the way from first grade up until highschool. The plan is to integrate it into existing courses such as mathematics. How exactly this is to be done is still very unclear.</p>
+
+<p>Me and a group of people at Lund University, including both professors and students, have started working on actual course material and hope to educate teachers on how to adapt their teaching to include programming in the best way possible with a strong focus on engaging the students. I have hopes we will open source the course material when the time for publication comes since we have two professors (<a href="http://cs.lth.se/bjorn-regnell/">Björn Regnell</a> and <a href="http://cs.lth.se/gorel-hedin/">Görel Hedin</a>) with strong interests in open source. Both are on the board of <a href="https://www.lth.se/lufoss">LUFOSS</a>, a scholarship fund for OSS contributors, and Björn lead the effort to create entirely <a href="https://github.com/lunduniversity/introprog">open source course material</a> for the 2016 remake of the introductory programming course for CS at Lund University.</p>
+
+<h2 id="to-expand-upon">To expand upon</h2>
+
+<ul>
+  <li><a href="https://news.ycombinator.com/item?id=14408728">Using Programming Language Concepts to Teach General Thinking Skills</a></li>
+</ul>
+
+<h2 id="related-articles">Related articles</h2>
+
+<ul>
+  <li><a href="/wiki/long-software">Good software</a></li>
+</ul>
+
+
+    </div>
+
+    <div class="footer">
+        <div style="border: solid rgba(255,255,255,0.2); border-width: 0 0 1px 0; padding-bottom: 10px;">
+
+            <span class="glyphicon glyphicon-link"></span>
+            <a href="/wiki/teaching-computer-science/">Permalink</a>
+
+            
+
+            <div style="float: right">
+                Words: 484
+            </div>
+
+            <!-- {-% include social-buttons.html page=page %-} -->
+        </div>
+
+        
+          <div class="msg-box note">
+  This is a <a href="https://en.wikipedia.org/wiki/Living_document">living document</a>. Comments and contributions welcome!
+</div>
+
+
+          
+
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'erikbjareholt'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+        
+    </div>
+</article>
+
+
+        </div>
+
+        <footer class="container small" style="margin-bottom: 2em; margin-top: 2em; padding-top: 2em; border: solid #CCC; border-width: 1px 0 0 0; color: #555">
+  <b>Donate:</b>
+  <a href="bitcoin:14JWbLLpgro6KbHGCrABsHfcCcZuuk3oQy"></a>
+  <br>
+  <b>Contact:</b>
+  <a href="mailto:erik@bjareho.lt">erik@bjareho.lt</a>
+
+  <div class="text-center">
+    Erik Bj&auml;reholt
+    <span class="glyphicon glyphicon-copyright-mark"></span> 2014-2017
+  </div>
+</footer>
+
+    </body>
+</html>

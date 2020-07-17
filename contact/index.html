@@ -1,9 +1,149 @@
----
-layout: main
-title: About
----
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About - Erik Bj&auml;reholt - Personal website</title>
+        <meta name="description" content="Blog, personal wiki, and stuff about me.
+">
+        <meta property="og:title" content="About" />
+        
+        <meta content="article" property="og:type">
+        
+        <meta property="og:url" content="https://erik.bjareholt.com/contact/" />
+        <meta property="og:image" content="https://erik.bjareholt.com/img/glider.png" />
+        
+        <meta content="Blog, personal wiki, and stuff about me.
+" property="og:description">
+        
 
-        <div class="section" id="contact">
+        <!-- Favicon -->
+        <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+        <!-- Google Authorship and Publisher Markup -->
+        <link rel="author" href="https://plus.google.com/+ErikBjareholt/posts">
+        <link rel="publisher" href="https://plus.google.com/+ErikBjareholt">
+
+        <!-- For better viewing on mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Facebook admin -->
+        <meta property="fb:admins" content="1155422697" />
+
+        <!-- CSS (Bootstrap, custom) -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=latin-ext" rel="stylesheet">
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' rel='stylesheet' type='text/css'>
+
+        <!-- JS -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="/js/negativar.js"></script>
+
+        <!-- Google Analytics -->
+        <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48818326-1', 'auto');
+ga('send', 'pageview');
+
+// Used to track outbound links:
+// https://support.google.com/analytics/answer/1136920?hl=en
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){
+       document.location = url;
+     }
+   });
+}
+
+// TODO: Not tested properly
+// Found here: http://veithen.github.io/2015/01/24/outbound-link-tracking.html
+$(function() {
+  $("a").click(function(e) {
+    if (!ga.q) {
+      var url = $(this).attr("href");
+      trackOutboundLink(url);
+      e.preventDefault();
+    }
+  });
+});
+        </script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+    <div class=row>
+        <nav class="navbar navbar-default navbar-static-top" role=navigation>
+            <div class="container">
+                <div class=row>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--a class="navbar-brand" href="#">Brand</a-->
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                          <li>
+                              <a href="/">
+                                  <span class="glyphicon glyphicon-home"></span>
+                                  <span class="pagename pagename-fold"> Home</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/wiki/">
+                                  <span class="fa fa-book" style="font-size: 1.2em"></span>
+                                  <span class="pagename pagename-fold"> Wiki</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/blog/">
+                                  <span class="glyphicon glyphicon-pencil"></span>
+                                  <span class="pagename pagename-fold"> Blog</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/about/">
+                                  <span class="glyphicon glyphicon-info-sign"></span>
+                                  <span class="pagename pagename-fold"> About</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/about/#cv">
+                                  <span class="glyphicon glyphicon-user"></span>
+                                  <span class="pagename pagename-fold"> CV</span>
+                              </a>
+                          </li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                          <li>
+                              <a href="/contact/">
+                                  <span class="glyphicon glyphicon-envelope"></span>
+                                  <span class="pagename"> Contact</span>
+                              </a>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+        <div class="container">
+                    <div class="section" id="contact">
             <h1>Contact</h1>
             You can mail me at <a href="mailto:erik@bjareho.lt">erik@bjareho.lt</a>,
             find me on <a href="http://freenode.net/">Freenode</a> as <i>ErikBjare</i>,
@@ -13,3 +153,21 @@ title: About
             You can find my PGP public key <a href="/erikbjare.asc">here</a> (Key ID: <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0x7A8F433A86E4C130">86E4C130</a>). Or at <a href="https://keybase.io/erb">Keybase</a>.
         </div>
 
+
+        </div>
+
+        <footer class="container small" style="margin-bottom: 2em; margin-top: 2em; padding-top: 2em; border: solid #CCC; border-width: 1px 0 0 0; color: #555">
+  <b>Donate:</b>
+  <a href="bitcoin:14JWbLLpgro6KbHGCrABsHfcCcZuuk3oQy"></a>
+  <br>
+  <b>Contact:</b>
+  <a href="mailto:erik@bjareho.lt">erik@bjareho.lt</a>
+
+  <div class="text-center">
+    Erik Bj&auml;reholt
+    <span class="glyphicon glyphicon-copyright-mark"></span> 2014-2017
+  </div>
+</footer>
+
+    </body>
+</html>

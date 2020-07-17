@@ -1,78 +1,193 @@
----
-layout: main
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home - Erik Bj&auml;reholt - Personal website</title>
+        <meta name="description" content="Blog, personal wiki, and stuff about me.
+">
+        <meta property="og:title" content="Home" />
+        
+        <meta content="article" property="og:type">
+        
+        <meta property="og:url" content="https://erik.bjareholt.com/" />
+        <meta property="og:image" content="https://erik.bjareholt.com/img/glider.png" />
+        
+        <meta content="Blog, personal wiki, and stuff about me.
+" property="og:description">
+        
 
-<div class="row">
+        <!-- Favicon -->
+        <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
+        <!-- Google Authorship and Publisher Markup -->
+        <link rel="author" href="https://plus.google.com/+ErikBjareholt/posts">
+        <link rel="publisher" href="https://plus.google.com/+ErikBjareholt">
+
+        <!-- For better viewing on mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Facebook admin -->
+        <meta property="fb:admins" content="1155422697" />
+
+        <!-- CSS (Bootstrap, custom) -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=latin-ext" rel="stylesheet">
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' rel='stylesheet' type='text/css'>
+
+        <!-- JS -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="/js/negativar.js"></script>
+
+        <!-- Google Analytics -->
+        <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48818326-1', 'auto');
+ga('send', 'pageview');
+
+// Used to track outbound links:
+// https://support.google.com/analytics/answer/1136920?hl=en
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){
+       document.location = url;
+     }
+   });
+}
+
+// TODO: Not tested properly
+// Found here: http://veithen.github.io/2015/01/24/outbound-link-tracking.html
+$(function() {
+  $("a").click(function(e) {
+    if (!ga.q) {
+      var url = $(this).attr("href");
+      trackOutboundLink(url);
+      e.preventDefault();
+    }
+  });
+});
+        </script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+    <div class=row>
+        <nav class="navbar navbar-default navbar-static-top" role=navigation>
+            <div class="container">
+                <div class=row>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--a class="navbar-brand" href="#">Brand</a-->
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                          <li>
+                              <a href="/">
+                                  <span class="glyphicon glyphicon-home"></span>
+                                  <span class="pagename pagename-fold"> Home</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/wiki/">
+                                  <span class="fa fa-book" style="font-size: 1.2em"></span>
+                                  <span class="pagename pagename-fold"> Wiki</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/blog/">
+                                  <span class="glyphicon glyphicon-pencil"></span>
+                                  <span class="pagename pagename-fold"> Blog</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/about/">
+                                  <span class="glyphicon glyphicon-info-sign"></span>
+                                  <span class="pagename pagename-fold"> About</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/about/#cv">
+                                  <span class="glyphicon glyphicon-user"></span>
+                                  <span class="pagename pagename-fold"> CV</span>
+                              </a>
+                          </li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                          <li>
+                              <a href="/contact/">
+                                  <span class="glyphicon glyphicon-envelope"></span>
+                                  <span class="pagename"> Contact</span>
+                              </a>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+        <div class="container">
+            <div class="row">
   <div class="col-md-12">
     <h1>Welcome</h1>
   </div>
-
-  <div class="col-md-10">
-    <!-- TODO: This makes the paragraph 80% wide even if the links are pushed down when display is too small, I think -->
-    <p>
-        This is the personal website of me, Erik Bj&auml;reholt.
-        Here you can read my <a href="/blog">blog</a> where I sometimes write about things I enjoy <!-- (or feel obliged) --> thinking about. You can also learn more about me by checking out the <a href="/about/">about</a> page or visit some of my various profiles online as listed below.
-    </p>
-
-    <a href="/wiki">Check out the wiki</a>
-
+  <div class="col-md-9">
+    <!-- TODO: This makes the paragraph 80% wide even if the links are pushed down when display is too small, I think-->
+    <p></p>This is the personal website of me, Erik Bj&auml;reholt.
+    Here you can read my <a href="/blog">blog</a> where I sometimes write about things I enjoy thinking about.
+    You can also learn more about me by checking out the <a href="/about/">about page</a> or visit some of my various profiles online as listed below.<a href="/wiki">Check out the wiki</a>
     <h2>Latest blogposts</h2>
     <ul class="posts">
-        {% for post in site.blog %}
-        <li>
-            <span>{{ post.date | date_to_string }}</span>
-            &raquo;
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
+      <li><span>
+          18 Mar 2014&raquo;<a href="/blog/2014/03/18/humble-beginnings/">Humble beginnings</a></span></li>
+      <li><span>
+          11 Apr 2014&raquo;<a href="/blog/2014/04/11/What-would-you-do-with-your-data/">What would you do with your data?</a></span></li>
+      <li><span>
+          20 Apr 2014&raquo;<a href="/blog/2014/04/20/looking-the-other-way/">VR: Looking the other way</a></span></li>
     </ul>
   </div>
-
-
-  <div class="col-md-2 links">
-
-    <a href="https://github.com/ErikBjare" class="no-link-annotation">
-      <div class="github">
-        <i class="fa fa-github"></i>
-        GitHub
-      </div>
-    </a>
-    <a href="https://twitter.com/ErikBjareholt">
-      <div class="twitter">
-        <i class="fa fa-twitter"></i>
-        Twitter
-      </div>
-    </a>
-    <a href="https://www.facebook.com/erik.bjareholt">
-      <div class="facebook">
-        <i class="fa fa-facebook"></i>
-        Facebook
-      </div>
-    </a>
-    <a href="https://www.linkedin.com/in/erikbjareholt">
-      <div class="linkedin">
-        <i class="fa fa-linkedin"></i>
-        LinkedIn
-      </div>
-    </a>
-
-    <hr>
-
-    <h5>Others</h5>
-    <!-- TODO: Keybase -->
-
-    <a class="google-plus" style="font-size: 0.9em" href="https://plus.google.com/+ErikBj&auml;reholt">
-      <i class="fa fa-google-plus"></i>
-    </a>
-    <a class="stack-exchange" href="https://stackexchange.com/users/936491/erb?tab=accounts">
-      <i class="fa fa-stack-exchange"></i>
-    </a>
-    <a class="quora" href="https://www.quora.com/Erik-Bj&auml;reholt">
-      <span class="icon-quora" style="color: #A00; font-size: 1.2em;">&nbsp;</span>
-    </a>
-    <a href="https://en.wikipedia.org/wiki/User:Erik.Bjareholt" class="no-link-annotation">
-      <span style="color: #333 !important; font-size: 1.4em" class="icon-wikipedia"></span>
-    </a>
+  <div class="col-md-3 links">
+    <h4>I'm also on</h4><a class="no-link-icon" href="https://github.com/ErikBjare">
+      <div style="color: #000"><i class="fab fa-github"></i> GitHub</div></a><a href="https://keybase.io/erb">
+      <div style="color: #F3A"><i class="fab fa-keybase"></i> Keybase</div></a><a href="https://twitter.com/ErikBjare">
+      <div style="color: #08F"><i class="fab fa-twitter"></i> Twitter</div></a><a href="https://www.facebook.com/erik.bjareholt">
+      <div style="color: #04F"><i class="fab fa-facebook"></i> Facebook</div></a><a href="https://www.linkedin.com/in/erikbjareholt">
+      <div style="color: #0077B4"><i class="fab fa-linkedin"></i> LinkedIn</div></a><a href="https://stackoverflow.com/users/965332/erb">
+      <div style="color: #F48024"><i class="fab fa-stack-overflow"></i> StackOverflow</div></a><a href="https://www.quora.com/Erik-Bj&amp;auml;reholt">
+      <div style="color: #A00"><i class="fab fa-quora"></i> Quora</div></a><a class="no-link-icon" href="https://en.wikipedia.org/wiki/User:Erik.Bjareholt">
+      <div style="color: #333 !important"><span class="icon-wikipedia"></span> Wikipedia</div></a>
   </div>
+</div>
+        </div>
+
+        <footer class="container small" style="margin-bottom: 2em; margin-top: 2em; padding-top: 2em; border: solid #CCC; border-width: 1px 0 0 0; color: #555">
+  <b>Donate:</b>
+  <a href="bitcoin:14JWbLLpgro6KbHGCrABsHfcCcZuuk3oQy"></a>
+  <br>
+  <b>Contact:</b>
+  <a href="mailto:erik@bjareho.lt">erik@bjareho.lt</a>
+
+  <div class="text-center">
+    Erik Bj&auml;reholt
+    <span class="glyphicon glyphicon-copyright-mark"></span> 2014-2017
+  </div>
+</footer>
+
+    </body>
+</html>

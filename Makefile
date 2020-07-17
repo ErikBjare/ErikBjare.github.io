@@ -1,12 +1,16 @@
 build:
-	bundle exec compass compile
-	bundle exec jekyll build
-
-install-deps:
-	bundle install
+	#bundle exec compass compile
+	#bundle exec jekyll build
+	bundle exec bliss build
 
 dev:
-	bundle exec jekyll serve --watch --drafts
+	#bundle exec jekyll serve --watch --drafts
+	bundle exec bliss serve
+
+install-deps:
+	-sudo npm install -g jekyll-bliss
+	bundle config set path 'vendor/bundle'
+	bundle install
 
 clean:
 	rm -r _site

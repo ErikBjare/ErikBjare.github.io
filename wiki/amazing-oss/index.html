@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Amazing Open Source Software - Erik Bj&auml;reholt - Personal website</title>
+        <meta name="description" content="Blog, personal wiki, and stuff about me.
+">
+        <meta property="og:title" content="Amazing Open Source Software" />
+        
+        <meta content="article" property="og:type">
+        
+        <meta property="og:url" content="https://erik.bjareholt.com/wiki/amazing-oss/" />
+        <meta property="og:image" content="https://erik.bjareholt.com/img/glider.png" />
+        
+        <meta content="The open source projects that have changed how I work and think about software." property="og:description">
+        
+
+        <!-- Favicon -->
+        <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+        <!-- Google Authorship and Publisher Markup -->
+        <link rel="author" href="https://plus.google.com/+ErikBjareholt/posts">
+        <link rel="publisher" href="https://plus.google.com/+ErikBjareholt">
+
+        <!-- For better viewing on mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Facebook admin -->
+        <meta property="fb:admins" content="1155422697" />
+
+        <!-- CSS (Bootstrap, custom) -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=latin-ext" rel="stylesheet">
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' rel='stylesheet' type='text/css'>
+
+        <!-- JS -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="/js/negativar.js"></script>
+
+        <!-- Google Analytics -->
+        <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48818326-1', 'auto');
+ga('send', 'pageview');
+
+// Used to track outbound links:
+// https://support.google.com/analytics/answer/1136920?hl=en
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){
+       document.location = url;
+     }
+   });
+}
+
+// TODO: Not tested properly
+// Found here: http://veithen.github.io/2015/01/24/outbound-link-tracking.html
+$(function() {
+  $("a").click(function(e) {
+    if (!ga.q) {
+      var url = $(this).attr("href");
+      trackOutboundLink(url);
+      e.preventDefault();
+    }
+  });
+});
+        </script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+    <div class=row>
+        <nav class="navbar navbar-default navbar-static-top" role=navigation>
+            <div class="container">
+                <div class=row>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--a class="navbar-brand" href="#">Brand</a-->
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                          <li>
+                              <a href="/">
+                                  <span class="glyphicon glyphicon-home"></span>
+                                  <span class="pagename pagename-fold"> Home</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/wiki/">
+                                  <span class="fa fa-book" style="font-size: 1.2em"></span>
+                                  <span class="pagename pagename-fold"> Wiki</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/blog/">
+                                  <span class="glyphicon glyphicon-pencil"></span>
+                                  <span class="pagename pagename-fold"> Blog</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/about/">
+                                  <span class="glyphicon glyphicon-info-sign"></span>
+                                  <span class="pagename pagename-fold"> About</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/about/#cv">
+                                  <span class="glyphicon glyphicon-user"></span>
+                                  <span class="pagename pagename-fold"> CV</span>
+                              </a>
+                          </li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                          <li>
+                              <a href="/contact/">
+                                  <span class="glyphicon glyphicon-envelope"></span>
+                                  <span class="pagename"> Contact</span>
+                              </a>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+        <div class="container">
+            <article class="post panel panel-default">
+    <header>
+        <h1 class="title"><a href="/wiki/amazing-oss/">Amazing Open Source Software</a></h1>
+
+        <div class="meta">
+          <small>
+            <div class="meta-box">
+              <span>
+    <span class="glyphicon glyphicon-edit"></span>
+    Last modified:
+    <time datetime="2020-07-17 16:17:51 +0200">
+      2020-07-17 16:17 CEST
+    </time>
+</span>
+
+            </div>
+            <div class="meta-box">
+              <span class="underline dotted">Tags:</span>
+              
+                
+                  <a href="/tags/#software">
+                    <span class="label label-info" style="margin-left: 0.3em; font-size: 90%">
+                      software
+                    </span>
+                  </a>
+                
+              
+                
+                  <a href="/tags/#open-source">
+                    <span class="label label-info" style="margin-left: 0.3em; font-size: 90%">
+                      open-source
+                    </span>
+                  </a>
+                
+              
+            </div>
+            
+          </small>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="toc">
+          <b>Table of contents</b>
+          <ul>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#ipfs"><a href="https://ipfs.io/">IPFS</a></a>
+      - {:.} <a href="#content-distribution-solved">Content distribution, solved</a>
+      - {:.} <a href="#ipns">IPNS</a></li>
+  <li><a href="#standard-notes"><a href="http://standardnotes.org/">Standard Notes</a></a></li>
+  <li><a href="#syncthing"><a href="https://syncthing.net/">Syncthing</a></a></li>
+  <li><a href="#git-annex"><a href="https://git-annex.branchable.com/">git-annex</a></a>
+      - {:.} <a href="#advice">Advice</a>
+      - {:.} <a href="#using-together-with-syncthing">Using together with Syncthing</a>
+    <ul>
+      <li><a href="#ethereum">Ethereum</a></li>
+    </ul>
+  </li>
+  <li><a href="#todo">TODO</a>
+    <ul>
+      <li><a href="#related-articles">Related articles</a></li>
+    </ul>
+  </li>
+</ul>
+
+        </div>
+
+        <h1 id="introduction">Introduction</h1>
+
+<p>Every now and then, I find a piece of software so amazing that it changes how I solve a problem forever.
+I find some of them so amazing in fact, that I think it’s a shame that other people don’t know about them.
+They vastly improve upon previous solutions to the problem they are solving (at least in the respects that are important to me) and that is why I put together this document.</p>
+
+<p>All software written about here is free and open source. 
+Much of it is also related to networking in one way of another, this is merely a coincidence however, as the internet is one of the greatest enablers of powerful software.</p>
+
+<h1 id="ipfs"><a href="https://ipfs.io/">IPFS</a></h1>
+<p><em>“The Permanent Web”</em></p>
+
+<p>May well be the future of sharing content (videos, documents, music, and other “write once, read many” applications). 
+I also predict it will serve as a next generation protocol for file sharing/piracy as soon as someone creates a decent search engine for it and starts migrating torrents.</p>
+
+<h3 id="content-distribution-solved">Content distribution, solved</h3>
+
+<p>One of the major strengths of IPFS is that it solves the problem of content distribution (planet scale spatial cache locality)</p>
+
+<p><strong>Fun story</strong>: In the 2017 Google Hashcode competition (a “real-life problem” competition, unlike ICPC etc.) the problem was to choose which YouTube videos should be cached at which servers in order to minimize latency for end-users.
+During the competition I joked with my teammates that the problem Google was trying to solve was the wrong one (for them it’s the right problem, IPFS might kill all ad revenue).</p>
+
+<p>IPFS solves this by making every user who recently downloaded a file into a distributor of that file, much like BitTorrent.</p>
+
+<h3 id="ipns">IPNS</h3>
+
+<p>IPNS is the InterPlanetary Name Service, a layer on top of IPFS enabling mutability similar to that found on the web.
+Each IPNS address has a publisher, someone with the private key to publish something to that address.</p>
+
+<h1 id="standard-notes"><a href="http://standardnotes.org/">Standard Notes</a></h1>
+
+<ul>
+  <li>The Evernote alternative I was too lazy (and shitty at UI dev) to build myself.</li>
+  <li>Full sync with E2E encryption, the server only holds encrypted notes and no decryption key.</li>
+  <li>You can also self-host your sync server.</li>
+</ul>
+
+<h1 id="syncthing"><a href="https://syncthing.net/">Syncthing</a></h1>
+
+<ul>
+  <li>Created by the amazing Jakob Borg
+    <ul>
+      <li>Who happens to have studied at the university where I study.</li>
+    </ul>
+  </li>
+  <li>A great private and distributed replacement Dropbox/Google Drive/OneDrive.</li>
+  <li>Syncs files directly* between your computers, without a third party.</li>
+  <li>Has support for <a href="https://docs.syncthing.net/users/ignoring.html"><code class="language-plaintext highlighter-rouge">.stignore</code></a> files, similar to <code class="language-plaintext highlighter-rouge">.gitignore</code>.
+    <ul>
+      <li>This is actually how I discovered it, I wanted to ignore syncing for some of my files (<code class="language-plaintext highlighter-rouge">node_modules</code> anyone?) but such a feature wasn’t available in Dropbox or Google Drive.</li>
+    </ul>
+  </li>
+  <li>Issues
+    <ul>
+      <li>Requires both computers to be on at the same time.
+        <ul>
+          <li>Solution: Run Syncthing on an always-on RPi/server.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>* <em>When a device is behind a firewall it can use <a href="https://docs.syncthing.net/users/relaying.html">relays to route between networks</a>. All data sent between devices is end-to-end encrypted so there is minimal loss of privacy. You can also host your own relay. The downside is that transfer speeds will be slower (in most cases not noticeable).</em></p>
+
+<p>A good evaluation from a software engineering perspective: https://twitter.com/jakobborg/status/860510307051073536</p>
+
+<h1 id="git-annex"><a href="https://git-annex.branchable.com/">git-annex</a></h1>
+
+<ul>
+  <li>Great for archiving and moving files to/from a backup system. Also great for just keeping track of files and their duplicates.</li>
+  <li>A lot of features, in a simple way.</li>
+  <li>Very useful if you have a lot of files spread out across computers (that you don’t want to always sync).
+    <ul>
+      <li>Examples: Videos, books/scientific articles, music, images</li>
+    </ul>
+  </li>
+  <li>Took some work to set up the way I wanted, but now I can’t imagine going back.</li>
+  <li>Supports many backends for storage. Supports encryption for all storages as well, so the storage provider doesn’t have to know what you store.
+    <ul>
+      <li>Google Drive
+        <ul>
+          <li>If you are a student you might have “infinite” storage space, but I wouldn’t want to risk abusing it, so keep a fair self-set limit of ~10TB.</li>
+        </ul>
+      </li>
+      <li>Amazon Cloud Drive
+        <ul>
+          <li>Not anymore, rclone developer got his key revoked.</li>
+          <li>Was previously another “unlimited storage” provider for $50/year.</li>
+        </ul>
+      </li>
+      <li>Amazon S3/Glacier</li>
+      <li>Backblaze B2</li>
+      <li>IPFS (early support, could be especially interesting with Filecoin)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Negatives</strong></p>
+<ul>
+  <li>Doesn’t work on Android or iOS</li>
+</ul>
+
+<p>I won’t try to explain git-annex here, as it’s too daunting a task and better done by the documentation.
+But if you are interested in archiving or simply have a lot of files (possibly spread across computers) that you need to structure better, you should definitely check out git-annex.</p>
+
+<h3 id="advice">Advice</h3>
+
+<p>Once you move some of your files into git-annex, you’ll want to move all of them there. But don’t, some you might want to sync with Syncthing instead until you no longer modify them.</p>
+
+<h3 id="using-together-with-syncthing">Using together with Syncthing</h3>
+
+<p>Syncthing is in many ways the perfect complement to git-annex. Syncthing is great at syncing files, while git-annex is great at archiving. While git-annex can also sync files (that’s a prime reason why it’s so great at archiving) it’s not optimal for often changed files since each change would require a commit in the git-annex (I think there are other reasons for not using git-annex for often changed files, but I won’t go into them).</p>
+
+<p>How I use them together:</p>
+
+<ul>
+  <li>git-annex for archiving (write once, read many)
+    <ul>
+      <li>Perfect for images, video, audio, books/documents.</li>
+      <li>I also archive all my old game saves there.</li>
+    </ul>
+  </li>
+  <li>Syncthing for my programming/projects folder (write many, read many)
+    <ul>
+      <li>Contains lots of git repositories which <a href="https://git-annex.branchable.com/forum/Storing_git_repos_in_git-annex/">git-annex cannot handle as-is</a></li>
+      <li>I have a Syncthing folder called “to annex” where files destined for the annex go
+        <ul>
+          <li>Useful when I want to archive something that’s on my phone (git-annex doesn’t work well on Android and not at all on iOS).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="ethereum">Ethereum</h2>
+
+<p>HYPE HYPE HYPE</p>
+
+<h1 id="todo">TODO</h1>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Why did I create this list?</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Basic explanation of each</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Why do I find it so amazing?</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Why didn’t X make the list?</li>
+</ul>
+
+<h2 id="related-articles">Related articles</h2>
+
+<ul>
+  <li><a href="/wiki/good-software">Good software</a></li>
+</ul>
+
+
+    </div>
+
+    <div class="footer">
+        <div style="border: solid rgba(255,255,255,0.2); border-width: 0 0 1px 0; padding-bottom: 10px;">
+
+            <span class="glyphicon glyphicon-link"></span>
+            <a href="/wiki/amazing-oss/">Permalink</a>
+
+            
+
+            <div style="float: right">
+                Words: 1050
+            </div>
+
+            <!-- {-% include social-buttons.html page=page %-} -->
+        </div>
+
+        
+          <div class="msg-box note">
+  This is a <a href="https://en.wikipedia.org/wiki/Living_document">living document</a>. Comments and contributions welcome!
+</div>
+
+
+          
+
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'erikbjareholt'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+        
+    </div>
+</article>
+
+
+        </div>
+
+        <footer class="container small" style="margin-bottom: 2em; margin-top: 2em; padding-top: 2em; border: solid #CCC; border-width: 1px 0 0 0; color: #555">
+  <b>Donate:</b>
+  <a href="bitcoin:14JWbLLpgro6KbHGCrABsHfcCcZuuk3oQy"></a>
+  <br>
+  <b>Contact:</b>
+  <a href="mailto:erik@bjareho.lt">erik@bjareho.lt</a>
+
+  <div class="text-center">
+    Erik Bj&auml;reholt
+    <span class="glyphicon glyphicon-copyright-mark"></span> 2014-2017
+  </div>
+</footer>
+
+    </body>
+</html>

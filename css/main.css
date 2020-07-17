@@ -1,160 +1,105 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
+html, body { margin: 0; padding: 0; }
 
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-}
+@media only screen { .container { max-width: 800px; } }
 
-html, body { height: 100%; }
+.icon-wikipedia:before { font-family: "Times New Roman", Times, serif; font-weight: 400; content: "VV"; letter-spacing: -0.45em; margin-right: 0.5em; }
 
-body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
-}
+a[href^="mailto:"]:not(.no-link-icon):before { position: relative; font-family: 'Glyphicons Halflings'; top: 2px; content: "\2709"; margin-right: 0.2em; color: #0AA; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+a[href*="wikipedia.org"]:not(.no-link-icon) { background: url(/img/wikipedia-icon.svg) center right no-repeat; background-size: 1.3em; padding-right: 1.4em; }
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+a[href*="github.com"]:not(.no-link-icon) { background: url(/img/github-icon.svg) center right no-repeat; background-size: 1.3em; padding-right: 1.4em; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a[href*="youtube.com"]:not(.no-link-icon):after { content: ' '; background: url(/img/youtube-icon.svg) center right no-repeat; background-size: 1.2em; padding-left: 1.4em; margin-right: 0.5em; opacity: 0.5; }
 
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
-}
+a[href*="youtube.com"]:not(.no-link-icon):hover:after { opacity: 1.0; }
 
-.posts li {
-  line-height: 1.75em;
-}
+a[href^="bitcoin:"]:not(.no-link-icon) { background: url(/img/bitcoin-icon.svg) center left no-repeat; background-size: 1.3em; padding-left: 1.4em; }
 
-.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
+a[href^="ethereum:"]:not(.no-link-icon) { background: url(/img/ethereum-icon.svg) center left no-repeat; margin-left: 0.2em; background-size: 0.9em; padding-left: 1.2em; }
 
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
+a[href^="dogecoin:"]:not(.no-link-icon) { background: url(/img/dogecoin-icon.svg) center left no-repeat; background-size: 1.3em; padding-left: 1.4em; }
 
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
+.links i.fab, .links span.icon-wikipedia { vertical-align: middle; }
 
-.header a {
-  font-weight: bold;
-  text-decoration: none;
-}
+body { font-family: "Open Sans", sans-serif; }
 
-.title {
-  display: inline-block;
-  margin-bottom: 2em;
-}
+h1, h2, h3, h4 { font-family: 'Varela Round', sans-serif; }
 
-.title a {
-  color: #a00;
-}
+h1 { font-size: 2.5em; }
 
-.title a:hover {
-  color: #000;
-}
+h3 { margin-top: 1.3em; }
 
-.header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
+h5 { font-weight: bold; margin-top: 2em; margin-bottom: 0.3em; font-size: 1em; }
 
-.header a.extra:hover {
-  color: #000;
-}
+a { color: #337ab7; text-decoration: none; text-shadow: 0px 0px 0px #337ab7; transition: color .2s ease-out; -moz-transition: color .2s ease-out, text-shadow 0.2s ease-out; -webkit-transition: color .2s ease-out, text-shadow 0.2s ease-out; -o-transition: color .2s ease-out, text-shadow 0.2s ease-out; }
 
-.meta {
-  color: #aaa;
-}
+a .button { text-decoration: none; }
 
-.footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
-}
+a :hover, a :active { color: #122a3f; }
 
-.footer .contact {
-  float: left;
-  margin-right: 3em;
-}
+blockquote { font-size: 1.2em; margin-left: -21px; margin-right: -21px; background-color: #f8f8f8; border-color: #666; font-style: italic; font-family: serif; }
 
-.footer .contact a {
-  color: #8085C1;
-}
+blockquote p:last-child { font-style: normal; }
 
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
+.navbar { margin-top: -5px; }
 
-.footer .rss img {
-  border: 0;
-}
+.navbar a > .pagename { margin-left: 5px; margin-top: 3px; height: 20px; top: 4px; position: relative; display: inline-block; overflow-x: hidden; overflow-y: hidden; }
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
+.navbar a:hover { background-color: #DDD !important; }
 
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-}
+hr.dotted { background: url("/img/diagonal-dotted-rule.png") repeat-x 0 0; border: 0 none; height: 0.2em; margin: 2em 0 2em 0; }
 
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
+.box { background: rgba(0, 0, 0, 0.8); border: 0.1em solid #555; border-radius: 0.3em; }
 
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
+.separator { font-weight: bold; margin: 0 0.3em 0 0.3em; }
 
-.post pre code {
-  border: none;
-}
+.status-completed { color: #080; }
 
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
+.status-in_progress { color: #800; }
 
-.post pre.terminal code {
-  background-color: #333;
-}
+.post { padding: 1.5em; }
+
+.post header { border: solid #888; border-width: 0 0 0.1em 0; border-radius: 0.7em 0.7em 0 0; padding: 0 0 1em 0; margin: 0 0 1em 0; }
+
+.post header .title { margin: 0 0 0 0; padding: 0 0 0 0; }
+
+.post header .title a { color: #000; }
+
+.post header .meta { margin: 0.3em 0 0 0; font-size: 1em; height: 1em; }
+
+.post header .meta-box { float: left; padding: 0 0.7em 0 0.3em; }
+
+.post header .meta-box .meta-icon { color: #444; padding-right: 0.3em; }
+
+.post .content { clear: both; text-align: justify; font-size: 1.1em; line-height: 1.6em; }
+
+.post .content img { margin-left: auto; margin-right: auto; display: block; border: 0.3em solid #DDD; }
+
+.post .footer { border: #888 solid; border-width: 1px 0 0 0; padding-top: 1em; font-size: 0.9em; }
+
+.post .footer .social-button { float: left; display: inline-block; margin-right: 4px; }
+
+.post .footer .glyphicon { color: #4466CC; }
+
+#footer { margin-top: 2em; border: solid #BBB; background-color: #f8f8f8; border-width: 1px 0 0 0; }
+
+#footer .COINWIDGETCOM_CONTAINER > a, #footer .COINWIDGETCOM_CONTAINER > span { height: 22px; max-height: 22px; }
+
+.msg-box { border: 1px solid; padding: 0.5em; margin: 0.5em 0 0.5em 0; }
+
+.msg-box.info { border: 1px solid #5CF; background-color: #CFEFFF; }
+
+.msg-box.note { border-color: #FC9; background-color: #ffefba; }
+
+.underline.dotted { border-bottom: 1px dashed #999; text-decoration: none; white-space-collapse: discard; }
+
+.links a { line-height: 2.0; min-width: 2.5em; text-decoration: none; }
+
+.links a i, .links a span { font-size: 1.5em; width: 1.0em; }
+
+.toc { font-size: 0.8em; display: inline-block; background: #f8f8f8; padding: 1em 1em 0.0em 1em; border: 1px solid #bbb; margin-bottom: 2em; }
+
+.toc ul { padding-left: 2em; }
+
+/*# sourceMappingURL=main.css.map */

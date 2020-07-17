@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Democracy: Improvements and alternatives - Erik Bj&auml;reholt - Personal website</title>
+        <meta name="description" content="Blog, personal wiki, and stuff about me.
+">
+        <meta property="og:title" content="Democracy: Improvements and alternatives" />
+        
+        <meta content="article" property="og:type">
+        
+        <meta property="og:url" content="https://erik.bjareholt.com/wiki/after-democracy/" />
+        <meta property="og:image" content="https://erik.bjareholt.com/img/glider.png" />
+        
+        <meta content="" property="og:description">
+        
+
+        <!-- Favicon -->
+        <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+        <!-- Google Authorship and Publisher Markup -->
+        <link rel="author" href="https://plus.google.com/+ErikBjareholt/posts">
+        <link rel="publisher" href="https://plus.google.com/+ErikBjareholt">
+
+        <!-- For better viewing on mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Facebook admin -->
+        <meta property="fb:admins" content="1155422697" />
+
+        <!-- CSS (Bootstrap, custom) -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=latin-ext" rel="stylesheet">
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' rel='stylesheet' type='text/css'>
+
+        <!-- JS -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="/js/negativar.js"></script>
+
+        <!-- Google Analytics -->
+        <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48818326-1', 'auto');
+ga('send', 'pageview');
+
+// Used to track outbound links:
+// https://support.google.com/analytics/answer/1136920?hl=en
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){
+       document.location = url;
+     }
+   });
+}
+
+// TODO: Not tested properly
+// Found here: http://veithen.github.io/2015/01/24/outbound-link-tracking.html
+$(function() {
+  $("a").click(function(e) {
+    if (!ga.q) {
+      var url = $(this).attr("href");
+      trackOutboundLink(url);
+      e.preventDefault();
+    }
+  });
+});
+        </script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+    <div class=row>
+        <nav class="navbar navbar-default navbar-static-top" role=navigation>
+            <div class="container">
+                <div class=row>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--a class="navbar-brand" href="#">Brand</a-->
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                          <li>
+                              <a href="/">
+                                  <span class="glyphicon glyphicon-home"></span>
+                                  <span class="pagename pagename-fold"> Home</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/wiki/">
+                                  <span class="fa fa-book" style="font-size: 1.2em"></span>
+                                  <span class="pagename pagename-fold"> Wiki</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/blog/">
+                                  <span class="glyphicon glyphicon-pencil"></span>
+                                  <span class="pagename pagename-fold"> Blog</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/about/">
+                                  <span class="glyphicon glyphicon-info-sign"></span>
+                                  <span class="pagename pagename-fold"> About</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/about/#cv">
+                                  <span class="glyphicon glyphicon-user"></span>
+                                  <span class="pagename pagename-fold"> CV</span>
+                              </a>
+                          </li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                          <li>
+                              <a href="/contact/">
+                                  <span class="glyphicon glyphicon-envelope"></span>
+                                  <span class="pagename"> Contact</span>
+                              </a>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+        <div class="container">
+            <article class="post panel panel-default">
+    <header>
+        <h1 class="title"><a href="/wiki/after-democracy/">Democracy: Improvements and alternatives</a></h1>
+
+        <div class="meta">
+          <small>
+            <div class="meta-box">
+              <span>
+    <span class="glyphicon glyphicon-edit"></span>
+    Last modified:
+    <time datetime="2020-07-17 16:17:51 +0200">
+      2020-07-17 16:17 CEST
+    </time>
+</span>
+
+            </div>
+            <div class="meta-box">
+              <span class="underline dotted">Tags:</span>
+              
+                
+                  <a href="/tags/#democracy">
+                    <span class="label label-info" style="margin-left: 0.3em; font-size: 90%">
+                      democracy
+                    </span>
+                  </a>
+                
+              
+                
+                  <a href="/tags/#epistocracy">
+                    <span class="label label-info" style="margin-left: 0.3em; font-size: 90%">
+                      epistocracy
+                    </span>
+                  </a>
+                
+              
+                
+                  <a href="/tags/#futarchy">
+                    <span class="label label-info" style="margin-left: 0.3em; font-size: 90%">
+                      futarchy
+                    </span>
+                  </a>
+                
+              
+            </div>
+            
+              <div class="meta-box" title="State is a measurement of completion">
+                <span class="underline dotted">State:</span>
+                
+                  <span class="label label-warning" style="margin-left: 0.3em">
+                
+                  draft
+                </span>
+              </div>
+            
+          </small>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="toc">
+          <b>Table of contents</b>
+          <ul>
+  <li><a href="#transitioning-to-new-systems-of-government">Transitioning to new systems of government</a></li>
+  <li><a href="#deliberative-democracy">Deliberative democracy</a>
+    <ul>
+      <li><a href="#participatory-vs-deliberative">Participatory vs. Deliberative</a></li>
+    </ul>
+  </li>
+  <li><a href="#futarchy">Futarchy</a>
+    <ul>
+      <li><a href="#issues">Issues</a></li>
+      <li><a href="#implementation">Implementation</a></li>
+    </ul>
+  </li>
+  <li><a href="#delegative-democracy">Delegative democracy</a></li>
+  <li><a href="#epistocracy">Epistocracy</a></li>
+  <li><a href="#range-voting">Range voting</a>
+    <ul>
+      <li><a href="#use-in-online-scoring-systems">Use in online scoring systems</a></li>
+      <li><a href="#how-it-affects-controversial-parties">How it affects controversial parties</a></li>
+    </ul>
+  </li>
+</ul>
+
+        </div>
+
+        <p>This article is about various ways to improve or supersede democracy. It’s highly speculative, so lets just get this out of the way first:</p>
+
+<blockquote>
+  <p>Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed it has been said that democracy is the worst form of Government except for all those other forms that have been tried from time to time.</p>
+
+  <p>– <a href="https://richardlangworth.com/worst-form-of-government">Winston Churchill</a></p>
+</blockquote>
+
+<p>Many years ago, when I first stumbled upon the writings of Robin Hanson, I discovered what I then thought to be a promising (although still unlikely) form of government with long-term potential: <a href="https://en.wikipedia.org/wiki/Futarchy">Futarchy</a>. Since then, I’ve thought more and more about it and have learned about other promising candidates to improve or replace democracy. Here’s my attempt at writing about them.</p>
+
+<h2 id="transitioning-to-new-systems-of-government">Transitioning to new systems of government</h2>
+
+<p>Before we start talking about alternatives, even just transitioning to them is a major challenge. Understanding the requirements for such a transition is important to ensure that our alternatives are realistic.</p>
+
+<ul>
+  <li>Any system that desires to be peacefully implemented by a reasonably rational government would require empirical evidence before being implemented.
+    <ul>
+      <li>For some systems, this is a difficult task.</li>
+      <li>Care should be taken since some systems can be similar in principle yet vary in implementation. (Example: Democracy in Russia vs. Switzerland)</li>
+    </ul>
+  </li>
+  <li>Provided that a system change is agreed upon, how could we trust the ones in power to implement the new system without bias?
+    <ul>
+      <li>Examples of this can be seen in some democracies that now look more like oligarchies from the outside (Russia, arguably Turkey).</li>
+    </ul>
+  </li>
+  <li>The constitutions of different countries usually make any fundamental change to the system different to implement, or at least makes such changes take a long time once put in motion.
+    <ul>
+      <li>This is intentional to prevent bad changes from taking place. Unfortunately it causes significant friction to <em>any</em> system change, good or bad.</li>
+      <li>Empirical evidence should be the solution to this issue.</li>
+      <li>Robin Hanson says pretty much exactly this <a href="https://www.youtube.com/watch?time_continue=3266&amp;v=mUUk0jSndoc">here @ 54:25</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- With all the above issues, no wonder political revolution is often violent when people become desperate. -->
+
+<h2 id="deliberative-democracy">Deliberative democracy</h2>
+
+<p>I really want to write about this, since I think it has a change of being our closest bet, but I am still researching.</p>
+
+<p>See the article on <a href="https://en.wikipedia.org/wiki/Deliberative_democracy">Wikipedia</a></p>
+
+<h3 id="participatory-vs-deliberative">Participatory vs. Deliberative</h3>
+
+<blockquote>
+  <p>‘Religion and politics’, as the old saying goes, ‘should never be discussed in mixed company.’And yet fostering discussions that cross lines of political difference has long been a central concern of political theorists. More recently, it has also become a cause célèbre for pundits and civic-minded citizens wanting to improve the health of American democracy. […] Drawing on her empirical work, Mutz suggests that it is doubtful that an extremely activist political culture can also be a heavily deliberative one.</p>
+
+  <p>– Summary of <a href="https://www.amazon.com/Hearing-Other-Side-Deliberative-Participatory/dp/0521612284">Deliberative versus Participatory Democracy</a> by Diana C. Mutz</p>
+</blockquote>
+
+<p>The above essentially claims empirical evidence that <a href="http://lesswrong.com/lw/gw/politics_is_the_mindkiller/">Politics is the Mind-killer</a>.</p>
+
+<h2 id="futarchy">Futarchy</h2>
+
+<p>New to futarchy? <a href="https://blog.ethereum.org/2014/08/21/introduction-futarchy/">Vitalik Buterin has written an introduction</a>.</p>
+
+<p>There is a podcast where Robin Hanson talks about futarchy and prediction markets <a href="https://epicenter.tv/episode/098/">here</a>.</p>
+
+<h3 id="issues">Issues</h3>
+
+<ul>
+  <li>There exists no sufficiently good prediction market, yet.</li>
+  <li>Hanson’s original formulation ‘vote on values, bet on beliefs’ has lead Tyler Cowen to bet against its success “I don’t think values and beliefs can be so easily separated”</li>
+</ul>
+
+<h3 id="implementation">Implementation</h3>
+
+<p>Some will scoff at this, for immediately going into “you shouldn’t put everything on a blockchain”-mode (I’ve been there). But hear me out, this time is different.</p>
+
+<p>The central mechanism in a futarchy is the prediction market. Good real-money prediction markets don’t really exist today. At least not anymore, since governments have gone above and beyond to kill any such market (the prediction market graveyard). There are betting sites, sure, but most of them are reliant on oracles we wouldn’t trust with any significant amount of power. Smart contracts and associated incentives for oracles to stay truthful have created several blockchain-based projects (Gnosis, Augur, STOX). One of them might succeed, and if they do, then at least we have the good prediction market that is required.</p>
+
+<p>It still seems that separation of values and beliefs is a hard problem. However, I’m not sure if we need to do it particularly well in order to improve upon democracy.</p>
+
+<h2 id="delegative-democracy">Delegative democracy</h2>
+
+<p>I’ve thought about something similar before, but can’t remember hearing about <a href="https://en.wikipedia.org/wiki/Delegative_democracy">delegative democracy</a> or <em>liquid democracy</em> as it’s also called.</p>
+
+<p>DAOs could essentially work as delegative democracies since token holders could choose to automatically follow a delegate.</p>
+
+<p>I’ll try to write more about it in the future since I find it really interesting.</p>
+
+<h2 id="epistocracy">Epistocracy</h2>
+
+<p>First proposed by political philosopher Jason Brennan in his 2016 book <a href="https://www.amazon.com/Against-Democracy-Jason-Brennan/dp/0691162603/">Against Democracy</a>, epistocracy at first sight doesn’t seem like a new idea: The basic idea is to give more votes to those who prove themselves more knowledgeable about politics.</p>
+
+<p>For those interested, Brennan has talked about this on the <a href="http://rationallyspeakingpodcast.org/show/rs-176-jason-brennan-on-against-democracy.html">Rationally Speaking podcast</a>.</p>
+
+<p>This has been done in the US in the past to prevent minority groups from voting in the form of <a href="https://en.wikipedia.org/wiki/Literacy_test#Voting">“literacy tests”</a> which in practice was only given to said minority groups. But Brennan has a remedy to prevent these kinds of tests from disenfranchising minority groups.</p>
+
+<blockquote>
+  <p>The electorate might make better decisions if it were restricted to make it more knowledgeable and less biased. For most people, ideas like epistocracy sound like advocacy of government by a small elite, which could easily abuse its powers. But Brennan presents a variety of strategies by which the quality of the electorate could be improved, while still keeping it large, and demographically representative. For example, the franchise could be limited to those who can pass a basic test of political knowledge. Those with greater knowledge could instead be given extra votes (as first advocated by John Stuart Mill in the nineteenth century). If the resulting more knowledgeable electorate is unrepresentative (e.g. – on the basis of race, sex, age, or wealth), the votes of knowledgeable members of these “underrepresented” groups could be given greater weight. Alternatively, we could potentially make the electorate both more knowledgeable and more representative than it is now, by using an “enfranchisement lottery.”</p>
+
+  <p>– <a href="https://www.washingtonpost.com/news/volokh-conspiracy/wp/2016/09/03/democracy-vs-epistacracy/">Democracy vs. Epistocracy</a> by Ilya Somin in the Washington Post</p>
+</blockquote>
+
+<p>However, the author of the above article concludes with concerns for one of the issues we’ve noted above:</p>
+
+<blockquote>
+  <p>Ultimately, however, while I agree with most of Brennan’s diagnosis of the problem, I am skeptical of his proposed solutions. As he recognizes, there is a substantial likelihood that real-world governments cannot be trusted to implement epistocracy in any kind of unbiased way. Instead of limiting the franchise to the knowledgeable, they are likely to structure tests, lotteries, or other similar mechanisms, in ways that over represent supporters of the party in power and exclude opponents.</p>
+</blockquote>
+
+<p>Richard Dawkins touches on this in his BigThink video <a href="https://www.youtube.com/watch?v=pe4feBH0ABk">“No, Not All Opinions Are Equal—Elitism, Lies, and the Limits of Democracy”</a> where he argues against the use of direct democracy in referendums like Brexit where the population is clearly undereducated/misinformed on the issue (Dawkins admitted to being undereducated himself).</p>
+
+<h2 id="range-voting">Range voting</h2>
+
+<p>For a good primer on range voting (also called <em>score voting</em>, or <em>olympic scoring</em>), see <a href="http://rangevoting.org/">this website</a>.</p>
+
+<p>Notably, Range voting is considered <a href="http://rangevoting.org/UniqBest.html">“uniquely best” among all common proposals for single winner voting systems</a>. The difference in <a href="http://rangevoting.org/BayRegDum.html">Bayesian regret</a> between feudalism/monarchy and <a href="http://rangevoting.org/Plurality.html">plurality voting</a> (also known as <em>first-past-the-post</em>, or the one voting system widely used today) is <a href="http://rangevoting.org/UniqBest.html">about as large as the difference between plurality and range voting</a>. In other words: A huge difference.</p>
+
+<p>For a good argument about how important issues like these are in general, see <a href="http://rangevoting.org/LivesSaved.html">this excellent article</a>.</p>
+
+<h3 id="use-in-online-scoring-systems">Use in online scoring systems</h3>
+
+<p>In reddit’s youth, they considered using a 5-star scheme to rate submissions. And while they’ve since considered it a really good idea to not have done so, it remains a curiosity for some of us despite it arguably being bad UX. Luckily, there is the reddit clone <a href="https://github.com/dessalines/flowchat/">Flowchat</a> which uses it (but haven’t solved the UX issue).</p>
+
+<p>Many sites use a similar, familiar, form of voting: the 5-star rating system. And while ridden with issues like selection bias, <a href="https://xkcd.com/1098/">among other things</a>, it still works surprisingly well on sites like Goodreads.</p>
+
+<h3 id="how-it-affects-controversial-parties">How it affects controversial parties</h3>
+
+<p>One interesting aspect of range voting is how it affects controversial parties (such as <a href="https://en.wikipedia.org/wiki/UK_Independence_Party#Other_political_groups">UKIP</a>, or Sweden’s own <a href="https://en.wikipedia.org/wiki/Sweden_Democrats">Sweden Democrats</a>), because they would get hurt in elections if people actively disliked them.</p>
+
+<p>Or, as I cheekily said in a conversation about it with friends:</p>
+
+<blockquote>
+  <p>All of a sudden, you’d have to care about what people <em>(other than your voters)</em> think about you.</p>
+</blockquote>
+
+<p>I believe this would have major impact on the political sphere, but I defer to political scientists on how it could actually play out.</p>
+
+
+    </div>
+
+    <div class="footer">
+        <div style="border: solid rgba(255,255,255,0.2); border-width: 0 0 1px 0; padding-bottom: 10px;">
+
+            <span class="glyphicon glyphicon-link"></span>
+            <a href="/wiki/after-democracy/">Permalink</a>
+
+            
+
+            <div style="float: right">
+                Words: 1522
+            </div>
+
+            <!-- {-% include social-buttons.html page=page %-} -->
+        </div>
+
+        
+          <div class="msg-box note">
+  This is a <a href="https://en.wikipedia.org/wiki/Living_document">living document</a>. Comments and contributions welcome!
+</div>
+
+
+          
+
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'erikbjareholt'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+        
+    </div>
+</article>
+
+
+        </div>
+
+        <footer class="container small" style="margin-bottom: 2em; margin-top: 2em; padding-top: 2em; border: solid #CCC; border-width: 1px 0 0 0; color: #555">
+  <b>Donate:</b>
+  <a href="bitcoin:14JWbLLpgro6KbHGCrABsHfcCcZuuk3oQy"></a>
+  <br>
+  <b>Contact:</b>
+  <a href="mailto:erik@bjareho.lt">erik@bjareho.lt</a>
+
+  <div class="text-center">
+    Erik Bj&auml;reholt
+    <span class="glyphicon glyphicon-copyright-mark"></span> 2014-2017
+  </div>
+</footer>
+
+    </body>
+</html>

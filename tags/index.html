@@ -1,21 +1,2912 @@
----
-layout: main
-title: Tags
----
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tags - Erik Bj&auml;reholt - Personal website</title>
+        <meta name="description" content="Blog, personal wiki, and stuff about me.
+">
+        <meta property="og:title" content="Tags" />
+        
+        <meta content="article" property="og:type">
+        
+        <meta property="og:url" content="https://erik.bjareholt.com/tags/" />
+        <meta property="og:image" content="https://erik.bjareholt.com/img/glider.png" />
+        
+        <meta content="Blog, personal wiki, and stuff about me.
+" property="og:description">
+        
 
-<h1>{{ page.title }}</h1>
+        <!-- Favicon -->
+        <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
-{% assign tags = site.wiki | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
-{% for tag in tags %}
-  <h3 id="{{tag}}">
-    <span class="label label-default">{{tag}}</span>
+        <!-- Google Authorship and Publisher Markup -->
+        <link rel="author" href="https://plus.google.com/+ErikBjareholt/posts">
+        <link rel="publisher" href="https://plus.google.com/+ErikBjareholt">
+
+        <!-- For better viewing on mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Facebook admin -->
+        <meta property="fb:admins" content="1155422697" />
+
+        <!-- CSS (Bootstrap, custom) -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=latin-ext" rel="stylesheet">
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' rel='stylesheet' type='text/css'>
+
+        <!-- JS -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="/js/negativar.js"></script>
+
+        <!-- Google Analytics -->
+        <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48818326-1', 'auto');
+ga('send', 'pageview');
+
+// Used to track outbound links:
+// https://support.google.com/analytics/answer/1136920?hl=en
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){
+       document.location = url;
+     }
+   });
+}
+
+// TODO: Not tested properly
+// Found here: http://veithen.github.io/2015/01/24/outbound-link-tracking.html
+$(function() {
+  $("a").click(function(e) {
+    if (!ga.q) {
+      var url = $(this).attr("href");
+      trackOutboundLink(url);
+      e.preventDefault();
+    }
+  });
+});
+        </script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+    <div class=row>
+        <nav class="navbar navbar-default navbar-static-top" role=navigation>
+            <div class="container">
+                <div class=row>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--a class="navbar-brand" href="#">Brand</a-->
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                          <li>
+                              <a href="/">
+                                  <span class="glyphicon glyphicon-home"></span>
+                                  <span class="pagename pagename-fold"> Home</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/wiki/">
+                                  <span class="fa fa-book" style="font-size: 1.2em"></span>
+                                  <span class="pagename pagename-fold"> Wiki</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/blog/">
+                                  <span class="glyphicon glyphicon-pencil"></span>
+                                  <span class="pagename pagename-fold"> Blog</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/about/">
+                                  <span class="glyphicon glyphicon-info-sign"></span>
+                                  <span class="pagename pagename-fold"> About</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/about/#cv">
+                                  <span class="glyphicon glyphicon-user"></span>
+                                  <span class="pagename pagename-fold"> CV</span>
+                              </a>
+                          </li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                          <li>
+                              <a href="/contact/">
+                                  <span class="glyphicon glyphicon-envelope"></span>
+                                  <span class="pagename"> Contact</span>
+                              </a>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+        <div class="container">
+            <h1>Tags</h1>
+
+
+
+  <h3 id="behavior">
+    <span class="label label-default">behavior</span>
   </h3>
   <ul>
-  {% for wikipage in site.wiki %}
-    {% if wikipage.tags contains tag %}
-    <li><a href="{{ site.baseurl }}{{ wikipage.url }}">{{ wikipage.title }}</a></li>
-    {% endif %}
-  {% endfor %}
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/importance-of-open-recommendation-systems/">The Importance of Open Recommender Systems</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
   </ul>
-{% endfor %}
 
+  <h3 id="bitcoin">
+    <span class="label label-default">bitcoin</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/smart-contracts-for-programmers/">Introduction to Smart Contracts</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="blockchain">
+    <span class="label label-default">blockchain</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/smart-contracts-for-programmers/">Introduction to Smart Contracts</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="business">
+    <span class="label label-default">business</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/ethics-and-profit/">Ethics and Profit</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="communication">
+    <span class="label label-default">communication</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/rules-for-private-chats/">Rules for private chats</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="community">
+    <span class="label label-default">community</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/rules-for-private-chats/">Rules for private chats</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="complexity">
+    <span class="label label-default">complexity</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/research-debt/">Research debt</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="computation">
+    <span class="label label-default">computation</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/physical-limits-of-computation/">Physical Limits of Computation</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="computer-science">
+    <span class="label label-default">computer-science</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/naming-things/">Naming Things</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="cosmology">
+    <span class="label label-default">cosmology</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/universe-simulation/">Universe Simulation</a></li>
+    
+  
+  </ul>
+
+  <h3 id="decentralization">
+    <span class="label label-default">decentralization</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/future-social-networks/">The Future of Social Networks</a></li>
+    
+  
+    
+  
+    
+    <li><a href="/wiki/importance-of-open-recommendation-systems/">The Importance of Open Recommender Systems</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="decentralized-systems">
+    <span class="label label-default">decentralized-systems</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/smart-contracts-for-programmers/">Introduction to Smart Contracts</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="democracy">
+    <span class="label label-default">democracy</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+    <li><a href="/wiki/after-democracy/">Democracy: Improvements and alternatives</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="education">
+    <span class="label label-default">education</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/teaching-computer-science/">Teaching Computer Science</a></li>
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="effective-altruism">
+    <span class="label label-default">effective-altruism</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/criticism-of-effective-altruism/">Criticism of Effective Altruism</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="epistocracy">
+    <span class="label label-default">epistocracy</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+    <li><a href="/wiki/after-democracy/">Democracy: Improvements and alternatives</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="ethereum">
+    <span class="label label-default">ethereum</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/smart-contracts-for-programmers/">Introduction to Smart Contracts</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="ethics">
+    <span class="label label-default">ethics</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/criticism-of-effective-altruism/">Criticism of Effective Altruism</a></li>
+    
+  
+    
+  
+    
+    <li><a href="/wiki/ethics-and-profit/">Ethics and Profit</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/my-values/">My values</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="futarchy">
+    <span class="label label-default">futarchy</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+    <li><a href="/wiki/after-democracy/">Democracy: Improvements and alternatives</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="future">
+    <span class="label label-default">future</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/to-write-about/">Topics I want to write about</a></li>
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="ideas">
+    <span class="label label-default">ideas</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/to-write-about/">Topics I want to write about</a></li>
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="leadership">
+    <span class="label label-default">leadership</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/decentralized-organizations/">Decentralized Organizations</a></li>
+    
+  
+    
+  
+    
+    <li><a href="/wiki/finite-and-infinite-games/">Finite and Infinite Games</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="learning">
+    <span class="label label-default">learning</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/naming-things/">Naming Things</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="links">
+    <span class="label label-default">links</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/links-2017-05/">Links for May 2017</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="long-x">
+    <span class="label label-default">long-x</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/long-software/">Long Software</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="mathematics">
+    <span class="label label-default">mathematics</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/naming-things/">Naming Things</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="meta">
+    <span class="label label-default">meta</span>
+  </h3>
+  <ul>
+  
+    
+    <li><a href="/wiki/about/">About this wiki</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/research-debt/">Research debt</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/to-write-about/">Topics I want to write about</a></li>
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="open-source">
+    <span class="label label-default">open-source</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/amazing-oss/">Amazing Open Source Software</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="organization">
+    <span class="label label-default">organization</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/decentralized-organizations/">Decentralized Organizations</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="pedagogy">
+    <span class="label label-default">pedagogy</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/simple-first-nuance-later/">Simple first, nuance later</a></li>
+    
+  
+    
+    <li><a href="/wiki/teaching-computer-science/">Teaching Computer Science</a></li>
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="philosophy">
+    <span class="label label-default">philosophy</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/criticism-of-effective-altruism/">Criticism of Effective Altruism</a></li>
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/finite-and-infinite-games/">Finite and Infinite Games</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="physics">
+    <span class="label label-default">physics</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/physical-limits-of-computation/">Physical Limits of Computation</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/universe-simulation/">Universe Simulation</a></li>
+    
+  
+  </ul>
+
+  <h3 id="programming">
+    <span class="label label-default">programming</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/python-weirdness/">Python's rough edges</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="psychology">
+    <span class="label label-default">psychology</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/importance-of-open-recommendation-systems/">The Importance of Open Recommender Systems</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="python">
+    <span class="label label-default">python</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/python-weirdness/">Python's rough edges</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="quantified-self">
+    <span class="label label-default">quantified-self</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/quantified-self/">Quantified Self</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="recommender-systems">
+    <span class="label label-default">recommender-systems</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/importance-of-open-recommendation-systems/">The Importance of Open Recommender Systems</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="research">
+    <span class="label label-default">research</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/research-debt/">Research debt</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="simulation">
+    <span class="label label-default">simulation</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/universe-simulation/">Universe Simulation</a></li>
+    
+  
+  </ul>
+
+  <h3 id="sitemeta">
+    <span class="label label-default">sitemeta</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/sandbox/">Sandbox</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="smart-contracts">
+    <span class="label label-default">smart-contracts</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/smart-contracts-for-programmers/">Introduction to Smart Contracts</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="social-media">
+    <span class="label label-default">social-media</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/future-social-networks/">The Future of Social Networks</a></li>
+    
+  
+    
+  
+    
+    <li><a href="/wiki/importance-of-open-recommendation-systems/">The Importance of Open Recommender Systems</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/rules-for-private-chats/">Rules for private chats</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="software">
+    <span class="label label-default">software</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/amazing-oss/">Amazing Open Source Software</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/good-software/">Good Software</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/long-software/">Long Software</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/teaching-computer-science/">Teaching Computer Science</a></li>
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="statistics">
+    <span class="label label-default">statistics</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/quantified-self/">Quantified Self</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="teaching">
+    <span class="label label-default">teaching</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/simple-first-nuance-later/">Simple first, nuance later</a></li>
+    
+  
+    
+    <li><a href="/wiki/teaching-computer-science/">Teaching Computer Science</a></li>
+    
+  
+    
+  
+    
+  
+  </ul>
+
+  <h3 id="values">
+    <span class="label label-default">values</span>
+  </h3>
+  <ul>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <li><a href="/wiki/my-values/">My values</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  </ul>
+
+
+
+        </div>
+
+        <footer class="container small" style="margin-bottom: 2em; margin-top: 2em; padding-top: 2em; border: solid #CCC; border-width: 1px 0 0 0; color: #555">
+  <b>Donate:</b>
+  <a href="bitcoin:14JWbLLpgro6KbHGCrABsHfcCcZuuk3oQy"></a>
+  <br>
+  <b>Contact:</b>
+  <a href="mailto:erik@bjareho.lt">erik@bjareho.lt</a>
+
+  <div class="text-center">
+    Erik Bj&auml;reholt
+    <span class="glyphicon glyphicon-copyright-mark"></span> 2014-2017
+  </div>
+</footer>
+
+    </body>
+</html>

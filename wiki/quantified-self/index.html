@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quantified Self - Erik Bj&auml;reholt - Personal website</title>
+        <meta name="description" content="Blog, personal wiki, and stuff about me.
+">
+        <meta property="og:title" content="Quantified Self" />
+        
+        <meta content="article" property="og:type">
+        
+        <meta property="og:url" content="https://erik.bjareholt.com/wiki/quantified-self/" />
+        <meta property="og:image" content="https://erik.bjareholt.com/img/glider.png" />
+        
+        <meta content="" property="og:description">
+        
+
+        <!-- Favicon -->
+        <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+        <!-- Google Authorship and Publisher Markup -->
+        <link rel="author" href="https://plus.google.com/+ErikBjareholt/posts">
+        <link rel="publisher" href="https://plus.google.com/+ErikBjareholt">
+
+        <!-- For better viewing on mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Facebook admin -->
+        <meta property="fb:admins" content="1155422697" />
+
+        <!-- CSS (Bootstrap, custom) -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=latin-ext" rel="stylesheet">
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' rel='stylesheet' type='text/css'>
+
+        <!-- JS -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="/js/negativar.js"></script>
+
+        <!-- Google Analytics -->
+        <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48818326-1', 'auto');
+ga('send', 'pageview');
+
+// Used to track outbound links:
+// https://support.google.com/analytics/answer/1136920?hl=en
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){
+       document.location = url;
+     }
+   });
+}
+
+// TODO: Not tested properly
+// Found here: http://veithen.github.io/2015/01/24/outbound-link-tracking.html
+$(function() {
+  $("a").click(function(e) {
+    if (!ga.q) {
+      var url = $(this).attr("href");
+      trackOutboundLink(url);
+      e.preventDefault();
+    }
+  });
+});
+        </script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+    <div class=row>
+        <nav class="navbar navbar-default navbar-static-top" role=navigation>
+            <div class="container">
+                <div class=row>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--a class="navbar-brand" href="#">Brand</a-->
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                          <li>
+                              <a href="/">
+                                  <span class="glyphicon glyphicon-home"></span>
+                                  <span class="pagename pagename-fold"> Home</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/wiki/">
+                                  <span class="fa fa-book" style="font-size: 1.2em"></span>
+                                  <span class="pagename pagename-fold"> Wiki</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/blog/">
+                                  <span class="glyphicon glyphicon-pencil"></span>
+                                  <span class="pagename pagename-fold"> Blog</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/about/">
+                                  <span class="glyphicon glyphicon-info-sign"></span>
+                                  <span class="pagename pagename-fold"> About</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="/about/#cv">
+                                  <span class="glyphicon glyphicon-user"></span>
+                                  <span class="pagename pagename-fold"> CV</span>
+                              </a>
+                          </li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                          <li>
+                              <a href="/contact/">
+                                  <span class="glyphicon glyphicon-envelope"></span>
+                                  <span class="pagename"> Contact</span>
+                              </a>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+        <div class="container">
+            <article class="post panel panel-default">
+    <header>
+        <h1 class="title"><a href="/wiki/quantified-self/">Quantified Self</a></h1>
+
+        <div class="meta">
+          <small>
+            <div class="meta-box">
+              <span>
+    <span class="glyphicon glyphicon-edit"></span>
+    Last modified:
+    <time datetime="2020-07-17 16:17:51 +0200">
+      2020-07-17 16:17 CEST
+    </time>
+</span>
+
+            </div>
+            <div class="meta-box">
+              <span class="underline dotted">Tags:</span>
+              
+                
+                  <a href="/tags/#quantified-self">
+                    <span class="label label-info" style="margin-left: 0.3em; font-size: 90%">
+                      quantified-self
+                    </span>
+                  </a>
+                
+              
+                
+                  <a href="/tags/#statistics">
+                    <span class="label label-info" style="margin-left: 0.3em; font-size: 90%">
+                      statistics
+                    </span>
+                  </a>
+                
+              
+            </div>
+            
+              <div class="meta-box" title="State is a measurement of completion">
+                <span class="underline dotted">State:</span>
+                
+                  <span class="label label-warning" style="margin-left: 0.3em">
+                
+                  draft
+                </span>
+              </div>
+            
+          </small>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="toc">
+          <b>Table of contents</b>
+          <ul>
+  <li><a href="#value-proposition">Value Proposition</a>
+    <ul>
+      <li><a href="#personal-level">Personal level</a></li>
+      <li><a href="#societal-level">Societal level</a></li>
+    </ul>
+  </li>
+  <li><a href="#my-efforts">My efforts</a>
+    <ul>
+      <li><a href="#automatic">Automatic</a>
+        <ul>
+          <li><a href="#computer-activity">Computer Activity</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#fitness">Fitness</a></li>
+          <li><a href="#sleep">Sleep</a></li>
+        </ul>
+      </li>
+      <li><a href="#manual-logging">Manual logging</a>
+        <ul>
+          <li><a href="#issues">Issues</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#subjective-measures">Subjective measures</a></li>
+          <li><a href="#drugspharmaceuticals">Drugs/Pharmaceuticals</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#privacy">Privacy</a></li>
+</ul>
+
+        </div>
+
+        <!-- TODO: I probably have an Evernote about this that I should incorporate details from -->
+<!-- TODO: Affiliate links (Amazon, RescueTime, etc.)  -->
+
+<h1 id="value-proposition">Value Proposition</h1>
+
+<h2 id="personal-level">Personal level</h2>
+
+<p>There is a lot of discussion in the Quantified Self movement about the actual value of self-tracking/logging and it seems many have grown skeptical about its value over time.</p>
+
+<p>I will probably write about my own thoughts on this someday, but to summarize: I find it fun and rewarding, keeping a history of what I’ve been doing is important to me so that I can look back and have a less biased view of my past.
+I think there is a lot of value to be extracted from some of the data. I’m interested in several ideas with high chance of failure/stagnation yet potentially high-impact projects. I reach out to people about these to share ideas and get feedback from time to time, if that brought you here: Hello!</p>
+
+<h2 id="societal-level">Societal level</h2>
+
+<p>A lot of data is collected about us daily, but most of it does not end up in our hands.</p>
+
+<p>Perhaps one of the most important data out there is medical data. This topic has received a lot of discussion, for good reason. 
+We want to protect the patients but we also want the data available for analysis. Today there are very strict regulations on the
+use of medical data in research, effectively preventing large scale exploratory data analysis (“big data”) of patient records.</p>
+
+<p><a href="https://tincture.io/ownership-vs-control-of-your-health-ace1c8065a2f">One writer noted</a> that giving the patient <em>ownership</em> of their data would make it even harder to do 
+large scale data analysis as there would be no information silo one could aggregate from.
+He instead advocates that patients should have data <em>control</em>, where the user is not the sole owner but still controls his/her copy. This seems to be the direction that medical data is moving in right now, at least in Sweden.</p>
+
+<p>But data silos can be dangerous for both security and privacy reasons (no transparency about which data is kept)
+I can however imagine a different world: where patients can give away their data (all or just some) on an opt-in/out basis to some regulated entity after it has been filtered through an anonymization system. 
+This would still lead to information silos, but a voluntary and less intrusive one.</p>
+
+<h1 id="my-efforts">My efforts</h1>
+
+<h2 id="automatic">Automatic</h2>
+
+<h3 id="computer-activity">Computer Activity</h3>
+
+<ul>
+  <li>Active window/website
+    <ul>
+      <li>RescueTime</li>
+      <li>ActivityWatch</li>
+    </ul>
+  </li>
+  <li>Active file in text editor
+    <ul>
+      <li>WakaTime</li>
+      <li>ActivityWatch extension possible using existing WakaTime plugins</li>
+    </ul>
+  </li>
+  <li>Input activity
+    <ul>
+      <li>ActivityWatch (currently only for AFK detection)</li>
+      <li>ulogme (keypresses)</li>
+      <li>Selfspy (full keylogger)</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- TODO: Refer to feature comparison in the ActivityWatch README. -->
+
+<h3 id="location">Location</h3>
+
+<ul>
+  <li>Google Maps Timeline / Google Location History</li>
+  <li>Moves</li>
+</ul>
+
+<h3 id="fitness">Fitness</h3>
+
+<ul>
+  <li>Fitness trackers
+    <ul>
+      <li>Mi Band 2 (cheap, recommended, my current one)</li>
+      <li>Mi Band (even cheaper, much better 30-60 day battery)</li>
+      <li>Fitbit (Flex was my first one, the 5 day battery was annoying after a while)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="sleep">Sleep</h3>
+
+<ul>
+  <li>Currently tracking with Mi Band 2, acceptable accuracy but not great.</li>
+</ul>
+
+<h2 id="manual-logging">Manual logging</h2>
+
+<p>During my first year of university (2013) I did extensive manual logging in a spreadsheet. It worked really well and it was pretty detailed (including mood + productivity 3x daily, sleep, exercise, etc.). I kept it up for months and it’s one of the most important logging experiences I’ve had, the spreadsheet format is great for most manual logging (apart from things like diaries).</p>
+
+<h3 id="issues">Issues</h3>
+
+<ul>
+  <li>Takes effort</li>
+</ul>
+
+<h3 id="benefits">Benefits</h3>
+
+<ul>
+  <li>Enables logging of a lot of data otherwise unrecordable.</li>
+</ul>
+
+<h3 id="subjective-measures">Subjective measures</h3>
+
+<ul>
+  <li>Mood</li>
+  <li>Productivity
+    <ul>
+      <li>Could be worth more than objective measurements in some aspects.</li>
+      <li>Highly correlated with mood in my findings (as expected, but interesting nonetheless).</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="drugspharmaceuticals">Drugs/Pharmaceuticals</h3>
+
+<ul>
+  <li>Recreational drugs (alcohol, etc.)
+    <ul>
+      <li>A great way to keep track of consumption patterns and tolerance.</li>
+      <li>I believe this greatly improves self-control of consumption (due to the increased awareness of consumption patterns).</li>
+      <li>Definitely recommended.</li>
+    </ul>
+  </li>
+  <li>Pharmaceuticals and supplements
+    <ul>
+      <li>Valuable medical data. Good for reference.</li>
+      <li><a href="https://www.reddit.com/r/StackAdvice/comments/6q8ni8/tracking_supplement_usage_and_productivity/">Of great interest to the nootropics community</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="privacy">Privacy</h1>
+
+<p>The best argument for not logging everything is the risk of compromising very personal information. I therefore don’t use things like keyloggers but plan to use keycounters.</p>
+
+
+    </div>
+
+    <div class="footer">
+        <div style="border: solid rgba(255,255,255,0.2); border-width: 0 0 1px 0; padding-bottom: 10px;">
+
+            <span class="glyphicon glyphicon-link"></span>
+            <a href="/wiki/quantified-self/">Permalink</a>
+
+            
+
+            <div style="float: right">
+                Words: 723
+            </div>
+
+            <!-- {-% include social-buttons.html page=page %-} -->
+        </div>
+
+        
+          <div class="msg-box note">
+  This is a <a href="https://en.wikipedia.org/wiki/Living_document">living document</a>. Comments and contributions welcome!
+</div>
+
+
+          
+
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'erikbjareholt'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+        
+    </div>
+</article>
+
+
+        </div>
+
+        <footer class="container small" style="margin-bottom: 2em; margin-top: 2em; padding-top: 2em; border: solid #CCC; border-width: 1px 0 0 0; color: #555">
+  <b>Donate:</b>
+  <a href="bitcoin:14JWbLLpgro6KbHGCrABsHfcCcZuuk3oQy"></a>
+  <br>
+  <b>Contact:</b>
+  <a href="mailto:erik@bjareho.lt">erik@bjareho.lt</a>
+
+  <div class="text-center">
+    Erik Bj&auml;reholt
+    <span class="glyphicon glyphicon-copyright-mark"></span> 2014-2017
+  </div>
+</footer>
+
+    </body>
+</html>
