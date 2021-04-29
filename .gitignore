@@ -8,7 +8,7 @@ _drafts
 
 # Misc
 *.swp
-.sass-cache
+.*cache
 .stfolder
 .idea
 vendor
