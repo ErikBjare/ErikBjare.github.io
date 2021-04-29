@@ -36,6 +36,7 @@ sass:
 plugins:
  - jekyll-redirect-from
  - jekyll-last-modified-at
+ - jekyll-pug
 
 jekyll-bliss:
   build-folder: _build
