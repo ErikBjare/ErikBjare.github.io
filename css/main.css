@@ -8,7 +8,7 @@ a[href^="mailto:"]:not(.no-link-icon):before { position: relative; font-family: 
 
 a[href*="wikipedia.org"]:not(.no-link-icon) { background: url(/img/wikipedia-icon.svg) center right no-repeat; background-size: 1.3em; padding-right: 1.4em; }
 
-a[href*="github.com"]:not(.no-link-icon) { background: url(/img/github-icon.svg) center right no-repeat; background-size: 1.3em; padding-right: 1.4em; }
+a[href*="github.com"]:not(.no-link-icon) { background: url(/img/github-icon.svg) center right no-repeat; background-size: 1.2em; padding-right: 1.5em; }
 
 a[href*="youtube.com"]:not(.no-link-icon):after { content: ' '; background: url(/img/youtube-icon.svg) center right no-repeat; background-size: 1.2em; padding-left: 1.4em; margin-right: 0.5em; opacity: 0.5; }
 
