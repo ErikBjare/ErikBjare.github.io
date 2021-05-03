@@ -11,34 +11,32 @@ div.row
     p
       | I build free and open source software for fun and the betterment of mankind 🌎🌍🌏. I also do things with markets for 💸.
 
+    p
+      | #[b I'm hiring!] Check out the #[a(href="/jobs") jobs] page.
+
     h2 This website
     p
       | Here you can read my #[a(href="/blog") blog] where I sometimes write about things I enjoy thinking about. You can also learn more about me by checking out the #[a(href="/about/") about page] or visit some of my various profiles online as listed below.
 
     p
-      | #[b I'm hiring!] Check out the #[a(href="/jobs") jobs] page.
-
-    p
       | #[b Note:] Unfortunately the blog and wiki haven't been updated in a long time, and that's probably not going to change anytime soon.
 
-    h2 Latest blogposts
+    h3 Latest blog posts
 
     ul.posts
-      | {% for post in site.blog %}
+      | {% assign posts = site.blog | sort: "date" | reverse %}
+      | {% for post in posts %}
       li
-        span {{ post.date | date_to_string }}
-          | &nbsp;&raquo;&nbsp;
-          a(href="{{ post.url }}") {{ post.title }}
+        | {{ post.date | date_to_long_string: "ordinal" }} &raquo; #[a(href="{{ post.url }}") {{ post.title }}]
       | {% endfor %}
 
-    h2 Selected wiki pages
+    h3 Selected wiki pages
 
     ul
       li #[a(href="/wiki/importance-of-open-recommendation-systems/") The Importance of Open Recommender Systems]
       li #[a(href="/wiki/quantified-self/") Quantified Self]
 
-    p 
-      | Check out the #[a(href="/wiki/") wiki index] for a full list of pages.
+    p Check out the #[a(href="/wiki/") wiki index] for a full list of pages.
 
   div.col-md-3.links
     h4 I'm also on

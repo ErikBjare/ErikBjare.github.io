@@ -13,7 +13,7 @@ echo "---
 layout: post
 title: \"$title\"
 author: \"$author\"
-date: $(date +'%Y/%m/%d %H:%M')
+date: $(date +'%Y-%m-%d %H:%M')
 status: In Progress
 categories: $categories
 ---" > "_drafts/$(date +'%Y-%m-%d')-${title// /-}.md"

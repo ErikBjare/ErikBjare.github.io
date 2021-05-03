@@ -5,7 +5,7 @@ title: Jobs
 
 # I'm hiring!
 
-I'm looking for help with a variety of projects, and as an experiment offer compensation for your contributions. Compensation is offered by time spent (tracked with ActivityWatch). 
+I'm looking for help with a variety of open source projects, and as an experiment offer compensation for your contributions. Compensation is offered by time spent (tracked with ActivityWatch). 
 
 The jobs available are generally programming-related, but I might expand this to non-technical tasks in the future.
 
@@ -33,11 +33,12 @@ Is the specific thing you're interested in working on not listed? I'm open to su
 
 ### Prerequisites
 
- - You can work largely independently and don't need much supervision (exceptions can be made on more difficult tasks).
+What I expect from you:
+
+ - You can work largely independently and don't need much supervision (except for more difficult tasks).
  - You have previous experience with the programming language you'll be working in.
 
-
-#### Bonuses
+I consider it a bonus if you:
 
  - You have a history of contributing to open source projects that I can review.
  - You've previously contributed to the project or worked with me before.
