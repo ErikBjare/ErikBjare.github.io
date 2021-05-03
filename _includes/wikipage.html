@@ -4,9 +4,20 @@
 
         <div class="meta">
           <small>
+            {% if page.created %}
+            <div class="meta-box">
+                <span class="glyphicon glyphicon-time"></span>
+                Created:
+                <time datetime="{{ page.created }}">
+                  {{ page.created | date: "%F" }}
+                </time>
+            </div>
+            {% endif %}
+
             <div class="meta-box">
               {% include last-modified.html %}
             </div>
+
             <div class="meta-box">
               <span class="underline dotted">Tags:</span>
               {% for tag in page.tags %}
@@ -19,6 +30,7 @@
                 {% endunless %}
               {% endfor %}
             </div>
+
             {% if page.state %}
               <div class="meta-box" title="State is a measurement of completion">
                 <span class="underline dotted">State:</span>

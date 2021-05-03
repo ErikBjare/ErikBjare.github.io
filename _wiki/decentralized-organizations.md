@@ -33,4 +33,5 @@ This article is intended to be a braindump of thoughts about decentralized/flat/
 ## Links
 
  - https://blog.p2pfoundation.net/belonging-is-a-superpower-patterns-for-decentralised-organising/2017/10/27
+ - Radical transparency: https://www.youtube.com/watch?v=HXbsVbFAczg
 
