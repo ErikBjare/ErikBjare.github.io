@@ -53,7 +53,7 @@ Before getting started, contact me and we'll discuss terms.
 
 Once your work is done, I need a few things from you so you can get paid:
 
- - Matching ActivityWatch events (using [this script](https://github.com/ActivityWatch/aw-client/blob/master/examples/working_hours.py"))
+ - Matching ActivityWatch events (using [this script](https://github.com/ActivityWatch/aw-client/blob/master/examples/working_hours.py))
  - (optional) Manually tracked time (using something like Toggl)
  - An invoice payable by SEPA transfer, or a receiving ETH address.
 
@@ -64,8 +64,8 @@ You are responsible for paying taxes on the income you get.
 
 I've written about this elsewhere, here are a few links for reference:
 
- - Getting paid with ActivityWatch: https://forum.activitywatch.net/t/getting-paid-with-activitywatch/986
- - ActivityWatch Grants: https://github.com/ActivityWatch/activitywatch/issues/458
+ - [Getting paid with ActivityWatch](https://forum.activitywatch.net/t/getting-paid-with-activitywatch/986)
+ - [ActivityWatch Grants](https://github.com/ActivityWatch/activitywatch/issues/458)
 
 
 ### Past jobs
