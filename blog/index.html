@@ -3,7 +3,8 @@ layout: main
 title: Blog
 ---
 
-{% for page in site.blog %}
+{% assign posts = site.blog | sort: "date" | reverse %}
+{% for page in posts %}
     {% include post.html content=page.content %}
 {% endfor %}
 
