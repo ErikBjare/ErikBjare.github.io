@@ -11,3 +11,6 @@ Here I write about anything that interests me. I'm currently working towards [im
 
 The blog is mostly old stuff I wrote, nowadays I tend to write wikipages instead since they don't come with deadlines and can be continual works in progress (removing publication pressure).
 
+# Build process
+
+The site is built with Jekyll. On every commit to master it pushes the result to the gh-pages branch.
