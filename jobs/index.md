@@ -60,6 +60,14 @@ Once your work is done, I need a few things from you so you can get paid:
 You are responsible for paying taxes on the income you get.
 
 
+### Links
+
+I've written about this elsewhere, here are a few links for reference:
+
+ - Getting paid with ActivityWatch: https://forum.activitywatch.net/t/getting-paid-with-activitywatch/986
+ - ActivityWatch Grants: https://github.com/ActivityWatch/activitywatch/issues/458
+
+
 ### Past jobs
 
 Nothing here yet, but in the future I'll list people who've worked for me and links to some select contributions they made.
