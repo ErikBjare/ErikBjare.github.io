@@ -38,6 +38,7 @@ jobs:
       - name: Build
         run: |
           make build
+          touch _site/.nojekyll
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.8
         if: github.ref == 'refs/heads/master'
