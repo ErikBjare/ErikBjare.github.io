@@ -37,10 +37,4 @@ plugins:
  - jekyll-redirect-from
  - jekyll-last-modified-at
  - jekyll-pug
-
-jekyll-bliss:
-  build-folder: _build
-  debug: false
-  quiet: false
-  delete-build-folder: false
-  livereload: true
+ - jekyll-feed

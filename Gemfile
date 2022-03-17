@@ -15,4 +15,6 @@ group :jekyll_plugins do
   gem "jekyll-redirect-from", "~> 0.16.0"
 
   gem 'jekyll-pug'
+
+  gem 'jekyll-feed'
 end
