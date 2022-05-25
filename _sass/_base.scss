@@ -19,23 +19,18 @@ body {
     @include default-font-style;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     @include round-font-style;
+    margin-top: 1.5em;
 }
 
 h1 {
     font-size: 2.5em;
 }
 
-h3 {
-    margin-top: 1.3em;
-}
-
 h5 {
-    font-weight: bold;
-    margin-top: 2em;
     margin-bottom: 0.3em;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 a {
@@ -57,31 +52,33 @@ a {
 }
 
 blockquote {
-    font-size: 1.2em;
-    margin-left: -21px;
-    margin-right: -21px;
+    @include serif-font-style;
+    font-size: 1em;
+    margin: 1em 0;
+    padding: 1em 1em 0.5em 1em;
     background-color: #f8f8f8;
     border-color: #666;
-    font-style: italic;
-    @include serif-font-style;
-
-    p:last-child {
-      font-style: normal;
-    }
+    border: 1px solid #ccc;
+    border-width: 0 0 0 1px;
 }
 
 .navbar {
-    margin-top: -5px;
+    .nav-item {
+        margin: 0 0.3em;
+    }
 
-    a > .pagename {
-        margin-left: 5px;
-        margin-top: 3px;
-        height: 20px;
-        top: 4px;
-        position: relative;
-        display: inline-block;
-        overflow-x: hidden;
-        overflow-y: hidden;
+    a {
+        border-radius: 5px;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+
+        i {
+            margin-left: 0.3em;
+        }
+
+        > .pagename {
+            padding: 0 0.2em 0 0.5em;
+        }
     }
 
     a:hover {
@@ -141,7 +138,7 @@ hr.dotted {
         }
 
         .meta-box {
-            float: left;
+            display: inline-block;
             padding: 0 0.7em 0 0.3em;
 
             .meta-icon {
@@ -149,7 +146,6 @@ hr.dotted {
                 padding-right: 0.3em;
             }
         }
-
     }
 
     .content {
@@ -173,12 +169,11 @@ hr.dotted {
         font-size: 0.9em;
 
         .social-button {
-            float: left;
             display: inline-block;
             margin-right: 4px;
         }
 
-        .glyphicon {
+        .fa {
             color: $softblue;
         }
     }

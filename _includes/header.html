@@ -1,61 +1,45 @@
-<div class="container-fluid">
-    <div class=row>
-        <nav class="navbar navbar-default navbar-static-top" role=navigation>
-            <div class="container">
-                <div class=row>
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <!--a class="navbar-brand" href="#">Brand</a-->
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                      <ul class="nav navbar-nav">
-                          <li>
-                              <a href="/">
-                                  <span class="glyphicon glyphicon-home"></span>
-                                  <span class="pagename pagename-fold"> Home</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/wiki/">
-                                  <span class="fa fa-book" style="font-size: 1.2em"></span>
-                                  <span class="pagename pagename-fold"> Wiki</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/blog/">
-                                  <span class="glyphicon glyphicon-pencil"></span>
-                                  <span class="pagename pagename-fold"> Blog</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/about/">
-                                  <span class="glyphicon glyphicon-info-sign"></span>
-                                  <span class="pagename pagename-fold"> About</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/jobs/">
-                                  <span class="glyphicon glyphicon-briefcase"></span>
-                                  <span class="pagename pagename-fold"> Jobs</span>
-                              </a>
-                          </li>
-                      </ul>
-                      <ul class="nav navbar-nav navbar-right">
-                          <li>
-                              <a href="/contact/">
-                                  <span class="glyphicon glyphicon-envelope"></span>
-                                  <span class="pagename"> Contact</span>
-                              </a>
-                          </li>
-                      </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" role=navigation>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">erik.bjareholt.com</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog/">
+                        <i class="fa fa-pencil"></i>
+                        <span class="pagename pagename-fold"> Blog</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/wiki/">
+                        <i class="fa fa-book"></i>
+                        <span class="pagename pagename-fold"> Wiki</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about/">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span class="pagename pagename-fold"> About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/jobs/">
+                        <i class="fa fa-briefcase"></i>
+                        <span class="pagename pagename-fold"> Jobs</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="d-flex navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact/">
+                        <i class="fa fa-envelope"></i>
+                        <span class="pagename"> Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
+</nav>

@@ -30,18 +30,17 @@
 <meta property="fb:admins" content="1155422697" />
 
 <!-- CSS (Bootstrap, custom) -->
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<link href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/main.css">
 <link rel="stylesheet" href="/css/syntax.css">
 
 <!-- Font -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=latin-ext" rel="stylesheet">
-<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- JS -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="/js/negativar.js"></script>
 
 <!-- Google Analytics -->
@@ -67,6 +66,7 @@ var trackOutboundLink = function(url) {
 
 // TODO: Not tested properly
 // Found here: http://veithen.github.io/2015/01/24/outbound-link-tracking.html
+/*
 $(function() {
   $("a").click(function(e) {
     if (!ga.q) {
@@ -76,4 +76,19 @@ $(function() {
     }
   });
 });
+*/
+
+// Do the above initialization of outbound links, but without jQuery
+for (var i = 0; i < document.links.length; i++) {
+  var link = document.links[i];
+  if (link.hostname != window.location.hostname) {
+    link.onclick = function() {
+      if(!ga.q) {
+        trackOutboundLink(this.href);
+        e.preventDefault();
+      }
+    }
+  }
+}
+
 </script>

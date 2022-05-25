@@ -6,6 +6,7 @@ title: Blog
 {% assign posts = site.blog | sort: "date" | reverse %}
 {% for page in posts %}
     {% include post.html content=page.content %}
+    <div style="margin: 6em 0;">
 {% endfor %}
 
 <!-- next page button/link goes here later -->

@@ -1,7 +1,9 @@
 <span>
-    <span class="glyphicon glyphicon-edit"></span>
+    <span class="fa fa-edit"></span>
     Updated:
-    <time datetime="{{ page.last_modified_at }}">
-      {{ page.last_modified_at | date: "%F" }}
-    </time>
+    <a class="no-link-icon" title="Click to show history" href="https://github.com/ErikBjare/ErikBjare.github.io/commits/master/{{ page.path }}">
+        <time datetime="{{ page.last_modified_at }}">
+            {{ page.last_modified_at | date: "%F" }}
+        </time>
+    </a>
 </span>

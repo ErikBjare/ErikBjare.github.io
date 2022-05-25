@@ -1,8 +1,9 @@
 a[href^="mailto:"]:not(.no-link-icon):before {
   position: relative;
-  font-family: 'Glyphicons Halflings';
-  top: 2px;
+  font-family: 'Font Awesome 5 Free';
+  top: 1px;
   content: "\2709";
+  margin-left: 0.3em;
   margin-right: 0.2em;
   color: #0AA;
 }

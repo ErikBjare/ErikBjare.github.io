@@ -9,11 +9,12 @@ title: Wiki
 
 This is the index of the Wiki. You can also browse the wiki by <a href="/tags/">tags</a>.
 
-<br>
-<br>
-
-{% for page in site.wiki %}
-  <li>
-    <a href="{{ page.url }}">{{ page.title }}</a>
-  </li>
-{% endfor %}
+<p>
+  <ul>
+    {% for page in site.wiki %}
+      <li>
+        <a href="{{ page.url }}">{{ page.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</p>

@@ -1,21 +1,21 @@
-<article class="post panel panel-default">
+<article class="post mt-4">
     <header>
         <h1 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
         <div class="meta">
             <div class="meta-box">
-                <span class="glyphicon glyphicon-user meta-icon" style="color: #05A"></span>
+                <span class="fa fa-user meta-icon" style="color: #05A"></span>
                 {{ page.author }}
             </div>
             <div class="meta-box">
-                <span class="glyphicon glyphicon-time meta-icon" style="color: #666"></span>
+                <span class="fa fa-calendar meta-icon" style="color: #666"></span>
                 <time datetime="{{ page.date }}">
                     {{ page.date | date: "%F %R %Z" }}
                 </time>
             </div>
             {% if page.status %}
             <div class="meta-box">
-                <span class="glyphicon glyphicon-flash meta-icon" style="color: #FA6"></span>
+                <span class="fa fa-bolt meta-icon" style="color: #FA6"></span>
                 Status:  <span class='status-{{ page.status | downcase | replace: " ", "_"}}'>{{ page.status }}</span>
             </div>
             {% endif %}
@@ -28,12 +28,12 @@
 
     <div class="footer">
         <div {% if include.fullpage %}style="border: solid rgba(255,255,255,0.2); border-width: 0 0 1px 0; padding-bottom: 10px;"{% endif %}>
-            <span class="glyphicon glyphicon-link"></span>
+            <span class="fa fa-link"></span>
             <a href="{{ page.url }}">Permalink</a>
 
             {% if include.fullpage != true %}
               <span class="separator">|</span>
-              <span class="glyphicon glyphicon-comment"></span>
+              <span class="fa fa-comment"></span>
               <a href="{{ page.url }}#disqus_thread">Comments</a>
             {% endif %}
 

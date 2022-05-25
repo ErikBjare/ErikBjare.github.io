@@ -18,8 +18,10 @@ We are not very good at being honest to ourselves, especially when we aren't hon
 
 
 Allow me to give an example, regarding the remarkable industry of self-help books: 
+
 > *"Self-help books are written to sell, not to help. Most books are structured around a gimmick that will sell well. The authors usually show no interest what-so-ever in testing to see if their advice actually works. In fact, I sometimes suspected the book was being written to get people motivated without actually giving them good advice so that when they failed to achieve their goals six months later they would assume it was their fault but look back positively on their initial motivation, and then buy the next heavily-marketed self-help book to come out the pipe."*  
-> - Luke Muehlhauser, [*The Best Self-Help Book of All Time*](http://commonsenseatheism.com/?p=12651)
+>
+> ― Luke Muehlhauser, [*The Best Self-Help Book of All Time*](http://commonsenseatheism.com/?p=12651)
 
 After reading this, you're probably a little sceptic about self-help books in general (if you weren't already). But some of them might actually work, how could we really know which books lead to the greatest improvement? 
 Well, we could log the variable we tried to improve before we read the book, collect more than a few datapoints, and then read a self-help book and apply what is in it (if it even gets us that far). We keep logging, and after a while we have established a pre-state and post-state.
