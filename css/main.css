@@ -20,7 +20,9 @@ a[href^="ethereum:"]:not(.no-link-icon) { background: url(/img/ethereum-icon.svg
 
 a[href^="dogecoin:"]:not(.no-link-icon) { background: url(/img/dogecoin-icon.svg) center left no-repeat; background-size: 1.3em; padding-left: 1.4em; }
 
-.links i.fab, .links span.icon-wikipedia { vertical-align: middle; }
+.links { padding: 1em; border-radius: 3px; border: 1px solid #e5e5e5; }
+
+.links i.fab, .links span.icon-wikipedia { vertical-align: middle; line-height: 1em; }
 
 body { font-family: "Open Sans", sans-serif; }
 
