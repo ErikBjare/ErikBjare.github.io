@@ -7,11 +7,15 @@
 
 @import 'link-icons';
 
-// To
 .links {
+  padding: 1em;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+
   i.fab,
   span.icon-wikipedia {
     vertical-align: middle;
+    line-height: 1em;
   }
 }
 
