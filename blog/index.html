@@ -31,18 +31,17 @@
 <meta property="fb:admins" content="1155422697" />
 
 <!-- CSS (Bootstrap, custom) -->
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<link href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/main.css">
 <link rel="stylesheet" href="/css/syntax.css">
 
 <!-- Font -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=latin-ext" rel="stylesheet">
-<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- JS -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="/js/negativar.js"></script>
 
 <!-- Google Analytics -->
@@ -68,6 +67,7 @@ var trackOutboundLink = function(url) {
 
 // TODO: Not tested properly
 // Found here: http://veithen.github.io/2015/01/24/outbound-link-tracking.html
+/*
 $(function() {
   $("a").click(function(e) {
     if (!ga.q) {
@@ -77,94 +77,93 @@ $(function() {
     }
   });
 });
+*/
+
+// Do the above initialization of outbound links, but without jQuery
+for (var i = 0; i < document.links.length; i++) {
+  var link = document.links[i];
+  if (link.hostname != window.location.hostname) {
+    link.onclick = function() {
+      if(!ga.q) {
+        trackOutboundLink(this.href);
+        e.preventDefault();
+      }
+    }
+  }
+}
+
 </script>
 
     </head>
     <body>
-        <div class="container-fluid">
-    <div class=row>
-        <nav class="navbar navbar-default navbar-static-top" role=navigation>
-            <div class="container">
-                <div class=row>
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <!--a class="navbar-brand" href="#">Brand</a-->
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                      <ul class="nav navbar-nav">
-                          <li>
-                              <a href="/">
-                                  <span class="glyphicon glyphicon-home"></span>
-                                  <span class="pagename pagename-fold"> Home</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/wiki/">
-                                  <span class="fa fa-book" style="font-size: 1.2em"></span>
-                                  <span class="pagename pagename-fold"> Wiki</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/blog/">
-                                  <span class="glyphicon glyphicon-pencil"></span>
-                                  <span class="pagename pagename-fold"> Blog</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/about/">
-                                  <span class="glyphicon glyphicon-info-sign"></span>
-                                  <span class="pagename pagename-fold"> About</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/jobs/">
-                                  <span class="glyphicon glyphicon-briefcase"></span>
-                                  <span class="pagename pagename-fold"> Jobs</span>
-                              </a>
-                          </li>
-                      </ul>
-                      <ul class="nav navbar-nav navbar-right">
-                          <li>
-                              <a href="/contact/">
-                                  <span class="glyphicon glyphicon-envelope"></span>
-                                  <span class="pagename"> Contact</span>
-                              </a>
-                          </li>
-                      </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" role=navigation>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">erik.bjareholt.com</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog/">
+                        <i class="fa fa-pencil"></i>
+                        <span class="pagename pagename-fold"> Blog</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/wiki/">
+                        <i class="fa fa-book"></i>
+                        <span class="pagename pagename-fold"> Wiki</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about/">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span class="pagename pagename-fold"> About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/jobs/">
+                        <i class="fa fa-briefcase"></i>
+                        <span class="pagename pagename-fold"> Jobs</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="d-flex navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact/">
+                        <i class="fa fa-envelope"></i>
+                        <span class="pagename"> Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
+</nav>
 
 
         <div class="container">
             
 
-    <article class="post panel panel-default">
+    <article class="post mt-4">
     <header>
         <h1 class="title"><a href="/blog/2014/04/20/looking-the-other-way/">VR: Looking the other way</a></h1>
 
         <div class="meta">
             <div class="meta-box">
-                <span class="glyphicon glyphicon-user meta-icon" style="color: #05A"></span>
+                <span class="fa fa-user meta-icon" style="color: #05A"></span>
                 Erik Bjäreholt
             </div>
             <div class="meta-box">
-                <span class="glyphicon glyphicon-time meta-icon" style="color: #666"></span>
+                <span class="fa fa-calendar meta-icon" style="color: #666"></span>
                 <time datetime="2014-04-20 00:35:00 +0200">
                     2014-04-20 00:35 CEST
                 </time>
             </div>
             
             <div class="meta-box">
-                <span class="glyphicon glyphicon-flash meta-icon" style="color: #FA6"></span>
+                <span class="fa fa-bolt meta-icon" style="color: #FA6"></span>
                 Status:  <span class='status-completed'>Completed</span>
             </div>
             
@@ -203,23 +202,25 @@ I mean which ordinary person knows that adding a second screen can increases pro
 
     <div class="footer">
         <div >
-            <span class="glyphicon glyphicon-link"></span>
+            <span class="fa fa-link"></span>
             <a href="/blog/2014/04/20/looking-the-other-way/">Permalink</a>
 
             
               <span class="separator">|</span>
-              <span class="glyphicon glyphicon-comment"></span>
+              <span class="fa fa-comment"></span>
               <a href="/blog/2014/04/20/looking-the-other-way/#disqus_thread">Comments</a>
             
 
             <span class="separator">|</span>
 
             <span>
-    <span class="glyphicon glyphicon-edit"></span>
+    <span class="fa fa-edit"></span>
     Updated:
-    <time datetime="2022-03-17 12:34:33 +0100">
-      2022-03-17
-    </time>
+    <a class="no-link-icon" title="Click to show history" href="https://github.com/ErikBjare/ErikBjare.github.io/commits/master/_blog/2014-04-20-looking-the-other-way.md">
+        <time datetime="2022-05-25 12:35:33 +0200">
+            2022-05-25
+        </time>
+    </a>
 </span>
 
 
@@ -234,25 +235,26 @@ I mean which ordinary person knows that adding a second screen can increases pro
     </div>
 </article>
 
+    <div style="margin: 6em 0;">
 
-    <article class="post panel panel-default">
+    <article class="post mt-4">
     <header>
         <h1 class="title"><a href="/blog/2014/04/11/What-would-you-do-with-your-data/">What would you do with your data?</a></h1>
 
         <div class="meta">
             <div class="meta-box">
-                <span class="glyphicon glyphicon-user meta-icon" style="color: #05A"></span>
+                <span class="fa fa-user meta-icon" style="color: #05A"></span>
                 Erik Bjäreholt
             </div>
             <div class="meta-box">
-                <span class="glyphicon glyphicon-time meta-icon" style="color: #666"></span>
+                <span class="fa fa-calendar meta-icon" style="color: #666"></span>
                 <time datetime="2014-04-11 22:53:00 +0200">
                     2014-04-11 22:53 CEST
                 </time>
             </div>
             
             <div class="meta-box">
-                <span class="glyphicon glyphicon-flash meta-icon" style="color: #FA6"></span>
+                <span class="fa fa-bolt meta-icon" style="color: #FA6"></span>
                 Status:  <span class='status-completed'>Completed</span>
             </div>
             
@@ -270,11 +272,11 @@ Sometimes we make progress, but our flawed memory, our skewed images of ourselve
 <p>We are not very good at being honest to ourselves, especially when we aren’t honest to others. <em>“The part of yourself that distorts what you say to others also distorts your own thoughts”</em> as Eliezer Yudkowsky put it in <a href="http://yudkowsky.net/rational/virtues/"><em>Twelve Virtues of Rationality</em></a>. It’s not that we are inherently dishonest, our brains are just incredibly good at tricking ourselves, and the brain believes what we say whether we really think it is true, or not. Akrasia is a very real enemy, and it is incredibly difficult for us to know when we’re one step closer to defeating it, and what it was that caused our progress.</p>
 
 <p>Allow me to give an example, regarding the remarkable industry of self-help books:</p>
+
 <blockquote>
   <p><em>“Self-help books are written to sell, not to help. Most books are structured around a gimmick that will sell well. The authors usually show no interest what-so-ever in testing to see if their advice actually works. In fact, I sometimes suspected the book was being written to get people motivated without actually giving them good advice so that when they failed to achieve their goals six months later they would assume it was their fault but look back positively on their initial motivation, and then buy the next heavily-marketed self-help book to come out the pipe.”</em></p>
-  <ul>
-    <li>Luke Muehlhauser, <a href="http://commonsenseatheism.com/?p=12651"><em>The Best Self-Help Book of All Time</em></a></li>
-  </ul>
+
+  <p>― Luke Muehlhauser, <a href="http://commonsenseatheism.com/?p=12651"><em>The Best Self-Help Book of All Time</em></a></p>
 </blockquote>
 
 <p>After reading this, you’re probably a little sceptic about self-help books in general (if you weren’t already). But some of them might actually work, how could we really know which books lead to the greatest improvement? 
@@ -295,28 +297,30 @@ Logging what activities I engaged in accidentally enabled the <a href="http://li
 
     <div class="footer">
         <div >
-            <span class="glyphicon glyphicon-link"></span>
+            <span class="fa fa-link"></span>
             <a href="/blog/2014/04/11/What-would-you-do-with-your-data/">Permalink</a>
 
             
               <span class="separator">|</span>
-              <span class="glyphicon glyphicon-comment"></span>
+              <span class="fa fa-comment"></span>
               <a href="/blog/2014/04/11/What-would-you-do-with-your-data/#disqus_thread">Comments</a>
             
 
             <span class="separator">|</span>
 
             <span>
-    <span class="glyphicon glyphicon-edit"></span>
+    <span class="fa fa-edit"></span>
     Updated:
-    <time datetime="2022-03-17 12:34:33 +0100">
-      2022-03-17
-    </time>
+    <a class="no-link-icon" title="Click to show history" href="https://github.com/ErikBjare/ErikBjare.github.io/commits/master/_blog/2014-04-10-What-would-you-do-with-your-data.md">
+        <time datetime="2022-05-25 12:35:33 +0200">
+            2022-05-25
+        </time>
+    </a>
 </span>
 
 
             <div style="float: right">
-                Words: 845
+                Words: 844
             </div>
 
             <!-- {-% include social-buttons.html page=page %-} -->
@@ -326,18 +330,19 @@ Logging what activities I engaged in accidentally enabled the <a href="http://li
     </div>
 </article>
 
+    <div style="margin: 6em 0;">
 
-    <article class="post panel panel-default">
+    <article class="post mt-4">
     <header>
         <h1 class="title"><a href="/blog/2014/03/18/humble-beginnings/">Humble beginnings</a></h1>
 
         <div class="meta">
             <div class="meta-box">
-                <span class="glyphicon glyphicon-user meta-icon" style="color: #05A"></span>
+                <span class="fa fa-user meta-icon" style="color: #05A"></span>
                 Erik Bjäreholt
             </div>
             <div class="meta-box">
-                <span class="glyphicon glyphicon-time meta-icon" style="color: #666"></span>
+                <span class="fa fa-calendar meta-icon" style="color: #666"></span>
                 <time datetime="2014-03-18 14:18:00 +0100">
                     2014-03-18 14:18 CET
                 </time>
@@ -357,23 +362,25 @@ Logging what activities I engaged in accidentally enabled the <a href="http://li
 
     <div class="footer">
         <div >
-            <span class="glyphicon glyphicon-link"></span>
+            <span class="fa fa-link"></span>
             <a href="/blog/2014/03/18/humble-beginnings/">Permalink</a>
 
             
               <span class="separator">|</span>
-              <span class="glyphicon glyphicon-comment"></span>
+              <span class="fa fa-comment"></span>
               <a href="/blog/2014/03/18/humble-beginnings/#disqus_thread">Comments</a>
             
 
             <span class="separator">|</span>
 
             <span>
-    <span class="glyphicon glyphicon-edit"></span>
+    <span class="fa fa-edit"></span>
     Updated:
-    <time datetime="2022-03-17 12:34:33 +0100">
-      2022-03-17
-    </time>
+    <a class="no-link-icon" title="Click to show history" href="https://github.com/ErikBjare/ErikBjare.github.io/commits/master/_blog/2014-03-18-humble-beginnings.md">
+        <time datetime="2022-05-25 12:35:33 +0200">
+            2022-05-25
+        </time>
+    </a>
 </span>
 
 
@@ -388,6 +395,7 @@ Logging what activities I engaged in accidentally enabled the <a href="http://li
     </div>
 </article>
 
+    <div style="margin: 6em 0;">
 
 
 <!-- next page button/link goes here later -->
@@ -397,7 +405,7 @@ Logging what activities I engaged in accidentally enabled the <a href="http://li
         <footer class="container small" style="margin-bottom: 2em; margin-top: 2em; padding-top: 2em; border: solid #CCC; border-width: 1px 0 0 0; color: #555">
   <div class="text-center">
     Erik Bj&auml;reholt
-    <span class="glyphicon glyphicon-copyright-mark"></span> 2014-2021
+    <span class="fa fa-copyright-mark"></span> 2014-2021
   </div>
 </footer>
 

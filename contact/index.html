@@ -31,18 +31,17 @@
 <meta property="fb:admins" content="1155422697" />
 
 <!-- CSS (Bootstrap, custom) -->
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<link href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/main.css">
 <link rel="stylesheet" href="/css/syntax.css">
 
 <!-- Font -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=latin-ext" rel="stylesheet">
-<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- JS -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="/js/negativar.js"></script>
 
 <!-- Google Analytics -->
@@ -68,6 +67,7 @@ var trackOutboundLink = function(url) {
 
 // TODO: Not tested properly
 // Found here: http://veithen.github.io/2015/01/24/outbound-link-tracking.html
+/*
 $(function() {
   $("a").click(function(e) {
     if (!ga.q) {
@@ -77,71 +77,70 @@ $(function() {
     }
   });
 });
+*/
+
+// Do the above initialization of outbound links, but without jQuery
+for (var i = 0; i < document.links.length; i++) {
+  var link = document.links[i];
+  if (link.hostname != window.location.hostname) {
+    link.onclick = function() {
+      if(!ga.q) {
+        trackOutboundLink(this.href);
+        e.preventDefault();
+      }
+    }
+  }
+}
+
 </script>
 
     </head>
     <body>
-        <div class="container-fluid">
-    <div class=row>
-        <nav class="navbar navbar-default navbar-static-top" role=navigation>
-            <div class="container">
-                <div class=row>
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <!--a class="navbar-brand" href="#">Brand</a-->
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                      <ul class="nav navbar-nav">
-                          <li>
-                              <a href="/">
-                                  <span class="glyphicon glyphicon-home"></span>
-                                  <span class="pagename pagename-fold"> Home</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/wiki/">
-                                  <span class="fa fa-book" style="font-size: 1.2em"></span>
-                                  <span class="pagename pagename-fold"> Wiki</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/blog/">
-                                  <span class="glyphicon glyphicon-pencil"></span>
-                                  <span class="pagename pagename-fold"> Blog</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/about/">
-                                  <span class="glyphicon glyphicon-info-sign"></span>
-                                  <span class="pagename pagename-fold"> About</span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/jobs/">
-                                  <span class="glyphicon glyphicon-briefcase"></span>
-                                  <span class="pagename pagename-fold"> Jobs</span>
-                              </a>
-                          </li>
-                      </ul>
-                      <ul class="nav navbar-nav navbar-right">
-                          <li>
-                              <a href="/contact/">
-                                  <span class="glyphicon glyphicon-envelope"></span>
-                                  <span class="pagename"> Contact</span>
-                              </a>
-                          </li>
-                      </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" role=navigation>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">erik.bjareholt.com</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog/">
+                        <i class="fa fa-pencil"></i>
+                        <span class="pagename pagename-fold"> Blog</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/wiki/">
+                        <i class="fa fa-book"></i>
+                        <span class="pagename pagename-fold"> Wiki</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about/">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span class="pagename pagename-fold"> About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/jobs/">
+                        <i class="fa fa-briefcase"></i>
+                        <span class="pagename pagename-fold"> Jobs</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="d-flex navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact/">
+                        <i class="fa fa-envelope"></i>
+                        <span class="pagename"> Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
+</nav>
 
 
         <div class="container">
@@ -158,7 +157,7 @@ $(function() {
         <footer class="container small" style="margin-bottom: 2em; margin-top: 2em; padding-top: 2em; border: solid #CCC; border-width: 1px 0 0 0; color: #555">
   <div class="text-center">
     Erik Bj&auml;reholt
-    <span class="glyphicon glyphicon-copyright-mark"></span> 2014-2021
+    <span class="fa fa-copyright-mark"></span> 2014-2021
   </div>
 </footer>
 

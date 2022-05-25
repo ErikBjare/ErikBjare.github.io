@@ -4,7 +4,7 @@ html, body { margin: 0; padding: 0; }
 
 .icon-wikipedia:before { font-family: "Times New Roman", Times, serif; font-weight: 400; content: "VV"; letter-spacing: -0.45em; margin-right: 0.5em; }
 
-a[href^="mailto:"]:not(.no-link-icon):before { position: relative; font-family: 'Glyphicons Halflings'; top: 2px; content: "\2709"; margin-right: 0.2em; color: #0AA; }
+a[href^="mailto:"]:not(.no-link-icon):before { position: relative; font-family: 'Font Awesome 5 Free'; top: 1px; content: "\2709"; margin-left: 0.3em; margin-right: 0.2em; color: #0AA; }
 
 a[href*="wikipedia.org"]:not(.no-link-icon) { background: url(/img/wikipedia-icon.svg) center right no-repeat; background-size: 1.3em; padding-right: 1.4em; }
 
@@ -24,13 +24,11 @@ a[href^="dogecoin:"]:not(.no-link-icon) { background: url(/img/dogecoin-icon.svg
 
 body { font-family: "Open Sans", sans-serif; }
 
-h1, h2, h3, h4 { font-family: 'Varela Round', sans-serif; }
+h1, h2, h3, h4, h5 { font-family: 'Varela Round', sans-serif; margin-top: 1.5em; }
 
 h1 { font-size: 2.5em; }
 
-h3 { margin-top: 1.3em; }
-
-h5 { font-weight: bold; margin-top: 2em; margin-bottom: 0.3em; font-size: 1em; }
+h5 { margin-bottom: 0.3em; font-size: 1.1em; }
 
 a { color: #337ab7; text-decoration: none; text-shadow: 0px 0px 0px #337ab7; transition: color .2s ease-out; -moz-transition: color .2s ease-out, text-shadow 0.2s ease-out; -webkit-transition: color .2s ease-out, text-shadow 0.2s ease-out; -o-transition: color .2s ease-out, text-shadow 0.2s ease-out; }
 
@@ -38,13 +36,15 @@ a .button { text-decoration: none; }
 
 a :hover, a :active { color: #122a3f; }
 
-blockquote { font-size: 1.2em; margin-left: -21px; margin-right: -21px; background-color: #f8f8f8; border-color: #666; font-style: italic; font-family: serif; }
+blockquote { font-family: serif; font-size: 1em; margin: 1em 0; padding: 1em 1em 0.5em 1em; background-color: #f8f8f8; border-color: #666; border: 1px solid #ccc; border-width: 0 0 0 1px; }
 
-blockquote p:last-child { font-style: normal; }
+.navbar .nav-item { margin: 0 0.3em; }
 
-.navbar { margin-top: -5px; }
+.navbar a { border-radius: 5px; padding-left: 0.5em; padding-right: 0.5em; }
 
-.navbar a > .pagename { margin-left: 5px; margin-top: 3px; height: 20px; top: 4px; position: relative; display: inline-block; overflow-x: hidden; overflow-y: hidden; }
+.navbar a i { margin-left: 0.3em; }
+
+.navbar a > .pagename { padding: 0 0.2em 0 0.5em; }
 
 .navbar a:hover { background-color: #DDD !important; }
 
@@ -68,7 +68,7 @@ hr.dotted { background: url("/img/diagonal-dotted-rule.png") repeat-x 0 0; borde
 
 .post header .meta { margin: 0.3em 0 0 0; font-size: 1em; height: 1em; }
 
-.post header .meta-box { float: left; padding: 0 0.7em 0 0.3em; }
+.post header .meta-box { display: inline-block; padding: 0 0.7em 0 0.3em; }
 
 .post header .meta-box .meta-icon { color: #444; padding-right: 0.3em; }
 
@@ -78,9 +78,9 @@ hr.dotted { background: url("/img/diagonal-dotted-rule.png") repeat-x 0 0; borde
 
 .post .footer { border: #888 solid; border-width: 1px 0 0 0; padding-top: 1em; font-size: 0.9em; }
 
-.post .footer .social-button { float: left; display: inline-block; margin-right: 4px; }
+.post .footer .social-button { display: inline-block; margin-right: 4px; }
 
-.post .footer .glyphicon { color: #4466CC; }
+.post .footer .fa { color: #4466CC; }
 
 #footer { margin-top: 2em; border: solid #BBB; background-color: #f8f8f8; border-width: 1px 0 0 0; }
 
