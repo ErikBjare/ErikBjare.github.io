@@ -18,17 +18,30 @@ Salary is negotiable, but expect a range of €20-50/h (depending on skill and d
 
 Currently there are jobs available on the following projects:
 
- - [ActivityWatch][gh-aw]
- - [Chatalysis][gh-chatalysis]
- - Projects related to [my MSc Thesis][gh-thesis]
+- [ActivityWatch][gh-aw]
+  - Work on sync to get it ready for production use ([issue #35][gh-sync])
+  - Marketing & outreach
+    - Help us attract more users.
+    - Post about new releases on Twitter, reddit, etc.
+    - Post where potential users might hang.
+    - You should make the [numbers go up][aw-stats].
+- [uniswap-python][aw-uniswap-python]
+  - Implement support for the Uniswap Universal Router ([issue #324](https://github.com/uniswap-python/uniswap-python/issues/324))
+- [Quantified Me]()
+  - Help with adding more types of analysis and visualization.
+- [Chatalysis][gh-chatalysis]
+- Projects related to [my MSc Thesis][gh-thesis]
 
-The specific tasks available in each projects can vary from time to time, and I haven't yet compiled a list of suitable tasks you can work on, but contact me and I'll see if there's something suitable for you.
+The specific tasks available in each projects can vary from time to time, but I encourage you to look at recent issues and PRs and go from there. You can also contact me directly (see instructions below) and we'll see if there's something suitable for you.
 
 Is the specific thing you're interested in working on not listed? I'm open to suggestions!
 
 [gh-aw]: https://github.com/ActivityWatch/activitywatch
 [gh-chatalysis]: https://github.com/ErikBjare/chatalysis
 [gh-thesis]: https://github.com/ErikBjare/thesis
+[gh-sync]: https://github.com/ActivityWatch/activitywatch/issues/35
+[gh-uniswap-python]: https://github.com/uniswap-python/uniswap-python
+[aw-stats]: https://activitywatch.net/stats/
 
 
 ### Prerequisites
@@ -46,7 +59,15 @@ I consider it a bonus if you:
 
 ### How it works
 
-Before getting started, contact me and we'll discuss terms.
+Before getting started, contact me by email with the following brief information:
+
+ - A link to your GitHub profile
+ - One or two past contributions you want to show off (if we haven't worked together before)
+ - Your expectations regarding pay.
+
+Then we'll discuss terms. 
+
+Feel free to start working without my permission (in fact, I encourage you to!).
 
 
 ### Getting paid
@@ -70,4 +91,7 @@ I've written about this elsewhere, here are a few links for reference:
 
 ### Past jobs
 
-Nothing here yet, but in the future I'll list people who've worked for me and links to some select contributions they made.
+In the past, I've paid:
+
+ - @xylix, for work on ActivityWatch
+ - @liquid8, for work on uniswap-python
