@@ -45,24 +45,27 @@
 <script src="/js/negativar.js"></script>
 
 <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5JWKQL1D3"></script>
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-ga('create', 'UA-48818326-1', 'auto');
-ga('send', 'pageview');
-
+  gtag('config', 'UA-48818326-1', {'transport_type': 'beacon'});
+  gtag('config', 'G-Q5JWKQL1D3');
+</script>
+<script>
 // Used to track outbound links:
 // https://support.google.com/analytics/answer/1136920?hl=en
 var trackOutboundLink = function(url) {
-   ga('send', 'event', 'outbound', 'click', url, {
-     'transport': 'beacon',
-     'hitCallback': function(){
-       document.location = url;
-     }
-   });
+  gtag('event', 'outbound', {
+    "event_category": 'click', 
+    "event_label": url, 
+    "event_callback": function() {
+      document.location = url;
+    }
+  });
 }
 
 // TODO: Not tested properly
@@ -149,26 +152,28 @@ for (var i = 0; i < document.links.length; i++) {
     <h1>Hi! I'm Erik 👋🏼</h1>
   </div>
   <div class="col-md-9">
+    <!-- NOTE: Much of this is duplicated from my GitHub profile README.-->
     <p>I build free and open source software for fun and the betterment of mankind 🌎🌍🌏. I also do things with markets for 💸.</p>
     <p><b>I'm hiring!</b> Check out the <a href="/jobs">jobs</a> page.</p>
     <h2>Projects</h2>
     <ul>
       <li>Founder and maintainer of <a href="https://activitywatch.net" target="_blank">ActivityWatch</a> 📊 (<a href="https://github.com/ActivityWatch">GitHub</a>)
         <ul>
-          <li><i>"The worlds best free and open-source automated time-tracker."</i></li>
+          <li><i>"The worlds best free and open-source automated time-tracker"</i></li>
         </ul>
       </li>
       <li>Maintainer of <a href="https://github.com/shanefontaine/uniswap-python/">uniswap-python</a> 📈
         <ul>
-          <li>Python wrapper for trading with & querying Uniswap contracts.</li>
+          <li>Python wrapper for the <a href="https://uniswap.org/">Uniswap</a> contracts.</li>
         </ul>
       </li>
       <li>Maintainer of <a href="https://github.com/NeuroTechX/eeg-notebooks">eeg-notebooks</a> 🧠
         <ul>
+          <li><i>"Democratizing the cognitive neuroscience experiment"</i></li>
           <li>A collection of EEG experiments & notebooks.</li>
         </ul>
       </li>
-      <li>Wrote my <a href="https://github.com/ErikBjare/thesis">MSc thesis</a> about classifying brain activity of developers with EEG 🧠</li>
+      <li>My <a href="https://github.com/ErikBjare/thesis">MSc thesis</a> about classifying brain activity (EEG) of developers 🧠</li>
       <li>And lots of <a href="https://github.com/search?o=desc&amp;q=user%3AErikBjare&amp;s=stars&amp;type=Repositories">other stuff</a> ✨</li>
     </ul>
     <h2>This website</h2>

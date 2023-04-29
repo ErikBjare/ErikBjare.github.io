@@ -44,24 +44,27 @@
 <script src="/js/negativar.js"></script>
 
 <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5JWKQL1D3"></script>
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-ga('create', 'UA-48818326-1', 'auto');
-ga('send', 'pageview');
-
+  gtag('config', 'UA-48818326-1', {'transport_type': 'beacon'});
+  gtag('config', 'G-Q5JWKQL1D3');
+</script>
+<script>
 // Used to track outbound links:
 // https://support.google.com/analytics/answer/1136920?hl=en
 var trackOutboundLink = function(url) {
-   ga('send', 'event', 'outbound', 'click', url, {
-     'transport': 'beacon',
-     'hitCallback': function(){
-       document.location = url;
-     }
-   });
+  gtag('event', 'outbound', {
+    "event_category": 'click', 
+    "event_label": url, 
+    "event_callback": function() {
+      document.location = url;
+    }
+  });
 }
 
 // TODO: Not tested properly
@@ -156,8 +159,8 @@ for (var i = 0; i < document.links.length; i++) {
     <span class="fa fa-edit"></span>
     Updated:
     <a class="no-link-icon" title="Click to show history" href="https://github.com/ErikBjare/ErikBjare.github.io/commits/master/_wiki/links-2017-05.md">
-        <time datetime="2022-05-25 15:45:50 +0200">
-            2022-05-25
+        <time datetime="2023-04-29 13:59:01 +0200">
+            2023-04-29
         </time>
     </a>
 </span>

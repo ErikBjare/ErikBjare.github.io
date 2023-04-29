@@ -45,24 +45,27 @@
 <script src="/js/negativar.js"></script>
 
 <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5JWKQL1D3"></script>
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-ga('create', 'UA-48818326-1', 'auto');
-ga('send', 'pageview');
-
+  gtag('config', 'UA-48818326-1', {'transport_type': 'beacon'});
+  gtag('config', 'G-Q5JWKQL1D3');
+</script>
+<script>
 // Used to track outbound links:
 // https://support.google.com/analytics/answer/1136920?hl=en
 var trackOutboundLink = function(url) {
-   ga('send', 'event', 'outbound', 'click', url, {
-     'transport': 'beacon',
-     'hitCallback': function(){
-       document.location = url;
-     }
-   });
+  gtag('event', 'outbound', {
+    "event_category": 'click', 
+    "event_label": url, 
+    "event_callback": function() {
+      document.location = url;
+    }
+  });
 }
 
 // TODO: Not tested properly
@@ -159,12 +162,34 @@ for (var i = 0; i < document.links.length; i++) {
 <p>Currently there are jobs available on the following projects:</p>
 
 <ul>
-  <li><a href="https://github.com/ActivityWatch/activitywatch">ActivityWatch</a></li>
+  <li><a href="https://github.com/ActivityWatch/activitywatch">ActivityWatch</a>
+    <ul>
+      <li>Work on sync to get it ready for production use (<a href="https://github.com/ActivityWatch/activitywatch/issues/35">issue #35</a>)</li>
+      <li>Marketing &amp; outreach
+        <ul>
+          <li>Help us attract more users.</li>
+          <li>Post about new releases on Twitter, reddit, etc.</li>
+          <li>Post where potential users might hang.</li>
+          <li>You should make the <a href="https://activitywatch.net/stats/">numbers go up</a>.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>[uniswap-python][aw-uniswap-python]
+    <ul>
+      <li>Implement support for the Uniswap Universal Router (<a href="https://github.com/uniswap-python/uniswap-python/issues/324">issue #324</a>)</li>
+    </ul>
+  </li>
+  <li><a href="">Quantified Me</a>
+    <ul>
+      <li>Help with adding more types of analysis and visualization.</li>
+    </ul>
+  </li>
   <li><a href="https://github.com/ErikBjare/chatalysis">Chatalysis</a></li>
   <li>Projects related to <a href="https://github.com/ErikBjare/thesis">my MSc Thesis</a></li>
 </ul>
 
-<p>The specific tasks available in each projects can vary from time to time, and I haven’t yet compiled a list of suitable tasks you can work on, but contact me and I’ll see if there’s something suitable for you.</p>
+<p>The specific tasks available in each projects can vary from time to time, but I encourage you to look at recent issues and PRs and go from there. You can also contact me directly (see instructions below) and we’ll see if there’s something suitable for you.</p>
 
 <p>Is the specific thing you’re interested in working on not listed? I’m open to suggestions!</p>
 
@@ -186,7 +211,17 @@ for (var i = 0; i < document.links.length; i++) {
 
 <h3 id="how-it-works">How it works</h3>
 
-<p>Before getting started, contact me and we’ll discuss terms.</p>
+<p>Before getting started, contact me by email with the following brief information:</p>
+
+<ul>
+  <li>A link to your GitHub profile</li>
+  <li>One or two past contributions you want to show off (if we haven’t worked together before)</li>
+  <li>Your expectations regarding pay.</li>
+</ul>
+
+<p>Then we’ll discuss terms.</p>
+
+<p>Feel free to start working without my permission (in fact, I encourage you to!).</p>
 
 <h3 id="getting-paid">Getting paid</h3>
 
@@ -211,7 +246,12 @@ for (var i = 0; i < document.links.length; i++) {
 
 <h3 id="past-jobs">Past jobs</h3>
 
-<p>Nothing here yet, but in the future I’ll list people who’ve worked for me and links to some select contributions they made.</p>
+<p>In the past, I’ve paid:</p>
+
+<ul>
+  <li>@xylix, for work on ActivityWatch</li>
+  <li>@liquid8, for work on uniswap-python</li>
+</ul>
 
         </div>
 
