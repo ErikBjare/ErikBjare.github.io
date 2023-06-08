@@ -20,14 +20,17 @@ Currently there are jobs available on the following projects:
 
 - [ActivityWatch][gh-aw]
   - Work on sync to get it ready for production use ([issue #35][gh-sync])
+  - Work on [aw-leaderboard][gh-aw-leaderboard] (greenfield)
+    - Exciting public leaderboard for ActivityWatch data
+    - Has a dual use as a time reporting server
   - Marketing & outreach
     - Help us attract more users.
     - Post about new releases on Twitter, reddit, etc.
     - Post where potential users might hang.
     - You should make the [numbers go up][aw-stats].
-- [uniswap-python][aw-uniswap-python]
+- [uniswap-python][gh-uniswap-python]
   - Implement support for the Uniswap Universal Router ([issue #324](https://github.com/uniswap-python/uniswap-python/issues/324))
-- [Quantified Me]()
+- [Quantified Me][gh-quantifiedme]
   - Help with adding more types of analysis and visualization.
 - [Chatalysis][gh-chatalysis]
 - Projects related to [my MSc Thesis][gh-thesis]
@@ -37,10 +40,12 @@ The specific tasks available in each projects can vary from time to time, but I 
 Is the specific thing you're interested in working on not listed? I'm open to suggestions!
 
 [gh-aw]: https://github.com/ActivityWatch/activitywatch
+[gh-sync]: https://github.com/ActivityWatch/activitywatch/issues/35
+[gh-aw-leaderboard]: https://github.com/ErikBjare/quantifiedme
 [gh-chatalysis]: https://github.com/ErikBjare/chatalysis
 [gh-thesis]: https://github.com/ErikBjare/thesis
-[gh-sync]: https://github.com/ActivityWatch/activitywatch/issues/35
 [gh-uniswap-python]: https://github.com/uniswap-python/uniswap-python
+[gh-quantifiedme]: https://github.com/ErikBjare/quantifiedme
 [aw-stats]: https://activitywatch.net/stats/
 
 
