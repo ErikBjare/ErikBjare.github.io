@@ -9,7 +9,7 @@ I'm looking for help with a variety of open source projects, and as an experimen
 
 The jobs available are generally programming-related, but I might expand this to non-technical tasks in the future.
 
-Salary is negotiable, but expect a range of €20-50/h (depending on skill and difficulty of task).
+Salary is negotiable, but expect a range of €20-60/h (depending on skill and difficulty of task).
 
 **Note:** This is in an early experimental stage, feedback and ideas welcome!
 
@@ -19,7 +19,7 @@ Salary is negotiable, but expect a range of €20-50/h (depending on skill and d
 Currently there are jobs available on the following projects:
 
 - [ActivityWatch][gh-aw]
-  - Work on sync to get it ready for production use ([issue #35][gh-sync])
+  - Work on [sync][gh-aw-sync] to get it ready for production use ([issue #35][gh-aw-sync-issue])
   - Work on [aw-leaderboard][gh-aw-leaderboard] (greenfield)
     - Exciting public leaderboard for ActivityWatch data
     - Has a dual use as a time reporting server
@@ -29,6 +29,7 @@ Currently there are jobs available on the following projects:
     - Post where potential users might hang.
     - You should make the [numbers go up][aw-stats].
 - [uniswap-python][gh-uniswap-python]
+  - Implement support for multi-hop swaps (aka "complete v3 support", [issue #95](https://github.com/uniswap-python/uniswap-python/issues/95))
   - Implement support for the Uniswap Universal Router ([issue #324](https://github.com/uniswap-python/uniswap-python/issues/324))
 - [Quantified Me][gh-quantifiedme]
   - Help with adding more types of analysis and visualization.
@@ -40,8 +41,9 @@ The specific tasks available in each projects can vary from time to time, but I 
 Is the specific thing you're interested in working on not listed? I'm open to suggestions!
 
 [gh-aw]: https://github.com/ActivityWatch/activitywatch
-[gh-sync]: https://github.com/ActivityWatch/activitywatch/issues/35
-[gh-aw-leaderboard]: https://github.com/ErikBjare/quantifiedme
+[gh-aw-sync]: https://github.com/ActivityWatch/aw-server-rust/tree/master/aw-sync
+[gh-aw-sync-issue]: https://github.com/ActivityWatch/activitywatch/issues/35
+[gh-aw-leaderboard]: https://github.com/ActivityWatch/aw-leaderboard
 [gh-chatalysis]: https://github.com/ErikBjare/chatalysis
 [gh-thesis]: https://github.com/ErikBjare/thesis
 [gh-uniswap-python]: https://github.com/uniswap-python/uniswap-python
