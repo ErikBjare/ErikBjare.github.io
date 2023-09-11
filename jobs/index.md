@@ -102,3 +102,13 @@ In the past, I've paid:
 
  - @xylix, for work on ActivityWatch
  - @liquid8, for work on uniswap-python
+
+### Thanks
+
+These people have also helped out significantly, but have yet to receive any compensation:
+
+ - @johan-bjareholt, my dear brother, for helping out with ActivityWatch
+ - @iloveitaly (Michael Bianco), for helping out with ActivityWatch
+ - @ShootingKing-AM (Harsha Raghu), for helping out with ActivityWatch
+ - @BelKed, for helping out answering questions in the ActivityWatch issues and Discord
+ - ...and everyone else, some of which you can find in the [ActivityWatch contributors stats](https://activitywatch.net/contributors/).
