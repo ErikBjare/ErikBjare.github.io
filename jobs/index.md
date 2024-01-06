@@ -9,7 +9,7 @@ I'm looking for help with a variety of open source projects, and as an experimen
 
 The jobs available are generally programming-related, but I might expand this to non-technical tasks in the future.
 
-Salary is negotiable, but expect a range of €20-60/h (depending on skill and difficulty of task).
+Salary is negotiable, but expect a range of €40-100/h (depending on skill and difficulty of task).
 
 **Note:** This is in an early experimental stage, feedback and ideas welcome!
 
