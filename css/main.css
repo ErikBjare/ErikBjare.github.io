@@ -1,107 +1,281 @@
-html, body { margin: 0; padding: 0; }
+@charset "UTF-8";
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
-@media only screen { .container { max-width: 800px; } }
+@media only screen {
+  .container {
+    max-width: 800px;
+  }
+}
+.icon-wikipedia:before {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  content: "VV";
+  letter-spacing: -0.45em;
+  margin-right: 0.5em;
+}
 
-.icon-wikipedia:before { font-family: "Times New Roman", Times, serif; font-weight: 400; content: "VV"; letter-spacing: -0.45em; margin-right: 0.5em; }
+a[href^="mailto:"]:not(.no-link-icon):before {
+  position: relative;
+  font-family: "Font Awesome 5 Free";
+  top: 1px;
+  content: "✉";
+  margin-left: 0.3em;
+  margin-right: 0.2em;
+  color: #0AA;
+}
 
-a[href^="mailto:"]:not(.no-link-icon):before { position: relative; font-family: 'Font Awesome 5 Free'; top: 1px; content: "\2709"; margin-left: 0.3em; margin-right: 0.2em; color: #0AA; }
+a[href*="wikipedia.org"]:not(.no-link-icon) {
+  background: url(/img/wikipedia-icon.svg) center right no-repeat;
+  background-size: 1.3em;
+  padding-right: 1.4em;
+}
 
-a[href*="wikipedia.org"]:not(.no-link-icon) { background: url(/img/wikipedia-icon.svg) center right no-repeat; background-size: 1.3em; padding-right: 1.4em; }
+a[href*="github.com"]:not(.no-link-icon) {
+  background: url(/img/github-icon.svg) center right no-repeat;
+  background-size: 1.2em;
+  padding-right: 1.5em;
+}
 
-a[href*="github.com"]:not(.no-link-icon) { background: url(/img/github-icon.svg) center right no-repeat; background-size: 1.2em; padding-right: 1.5em; }
+a[href*="youtube.com"]:not(.no-link-icon):after {
+  content: " ";
+  background: url(/img/youtube-icon.svg) center right no-repeat;
+  background-size: 1.2em;
+  padding-left: 1.4em;
+  margin-right: 0.5em;
+  opacity: 0.5;
+}
+a[href*="youtube.com"]:not(.no-link-icon):hover:after {
+  opacity: 1;
+}
 
-a[href*="youtube.com"]:not(.no-link-icon):after { content: ' '; background: url(/img/youtube-icon.svg) center right no-repeat; background-size: 1.2em; padding-left: 1.4em; margin-right: 0.5em; opacity: 0.5; }
+a[href^="bitcoin:"]:not(.no-link-icon) {
+  background: url(/img/bitcoin-icon.svg) center left no-repeat;
+  background-size: 1.3em;
+  padding-left: 1.4em;
+}
 
-a[href*="youtube.com"]:not(.no-link-icon):hover:after { opacity: 1.0; }
+a[href^="ethereum:"]:not(.no-link-icon) {
+  background: url(/img/ethereum-icon.svg) center left no-repeat;
+  margin-left: 0.2em;
+  background-size: 0.9em;
+  padding-left: 1.2em;
+}
 
-a[href^="bitcoin:"]:not(.no-link-icon) { background: url(/img/bitcoin-icon.svg) center left no-repeat; background-size: 1.3em; padding-left: 1.4em; }
+a[href^="dogecoin:"]:not(.no-link-icon) {
+  background: url(/img/dogecoin-icon.svg) center left no-repeat;
+  background-size: 1.3em;
+  padding-left: 1.4em;
+}
 
-a[href^="ethereum:"]:not(.no-link-icon) { background: url(/img/ethereum-icon.svg) center left no-repeat; margin-left: 0.2em; background-size: 0.9em; padding-left: 1.2em; }
+.links {
+  padding: 1em;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+}
+.links i.fab,
+.links span.icon-wikipedia {
+  vertical-align: middle;
+  line-height: 1em;
+}
 
-a[href^="dogecoin:"]:not(.no-link-icon) { background: url(/img/dogecoin-icon.svg) center left no-repeat; background-size: 1.3em; padding-left: 1.4em; }
+body {
+  font-family: "Open Sans", sans-serif;
+}
 
-.links { padding: 1em; border-radius: 3px; border: 1px solid #e5e5e5; }
+h1, h2, h3, h4, h5 {
+  font-family: "Varela Round", sans-serif;
+  margin-top: 1.5em;
+}
 
-.links i.fab, .links span.icon-wikipedia { vertical-align: middle; line-height: 1em; }
+h1 {
+  font-size: 2.5em;
+}
 
-body { font-family: "Open Sans", sans-serif; }
+h5 {
+  margin-bottom: 0.3em;
+  font-size: 1.1em;
+}
 
-h1, h2, h3, h4, h5 { font-family: 'Varela Round', sans-serif; margin-top: 1.5em; }
+a {
+  color: #337ab7;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #337ab7;
+  transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, text-shadow 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out, text-shadow 0.2s ease-out;
+  -o-transition: color 0.2s ease-out, text-shadow 0.2s ease-out;
+}
+a .button {
+  text-decoration: none;
+}
+a :hover, a :active {
+  color: #122a3f;
+}
 
-h1 { font-size: 2.5em; }
+blockquote {
+  font-family: serif;
+  font-size: 1em;
+  margin: 1em 0;
+  padding: 1em 1em 0.5em 1em;
+  background-color: #f8f8f8;
+  border-color: #666;
+  border: 1px solid #ccc;
+  border-width: 0 0 0 1px;
+}
 
-h5 { margin-bottom: 0.3em; font-size: 1.1em; }
+.navbar .nav-item {
+  margin: 0 0.3em;
+}
+.navbar a {
+  border-radius: 5px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.navbar a i {
+  margin-left: 0.3em;
+}
+.navbar a > .pagename {
+  padding: 0 0.2em 0 0.5em;
+}
+.navbar a:hover {
+  background-color: #DDD !important;
+}
 
-a { color: #337ab7; text-decoration: none; text-shadow: 0px 0px 0px #337ab7; transition: color .2s ease-out; -moz-transition: color .2s ease-out, text-shadow 0.2s ease-out; -webkit-transition: color .2s ease-out, text-shadow 0.2s ease-out; -o-transition: color .2s ease-out, text-shadow 0.2s ease-out; }
+hr.dotted {
+  background: url("/img/diagonal-dotted-rule.png") repeat-x 0 0;
+  border: 0 none;
+  height: 0.2em;
+  margin: 2em 0 2em 0;
+}
 
-a .button { text-decoration: none; }
+.box {
+  background: rgba(0, 0, 0, 0.8);
+  border: 0.1em solid #555;
+  border-radius: 0.3em;
+}
 
-a :hover, a :active { color: #122a3f; }
+.separator {
+  font-weight: bold;
+  margin: 0 0.3em 0 0.3em;
+}
 
-blockquote { font-family: serif; font-size: 1em; margin: 1em 0; padding: 1em 1em 0.5em 1em; background-color: #f8f8f8; border-color: #666; border: 1px solid #ccc; border-width: 0 0 0 1px; }
+.status-completed {
+  color: #080;
+}
 
-.navbar .nav-item { margin: 0 0.3em; }
+.status-in_progress {
+  color: #800;
+}
 
-.navbar a { border-radius: 5px; padding-left: 0.5em; padding-right: 0.5em; }
+.post {
+  padding: 1.5em;
+}
+.post header {
+  border: solid #888;
+  border-width: 0 0 0.1em 0;
+  border-radius: 0.7em 0.7em 0 0;
+  padding: 0 0 1em 0;
+  margin: 0 0 1em 0;
+}
+.post header .title {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+.post header .title a {
+  color: #000;
+}
+.post header .meta {
+  margin: 0.3em 0 0 0;
+  font-size: 1em;
+}
+.post header .meta-box {
+  display: inline-block;
+  padding: 0 0.7em 0 0.3em;
+}
+.post header .meta-box .meta-icon {
+  color: #444;
+  padding-right: 0.3em;
+}
+.post .content {
+  clear: both;
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+.post .content img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 0.3em solid #DDD;
+}
+.post .footer {
+  border: #888 solid;
+  border-width: 1px 0 0 0;
+  padding-top: 1em;
+  font-size: 0.9em;
+}
+.post .footer .social-button {
+  display: inline-block;
+  margin-right: 4px;
+}
+.post .footer .fa {
+  color: #4466CC;
+}
 
-.navbar a i { margin-left: 0.3em; }
+#footer {
+  margin-top: 2em;
+  border: solid #BBB;
+  background-color: #f8f8f8;
+  border-width: 1px 0 0 0;
+}
+#footer .COINWIDGETCOM_CONTAINER > a,
+#footer .COINWIDGETCOM_CONTAINER > span {
+  height: 22px;
+  max-height: 22px;
+}
 
-.navbar a > .pagename { padding: 0 0.2em 0 0.5em; }
+.msg-box {
+  border: 1px solid;
+  padding: 0.5em;
+  margin: 0.5em 0 0.5em 0;
+}
+.msg-box.info {
+  border: 1px solid #5CF;
+  background-color: #CFEFFF;
+}
+.msg-box.note {
+  border-color: #FC9;
+  background-color: #ffefba;
+}
 
-.navbar a:hover { background-color: #DDD !important; }
+.underline.dotted {
+  border-bottom: 1px dashed #999;
+  text-decoration: none;
+  white-space-collapse: discard;
+}
 
-hr.dotted { background: url("/img/diagonal-dotted-rule.png") repeat-x 0 0; border: 0 none; height: 0.2em; margin: 2em 0 2em 0; }
+.links a {
+  line-height: 2;
+  min-width: 2.5em;
+  text-decoration: none;
+}
+.links a i, .links a span {
+  font-size: 1.5em;
+  width: 1em;
+}
 
-.box { background: rgba(0, 0, 0, 0.8); border: 0.1em solid #555; border-radius: 0.3em; }
-
-.separator { font-weight: bold; margin: 0 0.3em 0 0.3em; }
-
-.status-completed { color: #080; }
-
-.status-in_progress { color: #800; }
-
-.post { padding: 1.5em; }
-
-.post header { border: solid #888; border-width: 0 0 0.1em 0; border-radius: 0.7em 0.7em 0 0; padding: 0 0 1em 0; margin: 0 0 1em 0; }
-
-.post header .title { margin: 0 0 0 0; padding: 0 0 0 0; }
-
-.post header .title a { color: #000; }
-
-.post header .meta { margin: 0.3em 0 0 0; font-size: 1em; height: 1em; }
-
-.post header .meta-box { display: inline-block; padding: 0 0.7em 0 0.3em; }
-
-.post header .meta-box .meta-icon { color: #444; padding-right: 0.3em; }
-
-.post .content { clear: both; text-align: justify; font-size: 1.1em; line-height: 1.6em; }
-
-.post .content img { margin-left: auto; margin-right: auto; display: block; border: 0.3em solid #DDD; }
-
-.post .footer { border: #888 solid; border-width: 1px 0 0 0; padding-top: 1em; font-size: 0.9em; }
-
-.post .footer .social-button { display: inline-block; margin-right: 4px; }
-
-.post .footer .fa { color: #4466CC; }
-
-#footer { margin-top: 2em; border: solid #BBB; background-color: #f8f8f8; border-width: 1px 0 0 0; }
-
-#footer .COINWIDGETCOM_CONTAINER > a, #footer .COINWIDGETCOM_CONTAINER > span { height: 22px; max-height: 22px; }
-
-.msg-box { border: 1px solid; padding: 0.5em; margin: 0.5em 0 0.5em 0; }
-
-.msg-box.info { border: 1px solid #5CF; background-color: #CFEFFF; }
-
-.msg-box.note { border-color: #FC9; background-color: #ffefba; }
-
-.underline.dotted { border-bottom: 1px dashed #999; text-decoration: none; white-space-collapse: discard; }
-
-.links a { line-height: 2.0; min-width: 2.5em; text-decoration: none; }
-
-.links a i, .links a span { font-size: 1.5em; width: 1.0em; }
-
-.toc { font-size: 0.8em; display: inline-block; background: #f8f8f8; padding: 1em 1em 0.0em 1em; border: 1px solid #bbb; margin-bottom: 2em; }
-
-.toc ul { padding-left: 2em; }
+.toc {
+  font-size: 0.8em;
+  display: inline-block;
+  background: #f8f8f8;
+  padding: 1em 1em 0em 1em;
+  border: 1px solid #bbb;
+  margin-bottom: 2em;
+}
+.toc ul {
+  padding-left: 2em;
+}
 
 /*# sourceMappingURL=main.css.map */
