@@ -18,19 +18,6 @@
               {% include last-modified.html %}
             </div>
 
-            <div class="meta-box">
-              <span class="underline dotted">Tags:</span>
-              {% for tag in page.tags %}
-                {% unless tag contains "state" and tag contains "quality" %}
-                  <a href="/tags/#{{tag}}">
-                    <span class="label label-info" style="margin-left: 0.3em; font-size: 90%">
-                      {{tag}}
-                    </span>
-                  </a>
-                {% endunless %}
-              {% endfor %}
-            </div>
-
             {% if page.state %}
               <div class="meta-box" title="State is a measurement of completion">
                 <span class="underline dotted">State:</span>
@@ -48,6 +35,19 @@
                 </span>
               </div>
             {% endif %}
+
+            <div class="meta-box">
+              <span class="underline dotted">Tags:</span>
+              {% for tag in page.tags %}
+                {% unless tag contains "state" and tag contains "quality" %}
+                  <a href="/tags/#{{tag}}">
+                    <span class="label label-info" style="margin-left: 0.3em; font-size: 90%">
+                      {{tag}}
+                    </span>
+                  </a>
+                {% endunless %}
+              {% endfor %}
+            </div>
           </small>
         </div>
     </header>
@@ -64,8 +64,24 @@
     <div class="footer">
         <div {% if include.fullpage %}style="border: solid rgba(255,255,255,0.2); border-width: 0 0 1px 0; padding-bottom: 10px;"{% endif %}>
 
+          <span class="mx-2">
             <span class="fa fa-link"></span>
             <a href="{{ page.url }}">Permalink</a>
+          </span>
+
+          <span class="mx-2">
+            <span class="fa fa-history"></span>
+            <a class="no-link-icon" href="{{ site.github.repository_url }}/commits/{{ site.github.branch }}/{{ page.path }}" title="History">
+              History
+            </a>
+          </span>
+
+          <span class="mx-2">
+            <span class="fa fa-pencil"></span>
+            <a class="no-link-icon" href="{{ site.github.repository_url }}/edit/{{ site.github.branch }}/{{ page.path }}" title="Edit">
+              Edit
+            </a>
+          </span>
 
             {% if include.fullpage != true %}
               <span class="separator">|</span>

@@ -33,6 +33,10 @@ defaults:
 sass:
     sass_dir: _sass
 
+github:
+  repository_url: https://github.com/ErikBjare/erikbjare.github.io
+  branch: master
+
 plugins:
  - jekyll-redirect-from
  - jekyll-last-modified-at
