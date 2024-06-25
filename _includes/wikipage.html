@@ -6,8 +6,10 @@
 
     <div class="content">
         <div class="toc">
-          <b>Table of contents</b>
-          {% include toc.html html=include.content %}
+          <details open>
+            <summary><b>Table of contents</b></summary>
+            {% include toc.html html=include.content %}
+          </details>
         </div>
 
         {{ include.content }}
