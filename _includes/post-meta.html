@@ -5,12 +5,15 @@
     {{ page.author }}
   </div>
 
-  {% assign created = page.created | default: page.date %}
+  {% if page.created %}
+    {% assign created = page.created %}
+  {% else %}
+    {% assign created = nil %}
+  {% endif %}
   {% if created %}
-    <div class="meta-box">
+    <div class="meta-box" title="Created">
       <span class="fa fa-calendar meta-icon" style="color: #666"></span>
-      <span class="fa fa-time"></span>
-      <time datetime="{{ reated }}">
+      <time datetime="{{ created }}">
         {{ created | date: "%F" }}
       </time>
     </div>

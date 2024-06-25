@@ -7,6 +7,7 @@ redirect_from:
   - /wiki/importance-of-open-recommender-systems/
 tags: psychology behavior recommender-systems social-media decentralization
 state: draft
+created: 2017-10-13
 ---
 
 ## Why care? 

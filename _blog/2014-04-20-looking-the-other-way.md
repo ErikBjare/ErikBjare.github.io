@@ -2,7 +2,7 @@
 title:  "VR: Looking the other way"
 author: "Erik Bjäreholt"
 description: "The future of VR is not only about games"
-date:   2014-04-20 00:35
+created:   2014-04-20 00:35
 status: Completed
 tags: vr futurism
 ---

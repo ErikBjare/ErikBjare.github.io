@@ -2,7 +2,7 @@
 title:  "Humble beginnings"
 author: "Erik Bjäreholt"
 description: "I had to start somewhere, might as well be here"
-date:   2014-03-18 14:18
+created:   2014-03-18 14:18
 ---
 
 So, here it is, the first post of my possibly first serious blog.
