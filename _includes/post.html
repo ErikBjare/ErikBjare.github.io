@@ -2,24 +2,7 @@
     <header>
         <h1 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
-        <div class="meta">
-            <div class="meta-box">
-                <span class="fa fa-user meta-icon" style="color: #05A"></span>
-                {{ page.author }}
-            </div>
-            <div class="meta-box">
-                <span class="fa fa-calendar meta-icon" style="color: #666"></span>
-                <time datetime="{{ page.date }}">
-                    {{ page.date | date: "%F %R %Z" }}
-                </time>
-            </div>
-            {% if page.status %}
-            <div class="meta-box">
-                <span class="fa fa-bolt meta-icon" style="color: #FA6"></span>
-                Status:  <span class='status-{{ page.status | downcase | replace: " ", "_"}}'>{{ page.status }}</span>
-            </div>
-            {% endif %}
-        </div>
+        {% include post-meta.html %}
     </header>
 
     <div class="content">

@@ -1,0 +1,68 @@
+<div class="meta">
+  <small>
+  <div class="meta-box">
+    <span class="fa fa-user meta-icon" style="color: #05A"></span>
+    {{ page.author }}
+  </div>
+
+  {% assign created = page.created | default: page.date %}
+  {% if created %}
+    <div class="meta-box">
+      <span class="fa fa-calendar meta-icon" style="color: #666"></span>
+      <span class="fa fa-time"></span>
+      <time datetime="{{ reated }}">
+        {{ created | date: "%F" }}
+      </time>
+    </div>
+  {% endif %}
+
+  <!-- This is kept at the bottom instead.
+  <div class="meta-box">
+    {% include last-modified.html %}
+  </div>
+  -->
+
+  {% if page.status %}
+  <div class="meta-box">
+    <span class="fa fa-bullseye meta-icon" style="color: #666"></span>
+    <!--span class="fa fa-bolt meta-icon" style="color: #FA6"></span-->
+    Status:  <span class='status-{{ page.status | downcase | replace: " ", "_"}}'>{{ page.status }}</span>
+  </div>
+  {% endif %}
+
+  {% if page.state %}
+  <div class="meta-box" title="State is a measurement of completion">
+    <span class="fa fa-bullseye meta-icon" style="color: #666"></span>
+    <span class="underline dotted">State:</span>
+    {% if page.state == "stub" %}
+    <span class="label label-danger" style="margin-left: 0.3em">
+      {% else if page.state == "draft" %}
+      <span class="label label-warning" style="margin-left: 0.3em">
+        {% else if page.state == "finished" %}
+        <span class="label label-success" style="margin-left: 0.3em">
+          {% else %}
+          <span class="label label-default" style="margin-left: 0.3em">
+            unknown state:
+            {% endif %}
+            {{ page.state }}
+          </span>
+  </div>
+  {% endif %}
+
+
+  <div class="meta-box">
+    <span class="fa fa-tags meta-icon" style="color: #666"></span>
+    <span class="underline dotted">Tags:</span>
+    {% for tag in page.tags %}
+    {% unless tag contains "state" and tag contains "quality" %}
+    <a href="/tags/#{{tag}}">
+      <span class="label label-info" style="margin-left: 0.3em; font-size: 90%">
+        {{tag}}
+      </span>
+    </a>
+    {% endunless %}
+    {% endfor %}
+  </div>
+  </small>
+</div>
+
