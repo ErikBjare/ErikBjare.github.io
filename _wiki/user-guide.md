@@ -40,7 +40,7 @@ TODO: add GPT-4 generated summary
 
 TODO
 
-I'm paying for recurring contributions to my open source projects. See the [jobs](/jobs) page for more information.
+Contributions to my open source projects are always welcome.
 
 ## Habits
 
