@@ -17,6 +17,17 @@
     vertical-align: middle;
     line-height: 1em;
   }
+
+  // Links here carry their own brand icons; suppress the global
+  // domain link-icon decorations (duplicate icons, bad wrapping)
+  a:not(.no-link-icon) {
+    background-image: none;
+    padding-right: 0;
+
+    &:after {
+      content: none;
+    }
+  }
 }
 
 body {
