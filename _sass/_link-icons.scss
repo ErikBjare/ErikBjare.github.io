@@ -8,19 +8,25 @@ a[href^="mailto:"]:not(.no-link-icon):before {
   color: #0AA;
 }
 
-$wikipedia_icon_color: #333;
-
-// Add a Wikipedia icon to Wikipedia links
-a[href*="wikipedia.org"]:not(.no-link-icon) {
-  background: url(/img/wikipedia-icon.svg) center right no-repeat;
-  background-size: 1.3em;
-  padding-right: 1.4em;
+// The Wikipedia/GitHub SVGs are near-black, so they are rendered via an
+// ::after pseudo-element that dark mode can invert (see --icon-invert).
+a[href*="wikipedia.org"]:not(.no-link-icon):after,
+a[href*="github.com"]:not(.no-link-icon):after {
+  content: '';
+  display: inline-block;
+  width: 1.3em;
+  height: 1em;
+  vertical-align: -0.1em;
+  margin-left: 0.2em;
+  filter: invert(var(--icon-invert));
 }
 
-a[href*="github.com"]:not(.no-link-icon) {
-  background: url(/img/github-icon.svg) center right no-repeat;
-  background-size: 1.2em;
-  padding-right: 1.5em;
+a[href*="wikipedia.org"]:not(.no-link-icon):after {
+  background: url(/img/wikipedia-icon.svg) center / 1.3em no-repeat;
+}
+
+a[href*="github.com"]:not(.no-link-icon):after {
+  background: url(/img/github-icon.svg) center / 1.1em no-repeat;
 }
 
 a[href*="youtube.com"]:not(.no-link-icon) {

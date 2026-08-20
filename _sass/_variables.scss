@@ -1,10 +1,90 @@
 //
 // Colors
 //
+// The palette is implemented as CSS custom properties so that dark mode can
+// swap values in a single place (the media query below) without duplicating
+// any style rules. Light is the default; dark follows the OS preference.
+//
 
-$neonblue: #428bca;
-$orange: #FA0;
-$softblue: #4466CC;
+:root {
+    color-scheme: light dark;
 
-// Currently the default Bootstrap link color (#337ab7)
-$linkcolor: #337ab7;
+    // Light theme: near-black text on white, teal accent
+    --bg: #ffffff;
+    --bg-soft: #f7f8fa;          // soft cards, blockquotes, toc
+    --border: #e2e8f0;
+    --border-soft: #edf0f4;
+    --card-border: transparent;  // sidebar cards are borderless on white
+    --text: #1a202c;
+    --text-muted: #4a5568;
+    --heading: #1a202c;
+    --accent: #0f766e;           // teal, echoing the Superuser Labs green
+    --accent-hover: #0b5952;
+    --accent-soft: rgba(15, 118, 110, 0.08);
+    --hover-soft: rgba(0, 0, 0, 0.05);
+    --hr-dashed: #cbd5e0;
+    --navbar-bg: #ffffff;
+    --input-bg: #ffffff;
+    --table-stripe: rgba(0, 0, 0, 0.02);
+    --status-done: #080;
+    --status-wip: #800;
+    --msg-info-border: #a8d9f0;
+    --msg-info-bg: #e8f6fd;
+    --msg-info-text: #1a202c;
+    --msg-note-border: #f0d9a8;
+    --msg-note-bg: #fdf6e3;
+    --msg-note-text: #1a202c;
+    // Near-black inline SVG icons (Wikipedia/GitHub) get inverted in dark
+    --icon-invert: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        // Dark theme: slate + green, aligned with superuserlabs.org
+        --bg: #020617;               // slate-950
+        --bg-soft: #0f172a;          // slate-900: cards, surfaces
+        --border: #1e293b;           // slate-800: 1px borders
+        --border-soft: #1e293b;
+        --card-border: #1e293b;
+        --text: #cbd5e1;             // slate-300
+        --text-muted: #94a3b8;       // slate-400
+        --heading: #ffffff;
+        --accent: #4ade80;           // green-400
+        --accent-hover: #86efac;     // green-300
+        --accent-soft: rgba(74, 222, 128, 0.1);
+        --hover-soft: rgba(255, 255, 255, 0.06);
+        --hr-dashed: #334155;
+        --navbar-bg: rgba(2, 6, 23, 0.92);
+        --input-bg: #0f172a;
+        --table-stripe: rgba(15, 23, 42, 0.5);
+        --status-done: #4ade80;
+        --status-wip: #fbbf24;
+        --msg-info-border: rgba(56, 189, 248, 0.4);
+        --msg-info-bg: rgba(56, 189, 248, 0.08);
+        --msg-info-text: #7dd3fc;
+        --msg-note-border: rgba(251, 191, 36, 0.4);
+        --msg-note-bg: rgba(251, 191, 36, 0.08);
+        --msg-note-text: #fcd34d;
+        --icon-invert: 0.85;
+    }
+}
+
+// SCSS aliases, so the rest of the stylesheets read naturally
+$bg: var(--bg);
+$bg-soft: var(--bg-soft);
+$border-color: var(--border);
+$border-soft: var(--border-soft);
+$card-border: var(--card-border);
+$text-color: var(--text);
+$text-muted: var(--text-muted);
+$heading: var(--heading);
+$accent: var(--accent);
+$accent-hover: var(--accent-hover);
+$accent-soft: var(--accent-soft);
+$hover-soft: var(--hover-soft);
+$hr-dashed: var(--hr-dashed);
+$navbar-bg: var(--navbar-bg);
+$input-bg: var(--input-bg);
+$table-stripe: var(--table-stripe);
+
+$linkcolor: $accent;
