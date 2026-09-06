@@ -7,137 +7,248 @@
 
 @import 'link-icons';
 
-.links {
-  padding: 1em;
-  border-radius: 3px;
-  border: 1px solid #e5e5e5;
-
-  i.fab,
-  span.icon-wikipedia {
-    vertical-align: middle;
-    line-height: 1em;
-  }
-}
+//
+// Global
+//
 
 body {
     @include default-font-style;
+    font-size: 16px;
+    line-height: 1.6;
+    color: $text-color;
+    background-color: $bg;
 }
 
 h1, h2, h3, h4, h5 {
     @include round-font-style;
-    margin-top: 1.5em;
+    color: $heading;
+    margin-top: 1.6em;
+    margin-bottom: 0.5em;
+    line-height: 1.25;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.1rem;
+    margin-top: 1em;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.1rem;
 }
 
 h5 {
     margin-bottom: 0.3em;
-    font-size: 1.1em;
+    font-size: 1rem;
 }
 
 a {
     color: $linkcolor;
     text-decoration: none;
-    text-shadow: 0px 0px 0px $linkcolor;
-    transition: color .2s ease-out;
-    -moz-transition: color .2s ease-out, text-shadow 0.2s ease-out;
-    -webkit-transition: color .2s ease-out, text-shadow 0.2s ease-out;
-    -o-transition: color .2s ease-out, text-shadow 0.2s ease-out;
+    transition: color 0.15s ease-out;
 
     .button {
         text-decoration: none;
     }
 
-    :hover, :active {
-       color: darken($linkcolor, 30%);
+    &:hover, &:active {
+        color: $accent-hover;
+        text-decoration: underline;
+        text-underline-offset: 0.15em;
     }
+}
+
+.text-muted {
+    color: $text-muted !important;
 }
 
 blockquote {
     @include serif-font-style;
     font-size: 1em;
     margin: 1em 0;
-    padding: 1em 1em 0.5em 1em;
-    background-color: #f8f8f8;
-    border-color: #666;
-    border: 1px solid #ccc;
-    border-width: 0 0 0 1px;
+    padding: 0.75em 1em;
+    color: $text-muted;
+    background-color: $bg-soft;
+    border-left: 3px solid $accent;
+    border-radius: 0 6px 6px 0;
 }
 
+//
+// Navbar: page background with a subtle bottom border, clear hover/active states
+//
+
 .navbar {
-    .nav-item {
-        margin: 0 0.3em;
+    background-color: $navbar-bg;
+    border-bottom: 1px solid $border-color;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+
+    .navbar-brand {
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        color: $heading;
+
+        &:hover {
+            color: $accent;
+            text-decoration: none;
+        }
     }
 
-    a {
-        border-radius: 5px;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+    .nav-item {
+        margin: 0 0.15em;
+    }
+
+    // Extra specificity to beat Bootstrap's .navbar-light .navbar-nav .nav-link
+    .navbar-nav a.nav-link {
+        color: $text-muted;
+        border-radius: 6px;
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+        transition: color 0.15s ease-out, background-color 0.15s ease-out;
 
         i {
             margin-left: 0.3em;
+            font-size: 0.9em;
         }
 
         > .pagename {
-            padding: 0 0.2em 0 0.5em;
+            padding: 0 0.2em 0 0.4em;
+        }
+
+        &:hover {
+            color: $accent;
+            background-color: $hover-soft;
+            text-decoration: none;
+        }
+
+        &.active {
+            color: $accent;
+            font-weight: 600;
+            background-color: $accent-soft;
         }
     }
 
-    a:hover {
-        background-color: #DDD !important;
+    .navbar-toggler {
+        border-color: $border-color;
+    }
+
+    // Bootstrap's navbar-light toggler icon is near-black; invert it in dark
+    .navbar-toggler-icon {
+        filter: invert(var(--icon-invert));
     }
 }
 
+//
+// Misc elements
+//
+
+hr {
+    border: 0;
+    border-top: 1px solid $border-color;
+    opacity: 1;
+    margin: 2em 0;
+}
+
 hr.dotted {
-    background: url("/img/diagonal-dotted-rule.png") repeat-x 0 0;
-    border: 0 none;
-    height: 0.2em;
-    margin: 2em 0 2em 0;
+    border-top: 1px dashed $hr-dashed;
+    margin: 2.5em 0;
 }
 
 .box {
-    background: rgba(0, 0, 0, 0.8);
-    border: 0.1em solid #555;
-    border-radius: 0.3em;
+    background: $bg-soft;
+    border: 1px solid $border-color;
+    border-radius: 6px;
 }
 
 .separator {
     font-weight: bold;
     margin: 0 0.3em 0 0.3em;
+    color: $text-muted;
 }
 
-
 .status-completed {
-    color: #080;
+    color: var(--status-done);
 }
 
 .status-in_progress {
-    color: #800;
+    color: var(--status-wip);
 }
+
+// Old Bootstrap-3-era labels (post meta, tags page)
+.label {
+    display: inline-block;
+    padding: 0.1em 0.6em;
+    border-radius: 999px;
+    font-size: 85%;
+    background-color: $bg-soft;
+    border: 1px solid $border-color;
+    color: $text-color;
+
+    &.label-info {
+        border-color: $accent;
+        color: $accent;
+    }
+}
+
+// Homepage projects list: tighter nesting with indent guides
+ul.projects {
+    padding-left: 1.25em;
+
+    > li {
+        margin-bottom: 0.75em;
+    }
+
+    ul {
+        margin-top: 0.15em;
+        margin-left: 0.1em;
+        padding-left: 1.1em;
+        border-left: 2px solid $border-soft;
+        list-style: none;
+        font-size: 0.95em;
+        color: $text-muted;
+
+        li {
+            margin-bottom: 0.1em;
+        }
+    }
+}
+
+//
+// Posts & wiki pages
+//
 
 .post {
     padding: 1.5em;
 
     header {
-        border: solid #888;
-        border-width: 0 0 0.1em 0;
-        border-radius: 0.7em 0.7em 0 0;
+        border-bottom: 1px solid $border-color;
         padding: 0 0 1em 0;
-        margin: 0 0 1em 0;
+        margin: 0 0 1.5em 0;
 
         .title {
-            margin: 0 0 0 0;
-            padding: 0 0 0 0;
+            margin: 0;
+            padding: 0;
             a {
-                color: #000;
+                color: $heading;
+
+                &:hover {
+                    color: $accent;
+                    text-decoration: none;
+                }
             }
         }
 
         .meta {
-            margin: 0.3em 0 0 0;
-            font-size: 1em;
+            margin: 0.4em 0 0 0;
+            font-size: 0.9em;
+            color: $text-muted;
         }
 
         .meta-box {
@@ -145,7 +256,7 @@ hr.dotted {
             padding: 0 0.7em 0 0.3em;
 
             .meta-icon {
-                color: #444;
+                color: $text-muted;
                 padding-right: 0.3em;
             }
         }
@@ -153,23 +264,24 @@ hr.dotted {
 
     .content {
         clear: both;
-        //text-align: justify;
-        font-size: 1.1em;
-        line-height: 1.6em;
+        font-size: 1.05em;
+        line-height: 1.65;
 
         img {
             margin-left: auto;
             margin-right: auto;
             display: block;
-            border: 0.3em solid #DDD;
+            max-width: 100%;
+            border: 1px solid $border-color;
+            border-radius: 6px;
         }
     }
 
     .footer {
-        border: #888 solid;
-        border-width: 1px 0 0 0;
+        border-top: 1px solid $border-color;
         padding-top: 1em;
         font-size: 0.9em;
+        color: $text-muted;
 
         .social-button {
             display: inline-block;
@@ -177,68 +289,185 @@ hr.dotted {
         }
 
         .fa {
-            color: $softblue;
+            color: $accent;
         }
     }
 }
 
-#footer {
-    margin-top: 2em;
-    border: solid #BBB;
-    background-color: #f8f8f8;
-    border-width: 1px 0 0 0;
+//
+// Site footer
+//
 
-    .COINWIDGETCOM_CONTAINER > a,
-    .COINWIDGETCOM_CONTAINER > span {
-        height: 22px;
-        max-height: 22px;
-    }
+.site-footer {
+    margin: 3em auto 2em auto;
+    padding-top: 1.5em;
+    border-top: 1px solid $border-color;
+    color: $text-muted;
 }
+
+//
+// Message boxes
+//
 
 .msg-box {
   border: 1px solid;
-  padding: 0.5em;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
   margin: 0.5em 0 0.5em 0;
 
   &.info {
-    border: 1px solid #5CF;
-    background-color: #CFEFFF;
+    border-color: var(--msg-info-border);
+    background-color: var(--msg-info-bg);
+    color: var(--msg-info-text);
   }
 
   &.note {
-    border-color: #FC9;
-    background-color: #ffefba;
+    border-color: var(--msg-note-border);
+    background-color: var(--msg-note-bg);
+    color: var(--msg-note-text);
   }
 }
 
 .underline.dotted {
-  border-bottom: 1px dashed #999;
+  border-bottom: 1px dashed $hr-dashed;
   text-decoration: none;
   white-space-collapse: discard;
 }
 
+//
+// Sidebar link lists as soft cards
+//
+
 .links {
+  padding: 1.25em;
+  border-radius: 10px;
+  background-color: $bg-soft;
+  border: 1px solid $card-border;
+  margin-bottom: 1.5em;
+
+  h5 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $text-muted;
+    margin-top: 0;
+  }
+
+  i.fab,
+  span.icon-wikipedia {
+    vertical-align: middle;
+    line-height: 1em;
+  }
+
   a {
     line-height: 2.0;
     min-width: 2.5em;
     text-decoration: none;
+    color: $text-color;
+
+    // These links already carry their own brand icons;
+    // suppress the generic domain link-icon decorations.
+    background: none !important;
+    padding-right: 0 !important;
+
+    &:after {
+        content: none !important;
+    }
+
+    div {
+        padding: 0.1em 0.4em;
+        margin: 0 -0.4em;
+        border-radius: 6px;
+        transition: background-color 0.15s ease-out;
+    }
+
+    &:hover div {
+        background-color: $hover-soft;
+    }
 
     i, span {
-      font-size: 1.5em;
-      width: 1.0em;
+      font-size: 1.35em;
+      width: 1.1em;
+      display: inline-block;
+      text-align: center;
     }
   }
 }
 
+//
+// Table of contents
+//
+
 .toc {
-  font-size: 0.8em;
+  font-size: 0.85em;
   display: inline-block;
-  background: #f8f8f8;
-  padding: 1em 1em 0.0em 1em;
-  border: 1px solid #bbb;
+  background: $bg-soft;
+  padding: 1em 1.25em 0.25em 1.25em;
+  border: 1px solid $card-border;
+  border-radius: 10px;
   margin-bottom: 2em;
 
-  ul {
-    padding-left: 2em;
+  summary {
+    cursor: pointer;
+    color: $heading;
   }
+
+  ul {
+    padding-left: 1.5em;
+  }
+}
+
+//
+// Content elements: tables, forms
+//
+
+table {
+    border-collapse: collapse;
+    margin: 1em 0;
+
+    th, td {
+        border: 1px solid $border-color;
+        padding: 0.5em 0.75em;
+    }
+
+    thead th, th {
+        background-color: $bg-soft;
+        color: $heading;
+        font-weight: 600;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: $table-stripe;
+    }
+}
+
+input, textarea, select {
+    background-color: $input-bg;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    color: $text-color;
+
+    &:focus {
+        border-color: $accent;
+        outline: none;
+        box-shadow: 0 0 0 2px $accent-soft;
+    }
+
+    &::placeholder {
+        color: $text-muted;
+    }
+}
+
+//
+// Dark-only fixes that the custom properties cannot express:
+// the sidebar GitHub/Wikipedia entries use near-black inline colors,
+// which would be invisible on the dark background.
+//
+
+@media (prefers-color-scheme: dark) {
+    .links a div[style*="#444"],
+    .links a div[style*="#333"] {
+        color: $text-color !important;
+    }
 }

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light" role=navigation>
+<nav class="navbar navbar-expand-lg navbar-light" role=navigation>
     <div class="container-fluid">
         <a class="navbar-brand" href="/">erik.bjareholt.com</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,33 +8,33 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/blog/">
+                    <a class="nav-link{% if page.url contains '/blog/' %} active{% endif %}" href="/blog/">
                         <i class="fa fa-pencil"></i>
                         <span class="pagename pagename-fold"> Blog</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/wiki/">
+                    <a class="nav-link{% if page.url contains '/wiki/' or page.url contains '/tags/' %} active{% endif %}" href="/wiki/">
                         <i class="fa fa-book"></i>
                         <span class="pagename pagename-fold"> Wiki</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about/">
+                    <a class="nav-link{% if page.url contains '/about/' %} active{% endif %}" href="/about/">
                         <i class="fa-solid fa-circle-info"></i>
                         <span class="pagename pagename-fold"> About</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/jobs/">
-                        <i class="fa fa-briefcase"></i>
-                        <span class="pagename pagename-fold"> Jobs</span>
+                    <a class="nav-link{% if page.url contains '/consulting/' %} active{% endif %}" href="/consulting/">
+                        <i class="fa fa-handshake"></i>
+                        <span class="pagename pagename-fold"> Consulting</span>
                     </a>
                 </li>
             </ul>
             <ul class="d-flex navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact/">
+                    <a class="nav-link{% if page.url contains '/contact/' %} active{% endif %}" href="/contact/">
                         <i class="fa fa-envelope"></i>
                         <span class="pagename"> Contact</span>
                     </a>

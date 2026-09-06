@@ -8,24 +8,36 @@ div.row
     h1 Hi! I'm Erik 👋🏼
 
   div.col-md-9
-    // NOTE: Much of this is duplicated from my GitHub profile README.
+    // KEEP IN SYNC: bio + projects here mirror my GitHub profile README
+    // (github.com/ErikBjare/ErikBjare, README.md). When updating either,
+    // update the other. The README is the more comprehensive of the two
+    // (timeline, beliefs, extended project descriptions); this page curates.
 
     p
       | I build free and open-source software for fun and the betterment of mankind 🌎🌍🌏.
       | Founder of #[a(href="https://superuserlabs.org") Superuser Labs].
-      | Building #[a(href="https://gptme.org") gptme] — an open-source AI assistant that turns every developer into a superuser.
+      | Building #[a(href="https://gptme.org") gptme], an open-source AI assistant that turns every developer into a superuser.
       | Founder and maintainer of #[a(href="https://activitywatch.net") ActivityWatch], the world's best free and open-source automated time tracker.
       | Previously founding team at #[a(href="https://lovable.dev") Lovable] (fka GPT Engineer).
 
+    p
+      | 💼 I take on a small number of consulting engagements, see #[a(href="/consulting/") Consulting].
+
     h2 Projects
-    ul
+    ul.projects
       li Founder of #[a(href="https://gptme.org") gptme] 🤖 (#[a(href="https://github.com/gptme/gptme") GitHub])
         ul
-          li #[i "An open-source AI assistant for the terminal — making LLM agents help you with everything"]
-          li Powers autonomous agents like #[a(href="https://github.com/TimeToBuildBob") Bob] — my first fully autonomous agent
+          li #[i "Making LLM agents help you with everything"]: CLI, web, desktop, and cloud service (#[a(href="https://gptme.ai") gptme.ai]) for agents
+          li Ecosystem: #[a(href="https://github.com/gptme/gptme-contrib") gptme-contrib] 🧩, gptme plugins plus many harness-independent tools and CLIs (gptodo, gptme-voice, gptmail, ...)
+      li Creator of #[a(href="https://github.com/TimeToBuildBob") Bob] 👷 (#[a(href="https://timetobuildbob.github.io") website])
+        ul
+          li Truly autonomous agent built on gptme, running 24/7
       li Founder and maintainer of #[a(href="https://activitywatch.net" target="_blank") ActivityWatch] 📊 (#[a(href="https://github.com/ActivityWatch") GitHub])
         ul
-          li #[i "The world's best free and open-source automated time-tracker"] — 10k+ GitHub stars, 400k+ downloads
+          li #[i "The world's best free and open-source automated time-tracker"]: 18k+ GitHub stars, 1M+ downloads
+      li #[a(href="https://github.com/ErikBjare/quantifiedme") quantifiedme] 🔬
+        ul
+          li Analyzing my personal data: Quantified Self experiments
       li Maintainer of #[a(href="https://github.com/uniswap-python/uniswap-python/") uniswap-python] 📈
         ul
           li Python wrapper for the #[a(href="https://uniswap.org/") Uniswap] contracts.
@@ -49,7 +61,7 @@ div.row
     p
       | Here you can read my #[a(href="/blog") blog] where I write about things I enjoy thinking about. You can also learn more about me by checking out the #[a(href="/about/") about page] or visit some of my various profiles online as listed below.
 
-    h3 Latest blog posts
+    h3 Writing
 
     ul.posts
       | {% assign posts = site.blog | sort: "date" | reverse %}
@@ -72,7 +84,7 @@ div.row
 
       a(href="https://twitter.com/ErikBjare")
         div(style="color: #08F")
-          | #[i.fab.fa-twitter] Twitter
+          | #[i.fab.fa-twitter] X (Twitter)
       a.no-link-icon(href="https://github.com/ErikBjare")
         div(style="color: #444")
           | #[i.fab.fa-github] GitHub
@@ -87,7 +99,7 @@ div.row
 
       a(href="https://github.com/sponsors/ErikBjare")
         div(style="color: #EA4AAA")
-          | #[i.fab.fa-github] GitHub Sponsors
+          | #[i.fab.fa-github] Sponsors
       a(href="https://patreon.com/ErikBjare")
         div(style="color: #F96854")
           | #[i.fab.fa-patreon] Patreon
@@ -96,10 +108,10 @@ div.row
 
       a(href="https://stackoverflow.com/users/965332/erb")
         div(style="color: #F48024")
-          | #[i.fab.fa-stack-overflow] StackOverflow
+          | #[i.fab.fa-stack-overflow] SO
       a(href="https://www.reddit.com/user/ErikBjare")
         div(style="color: #FF5700")
           | #[i.fab.fa-reddit] Reddit
       a.no-link-icon(href="https://en.wikipedia.org/wiki/User:Erik.Bjareholt")
-        div(style="color: #333 !important")
+        div(style="color: #333")
           | #[span.icon-wikipedia] Wikipedia

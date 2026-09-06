@@ -2,4 +2,13 @@
     .container {
         max-width: 800px;
     }
+
+    // Pages with a sidebar (e.g. the home page) get more room,
+    // so the main column and sidebar don't wrap as aggressively.
+    // Prose-only pages keep the narrower, readable measure.
+    @media (min-width: 992px) {
+        .container:has(.col-md-3) {
+            max-width: 990px;
+        }
+    }
 }
