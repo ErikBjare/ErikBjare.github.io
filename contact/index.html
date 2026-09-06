@@ -20,23 +20,19 @@
 <!-- Favicon -->
 <link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
-<!-- Google Authorship and Publisher Markup -->
-<link rel="author" href="https://plus.google.com/+ErikBjareholt/posts">
-<link rel="publisher" href="https://plus.google.com/+ErikBjareholt">
-
 <!-- For better viewing on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Facebook admin -->
-<meta property="fb:admins" content="1155422697" />
+<!-- Support automatic light/dark theming -->
+<meta name="color-scheme" content="light dark">
 
 <!-- CSS (Bootstrap, custom) -->
-<link href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/main.css">
 <link rel="stylesheet" href="/css/syntax.css">
 
 <!-- Font -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=latin-ext" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -52,54 +48,12 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-48818326-1', {'transport_type': 'beacon'});
   gtag('config', 'G-Q5JWKQL1D3');
-</script>
-<script>
-// Used to track outbound links:
-// https://support.google.com/analytics/answer/1136920?hl=en
-var trackOutboundLink = function(url) {
-  gtag('event', 'outbound', {
-    "event_category": 'click', 
-    "event_label": url, 
-    "event_callback": function() {
-      document.location = url;
-    }
-  });
-}
-
-// TODO: Not tested properly
-// Found here: http://veithen.github.io/2015/01/24/outbound-link-tracking.html
-/*
-$(function() {
-  $("a").click(function(e) {
-    if (!ga.q) {
-      var url = $(this).attr("href");
-      trackOutboundLink(url);
-      e.preventDefault();
-    }
-  });
-});
-*/
-
-// Do the above initialization of outbound links, but without jQuery
-for (var i = 0; i < document.links.length; i++) {
-  var link = document.links[i];
-  if (link.hostname != window.location.hostname) {
-    link.onclick = function() {
-      if(!ga.q) {
-        trackOutboundLink(this.href);
-        e.preventDefault();
-      }
-    }
-  }
-}
-
 </script>
 
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" role=navigation>
+        <nav class="navbar navbar-expand-lg navbar-light" role=navigation>
     <div class="container-fluid">
         <a class="navbar-brand" href="/">erik.bjareholt.com</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -127,15 +81,15 @@ for (var i = 0; i < document.links.length; i++) {
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/jobs/">
-                        <i class="fa fa-briefcase"></i>
-                        <span class="pagename pagename-fold"> Jobs</span>
+                    <a class="nav-link" href="/consulting/">
+                        <i class="fa fa-handshake"></i>
+                        <span class="pagename pagename-fold"> Consulting</span>
                     </a>
                 </li>
             </ul>
             <ul class="d-flex navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact/">
+                    <a class="nav-link active" href="/contact/">
                         <i class="fa fa-envelope"></i>
                         <span class="pagename"> Contact</span>
                     </a>
@@ -152,15 +106,22 @@ for (var i = 0; i < document.links.length; i++) {
     To get in touch, you can e-mail me at <a href="mailto:erik@bjareho.lt">erik@bjareho.lt</a>.
 
     <br><br>
-    You can find my PGP public key <a href="/erikbjare.asc">here</a> (Key ID: <a href="http://pgp.mit.edu/pks/lookup?op=get&search=0x7A8F433A86E4C130">86E4C130</a>). Or at <a href="https://keybase.io/erb">Keybase</a>.
+    For consulting inquiries, see <a href="/consulting/">Consulting</a>.
+
+    <br><br>
+    My current PGP public key is <a href="/erikbjare-2019.asc">erikbjare-2019.asc</a> (RSA-4096, Key ID: <code>108227B5</code>, fingerprint <code>7B99 EBCF 9394 56D4 B0F4 57C7 7334 9C58 1082 27B5</code>).
+    <a href="/erikbjare.asc">erikbjare.asc</a> always points to the latest key.
+
+    <br><br>
+    Past keys, for completeness: <a href="/erikbjare-2014.asc">erikbjare-2014.asc</a> (RSA-4096, Key ID: <code>86E4C130</code>, used 2014&ndash;2019).
 </div>
 
         </div>
 
-        <footer class="container small" style="margin-bottom: 2em; margin-top: 2em; padding-top: 2em; border: solid #CCC; border-width: 1px 0 0 0; color: #555">
+        <footer class="site-footer container small">
   <div class="text-center">
     Erik Bj&auml;reholt
-    <span class="fa fa-copyright-mark"></span> 2014-<script>document.write(new Date().getFullYear())</script>
+    <span class="fa fa-copyright-mark"></span> 2014-2026
   </div>
 </footer>
 
