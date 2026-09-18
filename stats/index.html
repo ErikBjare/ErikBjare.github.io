@@ -1,0 +1,96 @@
+---
+layout: main
+title: Stats
+---
+
+<h1>Stats</h1>
+
+<p>
+  Public numbers for <a href="https://github.com/ErikBjare">Erik Bjäreholt</a>:
+  GitHub activity, project growth, and open-source contributions.
+  Collected daily by <a href="https://github.com/ErikBjare/stats">ErikBjare/stats</a>.
+</p>
+
+<p>
+  <small>Source of truth: <a href="https://github.com/ErikBjare/stats/blob/master/data/summary.json">data/summary.json</a> ·
+  Raw data: <a href="https://github.com/ErikBjare/stats/blob/master/data/ledger.csv">data/ledger.csv</a></small>
+</p>
+
+<hr>
+
+<h2>GitHub Activity</h2>
+
+<div class="stats-charts">
+  <img src="https://raw.githubusercontent.com/ErikBjare/stats/master/charts/prs_monthly.svg"
+       alt="PRs per month"
+       style="max-width:100%; margin-bottom:1rem;">
+  <img src="https://raw.githubusercontent.com/ErikBjare/stats/master/charts/commits_public_monthly.svg"
+       alt="Commits per month"
+       style="max-width:100%; margin-bottom:1rem;">
+  <img src="https://raw.githubusercontent.com/ErikBjare/stats/master/charts/issues_opened_public_monthly.svg"
+       alt="Issues opened per month"
+       style="max-width:100%; margin-bottom:1rem;">
+</div>
+
+<h2>Project Growth</h2>
+
+<div class="stats-charts">
+  <img src="https://raw.githubusercontent.com/ErikBjare/stats/master/charts/stars_gptme_monthly.svg"
+       alt="gptme GitHub stars over time"
+       style="max-width:100%; margin-bottom:1rem;">
+  <img src="https://raw.githubusercontent.com/ErikBjare/stats/master/charts/stars_activitywatch_monthly.svg"
+       alt="ActivityWatch GitHub stars over time"
+       style="max-width:100%; margin-bottom:1rem;">
+  <img src="https://raw.githubusercontent.com/ErikBjare/stats/master/charts/pypi_gptme_downloads_monthly.svg"
+       alt="gptme PyPI downloads"
+       style="max-width:100%; margin-bottom:1rem;">
+</div>
+
+<hr>
+
+<h2>Latest Numbers</h2>
+
+<div id="stats-table-container">
+  <p><em>Loading stats…</em></p>
+</div>
+
+<script>
+(function() {
+  var url = "https://raw.githubusercontent.com/ErikBjare/stats/master/data/summary.json";
+  fetch(url)
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      var metrics = data.metrics || {};
+      var asOf = data.as_of || "";
+      var labels = {
+        "prs_merged_public": "Merged public PRs (lifetime)",
+        "prs_opened_public": "Opened public PRs (lifetime)",
+        "issues_opened_public": "Opened public issues (lifetime)",
+        "commits_public": "Public commits (lifetime, default branches)",
+        "stars_gptme": "gptme/gptme stars",
+        "stars_activitywatch": "ActivityWatch stars",
+        "pypi_gptme_downloads": "gptme PyPI downloads (last month)"
+      };
+      var rows = "";
+      Object.keys(labels).forEach(function(key) {
+        var m = metrics[key];
+        if (!m) return;
+        var isPoint = key.startsWith("stars_") || key === "pypi_gptme_downloads";
+        var val = isPoint ? m.latest_value : m.lifetime;
+        rows += "<tr><td>" + labels[key] + "</td><td style='text-align:right'><strong>" + val.toLocaleString() + "</strong></td></tr>";
+      });
+      var html = "<table style='width:100%;border-collapse:collapse'>" +
+        "<thead><tr><th style='text-align:left'>Metric</th><th style='text-align:right'>Value</th></tr></thead>" +
+        "<tbody>" + rows + "</tbody>" +
+        "</table>";
+      if (asOf) {
+        html += "<p><small>As of " + asOf.slice(0, 10) + ". Source: <a href='https://github.com/ErikBjare/stats'>ErikBjare/stats</a>.</small></p>";
+      }
+      document.getElementById("stats-table-container").innerHTML = html;
+    })
+    .catch(function() {
+      document.getElementById("stats-table-container").innerHTML =
+        "<p>Could not load stats. See <a href='https://github.com/ErikBjare/stats'>ErikBjare/stats</a> directly.</p>";
+    });
+})();
+</script>
