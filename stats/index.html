@@ -6,14 +6,15 @@ title: Stats
 <h1>Stats</h1>
 
 <p>
-  Public numbers for <a href="https://github.com/ErikBjare">Erik Bjäreholt</a>:
-  GitHub activity, project growth, and open-source contributions.
-  Collected daily by <a href="https://github.com/ErikBjare/stats">ErikBjare/stats</a>.
+  Public GitHub activity for <a href="https://github.com/ErikBjare">Erik Bjäreholt</a>,
+  monthly, with a 3-month average. Public repositories only; comment counts include
+  everything posted from the <code>ErikBjare</code> account, whoever drafted it.
+  Collected daily by <a href="https://github.com/TimeToBuildBob/erik-stats">TimeToBuildBob/erik-stats</a>.
 </p>
 
 <p>
-  <small>Source of truth: <a href="https://github.com/ErikBjare/stats/blob/master/data/summary.json">data/summary.json</a> ·
-  Raw data: <a href="https://github.com/ErikBjare/stats/blob/master/data/ledger.csv">data/ledger.csv</a></small>
+  <small>Source of truth: <a href="https://github.com/TimeToBuildBob/erik-stats/blob/master/data/summary.json">data/summary.json</a> ·
+  Raw data: <a href="https://github.com/TimeToBuildBob/erik-stats/blob/master/data/monthly.csv">data/monthly.csv</a></small>
 </p>
 
 <hr>
@@ -21,28 +22,17 @@ title: Stats
 <h2>GitHub Activity</h2>
 
 <div class="stats-charts">
-  <img src="https://raw.githubusercontent.com/ErikBjare/stats/master/charts/prs_monthly.svg"
-       alt="PRs per month"
+  <img src="https://raw.githubusercontent.com/TimeToBuildBob/erik-stats/master/charts/comments.svg"
+       alt="Issue and PR comments per month"
        style="max-width:100%; margin-bottom:1rem;">
-  <img src="https://raw.githubusercontent.com/ErikBjare/stats/master/charts/commits_public_monthly.svg"
-       alt="Commits per month"
+  <img src="https://raw.githubusercontent.com/TimeToBuildBob/erik-stats/master/charts/prs.svg"
+       alt="PRs opened and merged per month"
        style="max-width:100%; margin-bottom:1rem;">
-  <img src="https://raw.githubusercontent.com/ErikBjare/stats/master/charts/issues_opened_public_monthly.svg"
-       alt="Issues opened per month"
+  <img src="https://raw.githubusercontent.com/TimeToBuildBob/erik-stats/master/charts/issues.svg"
+       alt="Issues opened and closed per month"
        style="max-width:100%; margin-bottom:1rem;">
-</div>
-
-<h2>Project Growth</h2>
-
-<div class="stats-charts">
-  <img src="https://raw.githubusercontent.com/ErikBjare/stats/master/charts/stars_gptme_monthly.svg"
-       alt="gptme GitHub stars over time"
-       style="max-width:100%; margin-bottom:1rem;">
-  <img src="https://raw.githubusercontent.com/ErikBjare/stats/master/charts/stars_activitywatch_monthly.svg"
-       alt="ActivityWatch GitHub stars over time"
-       style="max-width:100%; margin-bottom:1rem;">
-  <img src="https://raw.githubusercontent.com/ErikBjare/stats/master/charts/pypi_gptme_downloads_monthly.svg"
-       alt="gptme PyPI downloads"
+  <img src="https://raw.githubusercontent.com/TimeToBuildBob/erik-stats/master/charts/commits.svg"
+       alt="Commits and reviews per month"
        style="max-width:100%; margin-bottom:1rem;">
 </div>
 
@@ -56,41 +46,89 @@ title: Stats
 
 <script>
 (function() {
-  var url = "https://raw.githubusercontent.com/ErikBjare/stats/master/data/summary.json";
+  var repo = "https://github.com/TimeToBuildBob/erik-stats";
+  var url = "https://raw.githubusercontent.com/TimeToBuildBob/erik-stats/master/data/summary.json";
+  var container = document.getElementById("stats-table-container");
+  var labels = [
+    ["issue_comments", "Issue and PR comments"],
+    ["prs_opened", "PRs opened"],
+    ["prs_merged", "PRs merged"],
+    ["issues_opened", "Issues opened"],
+    ["issues_closed", "Issues closed"],
+    ["reviews", "Reviews"],
+    ["commits", "Commits"]
+  ];
+  var periods = [
+    ["all_time", "All time"],
+    ["last_12_months", "Last 12 months"]
+  ];
+
+  function cell(tag, text, align) {
+    var el = document.createElement(tag);
+    el.textContent = text;
+    if (align) el.style.textAlign = align;
+    return el;
+  }
+
+  function fail() {
+    container.textContent = "Could not load stats. See ";
+    var a = document.createElement("a");
+    a.href = repo;
+    a.textContent = "TimeToBuildBob/erik-stats";
+    container.appendChild(a);
+    container.appendChild(document.createTextNode(" directly."));
+  }
+
   fetch(url)
-    .then(function(r) { return r.json(); })
-    .then(function(data) {
-      var metrics = data.metrics || {};
-      var asOf = data.as_of || "";
-      var labels = {
-        "prs_merged_public": "Merged public PRs (lifetime)",
-        "prs_opened_public": "Opened public PRs (lifetime)",
-        "issues_opened_public": "Opened public issues (lifetime)",
-        "commits_public": "Public commits (lifetime, default branches)",
-        "stars_gptme": "gptme/gptme stars",
-        "stars_activitywatch": "ActivityWatch stars",
-        "pypi_gptme_downloads": "gptme PyPI downloads (last month)"
-      };
-      var rows = "";
-      Object.keys(labels).forEach(function(key) {
-        var m = metrics[key];
-        if (!m) return;
-        var isPoint = key.startsWith("stars_") || key === "pypi_gptme_downloads";
-        var val = isPoint ? m.latest_value : m.lifetime;
-        rows += "<tr><td>" + labels[key] + "</td><td style='text-align:right'><strong>" + val.toLocaleString() + "</strong></td></tr>";
-      });
-      var html = "<table style='width:100%;border-collapse:collapse'>" +
-        "<thead><tr><th style='text-align:left'>Metric</th><th style='text-align:right'>Value</th></tr></thead>" +
-        "<tbody>" + rows + "</tbody>" +
-        "</table>";
-      if (asOf) {
-        html += "<p><small>As of " + asOf.slice(0, 10) + ". Source: <a href='https://github.com/ErikBjare/stats'>ErikBjare/stats</a>.</small></p>";
-      }
-      document.getElementById("stats-table-container").innerHTML = html;
+    .then(function(r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
     })
-    .catch(function() {
-      document.getElementById("stats-table-container").innerHTML =
-        "<p>Could not load stats. See <a href='https://github.com/ErikBjare/stats'>ErikBjare/stats</a> directly.</p>";
-    });
+    .then(function(data) {
+      var table = document.createElement("table");
+      table.style.width = "100%";
+      table.style.borderCollapse = "collapse";
+
+      var headRow = document.createElement("tr");
+      headRow.appendChild(cell("th", "Metric", "left"));
+      periods.forEach(function(p) { headRow.appendChild(cell("th", p[1], "right")); });
+      var thead = document.createElement("thead");
+      thead.appendChild(headRow);
+      table.appendChild(thead);
+
+      var tbody = document.createElement("tbody");
+      var shown = 0;
+      labels.forEach(function(l) {
+        var values = periods.map(function(p) {
+          var v = (data[p[0]] || {})[l[0]];
+          return typeof v === "number" && isFinite(v) ? v : null;
+        });
+        if (values.every(function(v) { return v === null; })) return;
+        var tr = document.createElement("tr");
+        tr.appendChild(cell("td", l[1]));
+        values.forEach(function(v) {
+          tr.appendChild(cell("td", v === null ? "–" : v.toLocaleString(), "right"));
+        });
+        tbody.appendChild(tr);
+        shown++;
+      });
+      if (!shown) throw new Error("no valid metrics");
+      table.appendChild(tbody);
+
+      container.textContent = "";
+      container.appendChild(table);
+      if (typeof data.as_of_month === "string") {
+        var p = document.createElement("p");
+        var small = document.createElement("small");
+        small.textContent = "Through " + data.as_of_month + " (current month partial). Source: ";
+        var a = document.createElement("a");
+        a.href = repo;
+        a.textContent = "TimeToBuildBob/erik-stats";
+        small.appendChild(a);
+        p.appendChild(small);
+        container.appendChild(p);
+      }
+    })
+    .catch(fail);
 })();
 </script>
