@@ -9,6 +9,8 @@ I'm Erik, creator of [ActivityWatch](https://activitywatch.net) (18k+ stars) and
 
 I take on a small number of consulting engagements alongside my open-source work. 💼
 
+See [consulting at Superuser Labs](https://superuserlabs.org/#consulting) for our current offer and how to get in touch.
+
 ## What I can help with
 
 - **AI agents & LLM integration**: integrating LLM agents into your product, agent infrastructure & evals, tool use, autonomous workflows.
